@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://alan-turing-institute.github.io/turing-commons/rri/chapter4/assurance/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>What is Argument-Based Assurance - Turing Commons</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../../../stylesheets/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Turing Commons</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../welcome/" class="nav-link">Welcome</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Responsible Research and Innovation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">(RRI) About this Course</a>
+</li>
+                                    
+<li>
+    <a href="../../intro/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Responsible Research and Innovation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/responsibility/" class="dropdown-item">What is Responsibility</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/history/" class="dropdown-item">A Short History of RRI</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/sts/" class="dropdown-item">Science, Technology, and Society</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/timeline/" class="dropdown-item">Science and Technology Studies Timeline</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Data Science and AI</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter2/responsible_ds/" class="dropdown-item">What is Responsible Data Science and AI</a>
+</li>
+            
+<li>
+    <a href="../../chapter2/project_lifecycle/" class="dropdown-item">Introducing the Project Lifecycle</a>
+</li>
+            
+<li>
+    <a href="../../chapter2/roles_responsibility/" class="dropdown-item">Roles and Responsibilities</a>
+</li>
+            
+<li>
+    <a href="../../chapter2/understanding_bias/" class="dropdown-item">Understanding Bias</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Project Lifecycle</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../activities/case_studies/" class="dropdown-item">Case Studies</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/project_design/planning/" class="dropdown-item">Project Planning</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/project_design/problem/" class="dropdown-item">Problem Formulation</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/project_design/data_extraction/" class="dropdown-item">Data Extraction or Procurement</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/project_design/data_analysis.ipynb" class="dropdown-item">Data Analysis</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/model_development/preprocessing/" class="dropdown-item">Preprocessing and Feature Engineering</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/model_development/model_selection/" class="dropdown-item">Model Selection and Training</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/model_development/model_testing/" class="dropdown-item">Model Testing and Validation</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/model_development/model_reporting/" class="dropdown-item">Model Reporting</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/system_deployment/model_productionalisation/" class="dropdown-item">Model Productionalisation</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/system_deployment/user_training/" class="dropdown-item">User Training</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/system_deployment/system_use.ipynb" class="dropdown-item">System Use and Monitoring</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/system_deployment/model_updating/" class="dropdown-item">Model Updating or Deprovisioning</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/summary/" class="dropdown-item">Next Steps</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Communication</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">What is Argument-Based Assurance</a>
+</li>
+            
+<li>
+    <a href="../communication/" class="dropdown-item">Assurance and Responsible Communication</a>
+</li>
+            
+<li>
+    <a href="../gpe/" class="dropdown-item">Goals, Properties, and Evidence</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../conclusion/" class="dropdown-item">Conclusion</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../resources/" class="dropdown-item">Additional Resources</a>
+</li>
+            
+<li>
+    <a href="../../resources/synthetic_data_generation.ipynb" class="dropdown-item">Synthetic Data Generation</a>
+</li>
+            
+<li>
+    <a href="../../resources/further-reading/" class="dropdown-item">Further Reading</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Public Engagement of Data Science and AI <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../ped/" class="dropdown-item">(PED) About this Course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Public Engagement?</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter1/ladder/" class="dropdown-item">Climbing the Ladder</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter1/goals/" class="dropdown-item">Goals of Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Value(s) of Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter2/deliberation/" class="dropdown-item">Deliberative Values</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter2/responsible/" class="dropdown-item">Responsible Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Facilitating Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter3/when/" class="dropdown-item">When should you engage</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter3/how/" class="dropdown-item">How should you engage</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Guidance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/storytelling/" class="dropdown-item">Storytelling with Data</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/uncertainty/" class="dropdown-item">Communicating Uncertainty</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/uncertainty_example.ipynb" class="dropdown-item">Visualising Uncertainty</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Public Trust and Assurance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter5/trust/" class="dropdown-item">Public Trust in Science and Technology</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">AI Ethics and Governance <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../aeg/" class="dropdown-item">(AEG) About this course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Ethics</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter1/metaethics/" class="dropdown-item">Introduction to Metaethics</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter1/normative/" class="dropdown-item">Introduction to Normative Theories</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Harms and Values</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter2/harms/" class="dropdown-item">AI Harms</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter2/values/" class="dropdown-item">AI Values</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Sustainability</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter3/engagement/" class="dropdown-item">Stakeholder Engagement Process</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter3/impact/" class="dropdown-item">Stakeholder Impact Assessment</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Fairness & Bias Mitigation, Accountability, and Governance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/fairness/" class="dropdown-item">Introduction to Fairness</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/aifairness/" class="dropdown-item">AI Fairness</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/bias/" class="dropdown-item">Bias Mitigation</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/accountability/" class="dropdown-item">Accountability</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/governance/" class="dropdown-item">AI Governance</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Transparency, Explainability and CARE & ACT Principles</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/transparency/" class="dropdown-item">Transparency & Explainability</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/consider/" class="dropdown-item">Consider Context</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/anticipate/" class="dropdown-item">Anticipate Impacts</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/reflect/" class="dropdown-item">Reflect on Purpose, Positionality, and Power</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/engage/" class="dropdown-item">Engage Inclusively</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/act/" class="dropdown-item">Act Responsibly</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../blog/" class="dropdown-item">Blog</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../communication/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/alan-turing-institute/turing-commons/edit/master/docs/rri/chapter4/assurance.md" class="nav-link">Edit on alan-turing-institute/turing-commons
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#what-is-argument-based-assurance" class="nav-link">What is Argument-Based Assurance?</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#assurance-cases" class="nav-link">Assurance Cases</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#reflect-act-justify" class="nav-link">Reflect, Act, Justify</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="what-is-argument-based-assurance">What is Argument-Based Assurance?<a class="headerlink" href="#what-is-argument-based-assurance" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Reference</p>
+<p>This section is based on Burr[@burr2021], which provides a more thorough account of the argument-based assurance methodology and how it applies to responsible research and innovation in data science and AI.</p>
+</div>
+<p>The method we will explore that serves the role of facilitating responsible communication is known as <em>argument-based assurance</em> (ABA).
+We can define ABA as:</p>
+<blockquote>
+<p>a process of using structured argumentation to provide assurance to another party (or parties) that a particular claim (or set of related claims) about a property of a system is warranted given the available evidence.</p>
+</blockquote>
+<p>As a structured method for communication, ABA is already widely used in safety-critical domains or industries where manufacturing and development processes are required to comply with strict regulatory standards and support industry-recognised best practices.[@hawkins2021]</p>
+<p>However, ABA is useful for more than just demonstrating regulatory compliance.
+It can also</p>
+<ul>
+<li>assist internal <strong>reflection</strong> and <strong>deliberation</strong> by providing a systematic and structured means for evaluating how the development of systems or products can fulfil certain normative goals (e.g. safety or robustness), according to certain well-defined properties (e.g. software hazards identified) and criteria (e.g. risk reduction thresholds met);</li>
+<li>provide a deliberate means for the <strong>anticipation</strong> and <strong>pre-emption</strong> of potential risks and adverse impacts through mechanisms of end-to-end assessment and redress;</li>
+<li>facilitate <strong>transparent communication</strong> between developers and affected stakeholders;</li>
+<li>support mechanisms and processes of <strong>documentation</strong> (or, reporting) to <strong>ensure accountability</strong> (e.g. audits, compliance);</li>
+<li>and build <strong>trust and confidence</strong> by promoting the adoption of best practices (e.g. standards for warranted evidence) and by conveying the integration of these into design, development, and deployment lifecycles to impacted stakeholders.</li>
+</ul>
+<p>For these reasons, it is a useful foundation upon which to build a framework for responsible communication.</p>
+<h2 id="assurance-cases">Assurance Cases<a class="headerlink" href="#assurance-cases" title="Permanent link">&para;</a></h2>
+<p>When a barrister stands in a court room, in front of the judge, jury, and defendant, they are tasked with presenting a case.
+If they are part of the prosecution, their role is to convince the jury, beyond all reasonable doubt, that the defendant is guilty of committing the crimes of which they stand accused, based on the admissible evidence agreed upon by all parties.
+The case they present, therefore, is an argument that attempts to justify their position or standpoint.
+Although the format and goals may be different, the purpose of <strong>argument-based</strong> assurance is also to develop and present a case.
+This is not an argument in the antagonistic sense of the term, but rather a structured and justifiable case supported by evidence.</p>
+<p>The scope and content of what we can call an 'assurance case' is determined by the relevant details of the project in question, and what the project team need to provide assurance for. For example, if a project team needs to communicate the processes by which they have ensured the <em>interpretability</em> of their model, they may need to develop an <em>interpretability case</em>, which could look something like the following:</p>
+<p><img alt="A template of an assurance case that focuses on providing assurance for the interpretability of a machine learning model. Reprinted from Ward[@ward2020]" src="../../../assets/images/graphics/interpretability-case.png" /></p>
+<p>Here, the assurance case is represented in a graphical format.
+The top-level claim is a goal that is supported by the lower level claims, which in turn further specify what it means to say "The {ML model} is sufficiently {interpretable} in the intended {context}".
+At the lowest level is the evidence that supports and establishes the relevant basis for making the specific claims.
+Overall, the case is a <em>structured argument</em> that is oriented towards the top-level goal.</p>
+<p>This is achieved by first <em>reflecting</em> on what the goal claim means.
+For instance, what are the parameters of <em>sufficiently interpretable</em>?
+Or, what is the <em>intended context</em>?</p>
+<p>Next, the project team consider the <em>actions</em> they have taken that can be referred to as supporting <em>evidence</em>.
+This evidence provides the inferential support for the higher-level claims.</p>
+<p>Finally, once all the pieces are together in a structured manner, the entire case is used as the basis for <em>justifying</em> the validity of the top-level goal.</p>
+<h3 id="elements-of-an-assurance-case">Elements of an Assurance Case<a class="headerlink" href="#elements-of-an-assurance-case" title="Permanent link">&para;</a></h3>
+<p>The interpretability example helps us identify a <em>minimal set</em> of elements that need to be established in an assurance case:</p>
+<ol>
+<li>A top-level normative goal</li>
+<li>Claims about the project or system</li>
+<li>Supporting evidence</li>
+</ol>
+<p>The top-level goal orients and delineates the case by setting a direction and helping to establish the scope of what claims need to be included.
+For instance, a particular claim about the privacy or security of a project's data management policy many be important but unnecessary to include in an assurance case that justifies why a model does not cause any discriminatory harm.</p>
+<p>In addition to any clarificatory claims that pertain to the goal (e.g., what type of model is being assured; the context of use for the system), the lower-level claims should further specify the goal by a) addressing the specific activities that have been carried out during the project, or b) identifying properties of the system that help ensure the goal claim is legitimate.
+We can, therefore, separate the type of lower-level claim being established as either a <em>project</em> or <em>system</em> property claim.</p>
+<p>Unless the claim is self-evidential, there will need to be a final element that points to some supporting evidence.
+This evidence establishes the foundation upon which the justifiability of the overall argument depends.
+The following two figures show the relationship between these elements and also provide an example of a partial assurance case that focuses on a goal of safety.</p>
+<p>=== "Figure A"</p>
+<pre><code>![A minimal set of elements for an assurance case.](../../assets/images/graphics/gce.png)
+A minimal set of elements for an assurance case.
+</code></pre>
+<p>=== "Figure B"</p>
+<pre><code>![An example of a goal, claims, and evidence using the minimal set of elements identified previously.](../../assets/images/graphics/gce-example.png)
+An example of a goal, claims, and evidence using the minimal set of elements identified previously.
+</code></pre>
+<h3 id="who-is-the-target-audience">Who is the Target Audience?<a class="headerlink" href="#who-is-the-target-audience" title="Permanent link">&para;</a></h3>
+<p>As you can probably imagine, all of these elements help play a vital role in the effective communication of an assurance case.
+A clear goal helps signal to stakeholders what values underwrite and motivate your project, as well as providing the means for more critical evaluation and engagement (i.e. an assessment by the stakeholders of whether your goal has been obtained, conditional on the evidence provided).
+The set of claims collectively establishes the scope and content of your argument, enabling stakeholders to identify whether there are any gaps (i.e. whether your argument is complete).
+And, the evidential base allows stakeholders to determine whether there is a legitimate reason for accepting your argument.</p>
+<p>However, the justifiability and acceptability of an assurance case, in part, depends on the target audience.
+Sticking with the interpretability example, we can note that what is interpretable to an expert in statistical learning theory may be completely uninterpretable for a policy-maker tasked with evaluating whether a particular model is suitable to deploy in their own project.
+Therefore, prior to building an assurance case, it is important to identify the target audience and understand their needs.
+In some cases, this may be determined on the behalf of the project team (e.g. where an external auditor requests assurance for compliance objectives).
+In other cases, identifying relevant stakeholders may have been performed through stakeholder engagement processes carried out as part of the '<a href="../../chapter3/project_design/planning/">Project Planning</a>' activities.</p>
+<h2 id="reflect-act-justify">Reflect, Act, Justify<a class="headerlink" href="#reflect-act-justify" title="Permanent link">&para;</a></h2>
+<p>We now have sufficient background information to present an intuitive (high-level) procedure for developing and communicating an assurance case.
+The procedure is broken down into three steps, which also complement the goals of the <a href="../../chapter2/project_lifecycle/">project lifecycle</a>:</p>
+<ol>
+<li>Reflect</li>
+<li>Act</li>
+<li>Justify</li>
+</ol>
+<p><strong>Reflection</strong> is an anticipatory and deliberative process in which questions such as the following are asked of the project and its governance:</p>
+<ol>
+<li>What are the goals of your system?</li>
+<li>How are these goals defined?</li>
+<li>Which stakeholders have participated in the identification and defining of these goals?</li>
+<li>What properties need to be implemented in the project or system to ensure that these goals are achieved?</li>
+<li>Which actions ought to be taken to establish these properties within the project or system?</li>
+</ol>
+<p>These are inherently normative and value-laden questions, which is one reason why diverse and inclusive stakeholder engagement is so crucial.</p>
+<p><strong>Action</strong> occurs throughout all of the stages of the project lifecycle, and the output of many of these actions are likely to serve as the evidence for the claims of the assurance case.
+These actions and evidential artefacts can also help you identify what claims may be relevant in your argument.
+As such, the following questions serve only to provide some additional supporting structure to this process:</p>
+<ol>
+<li>What actions have been undertaken during <strong>(project) design</strong> that have generated salient evidence for your goals and claims?</li>
+<li>What actions have been undertaken during <strong>(model) development</strong> that have generated salient evidence for your goals and claims?</li>
+<li>What actions have been undertaken during <strong>(system) deployment</strong> that have generated salient evidence for your goals and claims?</li>
+</ol>
+<p>Using the project lifecycle model as a scaffold or guide is, therefore, a useful tool for both a) reflectively planning the necessary activities that ought to be undertaken, prior to the project's commencement, and b) evaluating and assessing whether there are any gaps as a project evolves.</p>
+<p>The final step is to <strong>justify</strong> that your evidence base is sufficient to warrant the claims that are being made about the properties of your project or system.
+This does not mean that the assurance case is the final activity that needs to be done at the very end of a project.
+Rather, it's development should be seen as iterative and ongoing as the project evolves.
+Identifying the relevant evidence and determining whether the evidence base is sufficient and complete can be challenging. 
+To help this process, deliberative prompts such as the following can be instructive:</p>
+<ol>
+<li>Which stakeholders, identified in your stakeholder engagement plan, can support the evaluation of your evidence and overall case?</li>
+<li>Is any evidence missing from your case?</li>
+<li>Are the collection of property claims jointly sufficient to support your top-level goal?</li>
+</ol>
+<p>However, in general stakeholder engagement—especially with domain experts—is essential.</p>
+<p>In the next section, we will discuss some possible orienting goals and principles, to help you identify the sorts of properties that may comprise an ethical and responsible assurance case.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 Alan Turing Institute</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../javascripts/mathjax.js" defer></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+        <script src="../../../javascripts/tablesort.js" defer></script>
+        <script src="../../../javascripts/case-studies.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

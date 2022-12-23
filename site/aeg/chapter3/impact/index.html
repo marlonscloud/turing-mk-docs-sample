@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://alan-turing-institute.github.io/turing-commons/aeg/chapter3/impact/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Stakeholder Impact Assessment - Turing Commons</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../../../stylesheets/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Turing Commons</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../welcome/" class="nav-link">Welcome</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Responsible Research and Innovation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../rri/" class="dropdown-item">(RRI) About this Course</a>
+</li>
+                                    
+<li>
+    <a href="../../../rri/intro/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Responsible Research and Innovation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/responsibility/" class="dropdown-item">What is Responsibility</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/history/" class="dropdown-item">A Short History of RRI</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/sts/" class="dropdown-item">Science, Technology, and Society</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/timeline/" class="dropdown-item">Science and Technology Studies Timeline</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Data Science and AI</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/responsible_ds/" class="dropdown-item">What is Responsible Data Science and AI</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/project_lifecycle/" class="dropdown-item">Introducing the Project Lifecycle</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/roles_responsibility/" class="dropdown-item">Roles and Responsibilities</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/understanding_bias/" class="dropdown-item">Understanding Bias</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Project Lifecycle</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/activities/case_studies/" class="dropdown-item">Case Studies</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/planning/" class="dropdown-item">Project Planning</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/problem/" class="dropdown-item">Problem Formulation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/data_extraction/" class="dropdown-item">Data Extraction or Procurement</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/data_analysis.ipynb" class="dropdown-item">Data Analysis</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/preprocessing/" class="dropdown-item">Preprocessing and Feature Engineering</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_selection/" class="dropdown-item">Model Selection and Training</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_testing/" class="dropdown-item">Model Testing and Validation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_reporting/" class="dropdown-item">Model Reporting</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/model_productionalisation/" class="dropdown-item">Model Productionalisation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/user_training/" class="dropdown-item">User Training</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/system_use.ipynb" class="dropdown-item">System Use and Monitoring</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/model_updating/" class="dropdown-item">Model Updating or Deprovisioning</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/summary/" class="dropdown-item">Next Steps</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Communication</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/assurance/" class="dropdown-item">What is Argument-Based Assurance</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/communication/" class="dropdown-item">Assurance and Responsible Communication</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/gpe/" class="dropdown-item">Goals, Properties, and Evidence</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../rri/conclusion/" class="dropdown-item">Conclusion</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/resources/" class="dropdown-item">Additional Resources</a>
+</li>
+            
+<li>
+    <a href="../../../rri/resources/synthetic_data_generation.ipynb" class="dropdown-item">Synthetic Data Generation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/resources/further-reading/" class="dropdown-item">Further Reading</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Public Engagement of Data Science and AI <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../ped/" class="dropdown-item">(PED) About this Course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Public Engagement?</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter1/ladder/" class="dropdown-item">Climbing the Ladder</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter1/goals/" class="dropdown-item">Goals of Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Value(s) of Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter2/deliberation/" class="dropdown-item">Deliberative Values</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter2/responsible/" class="dropdown-item">Responsible Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Facilitating Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter3/when/" class="dropdown-item">When should you engage</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter3/how/" class="dropdown-item">How should you engage</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Guidance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/storytelling/" class="dropdown-item">Storytelling with Data</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/uncertainty/" class="dropdown-item">Communicating Uncertainty</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/uncertainty_example.ipynb" class="dropdown-item">Visualising Uncertainty</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Public Trust and Assurance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter5/trust/" class="dropdown-item">Public Trust in Science and Technology</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">AI Ethics and Governance <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">(AEG) About this course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Ethics</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/metaethics/" class="dropdown-item">Introduction to Metaethics</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/normative/" class="dropdown-item">Introduction to Normative Theories</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Harms and Values</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter2/harms/" class="dropdown-item">AI Harms</a>
+</li>
+            
+<li>
+    <a href="../../chapter2/values/" class="dropdown-item">AI Values</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Sustainability</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../engagement/" class="dropdown-item">Stakeholder Engagement Process</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Stakeholder Impact Assessment</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Fairness & Bias Mitigation, Accountability, and Governance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/fairness/" class="dropdown-item">Introduction to Fairness</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/aifairness/" class="dropdown-item">AI Fairness</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/bias/" class="dropdown-item">Bias Mitigation</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/accountability/" class="dropdown-item">Accountability</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/governance/" class="dropdown-item">AI Governance</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Transparency, Explainability and CARE & ACT Principles</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/transparency/" class="dropdown-item">Transparency & Explainability</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/consider/" class="dropdown-item">Consider Context</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/anticipate/" class="dropdown-item">Anticipate Impacts</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/reflect/" class="dropdown-item">Reflect on Purpose, Positionality, and Power</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/engage/" class="dropdown-item">Engage Inclusively</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/act/" class="dropdown-item">Act Responsibly</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../blog/" class="dropdown-item">Blog</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../engagement/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../chapter4/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/alan-turing-institute/turing-commons/edit/master/docs/aeg/chapter3/impact.md" class="nav-link">Edit on alan-turing-institute/turing-commons
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#stakeholder-impact-assessment" class="nav-link">Stakeholder Impact Assessment</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#skills-for-conducting-sias" class="nav-link">Skills for Conducting SIA's</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="stakeholder-impact-assessment">Stakeholder Impact Assessment<a class="headerlink" href="#stakeholder-impact-assessment" title="Permanent link">&para;</a></h1>
+<p>Designers and users of AI systems should remain aware that these technologies may have transformative and long-term effects on individuals and society. To ensure that the deployment of an AI system remains sustainable and supports the sustainability of the communities it will affect, the project team should proceed with a continuous sensitivity to the real-world impacts that the system will have. The team should come together to evaluate the social impact and sustainability of an AI project through what is known as a Stakeholder Impact Assessment (SIA).</p>
+<p>The SUM values form the basis of the SIA. They are intended as a launching point for open and inclusive conversations about the individual and societal impacts of data science research and AI innovation projects rather than to provide a comprehensive inventory of moral concerns and solutions. At the very outset of any project, these should provide the normative point of departure for collaborative and anticipatory reflection, while, at the same time, allowing for the respectful and interculturally sensitive inclusion of other points of view.</p>
+<div class="admonition example">
+<p class="admonition-title">Objectives of a SIA<p>The purpose of carrying out a SIA is multidimensional. SIAs can serve several purposes, some of which include:</p>
+<ul>
+<li>Help to build <strong>public confidence</strong> that the design and deployment of the AI system has been done responsibly.</li>
+<li>Facilitate and strengthen your <strong>accountability</strong> framework.</li>
+<li><strong>Bring to light unseen risks</strong> that threaten to affect individuals and the public good.</li>
+<li>Underwrite <strong>well-informed decision-making</strong> and <strong>transparent innovation practices</strong>.</li>
+<li>Demonstrate <strong>forethought</strong> and due <strong>diligence</strong> not only within an organisation but also to the wider public.</li>
+</ul>
+</p>
+</div>
+<p>AI projects may require different kinds of impact assessments. For example Data Protection Law requires data protection impact assessments (DPIAs) to be carried out in cases where the processing of personal data is likely to result in a high risk to individuals. DPIAs assess the necessity and proportionality of the processing of personal data, identify risks that may emerge in that processing, and present measures taken to mitigate those risks. Another example are equality impact assessments (EIAs) which aid in fulfiling the requirements of equality legislation.</p>
+<p>While both DPIAs and EIAs provide relevant insights with respect to the ethical stakes of AI innovation projects, they go only part of the way in identifying and assessing the full range of potential individual and societal impacts of the design, development, and deployment of AI systems. Reaching a comprehensive assessment of these impacts is the purpose of SIAs.</p>
+<div class="admonition info">
+<p class="admonition-title">Key Concept: Stakeholder Impact Assessment</p>
+<p>SIAs are tools that create a procedure for, and a means of documenting, the collaborative evaluation and reflective anticipation of the possible harms and benefits of AI innovation projects. SIAs are not intended to replace DPIAs or EIAs, which are obligatory. Rather, SIAs are meant to be integrated into the wider impact assessment regime as a way to demonstrate that sufficient attention has been paid to the ethical permissibility, transparency, accountability, and equity of AI innovation projects.</p>
+</div>
+<p>There are three critical points in the AI project lifecycle at which the project team should convene to impact the social impact and sustainability of a project:</p>
+<p>=== ":octicons-log-16: Design"</p>
+<pre><code>A SIA should be carried out to determine the ethical permissibility of the project. As a starting point, the team should refer to the SUM Values  for the considerations of the possible effects of the project on individual wellbeing and public welfare. This should include a stakeholder engagement and involvement component in the initial SIA through methods established in the initial Project Summary Report (PS Report), so public views can be considered in ways that are proportional to potential project impacts and appropriate to team positionality.
+
+This will bolster the inclusion of a diversity of voices and opinions into the design and development process through the participation of a more representative range of stakeholders. The Design Phase SIA includes a revisitation of the Project Summary Report, where engagement objectives and methods for the Development Phase SIA were first established. These, and other relevant project revisions should be reflected in an update to the PS Report.
+</code></pre>
+<p>=== ":material-developer-board: Develop"</p>
+<pre><code>Once a model has been trained, tested, and validated, the project team should revisit the initial SIA to confirm that the AI system to be implemented is still in line with the evaluations and conclusions of the original assessment. This check-in should be logged on the Development Phase section of the SIA with any applicable changes added and discussed.
+
+The method of stakeholder engagement that accompanies the SIA process will have been initially established in the PS report and revisited in the Design Phase SIA. This report should be revisited again during the Development Phase SIA and updated where needed. At this point the team must also set a timeframe for re-assessment once the system is in operation. Timeframes for these re-assessments should be decided by the team on a case-by-case basis but should be proportional to the scale of the potential impact of the system on the individuals and communities it will affect.
+</code></pre>
+<p>=== ":material-network-pos: Deploy"</p>
+<pre><code>Once an AI system has gone live, the team should iteratively revisit and re-evaluate the SIA. These checkins should be logged on the Deployment Phase section of the SIA with any applicable changes added and discussed. Deployment-Phase SIAs should focus both on evaluating the existing SIA against real world impacts and on considering how to mitigate the unintended consequences that may have ensued in the wake of the deployment of the system. As with each SIA iteration, the PS report is revisited at this point, when objectives, methods, and timeframes for the next Deployment Phase SIA are established.
+</code></pre>
+<h2 id="skills-for-conducting-sias">Skills for Conducting SIA's<a class="headerlink" href="#skills-for-conducting-sias" title="Permanent link">&para;</a></h2>
+<figure>
+<p><img align="center" alt="stakeholder" src="../../../assets/images/illustrations/stakeholder-engagement.jpg" /></p>
+</figure>
+<h3 id="weighing-the-values-and-considering-trade-offs">Weighing the values and considering trade-offs<a class="headerlink" href="#weighing-the-values-and-considering-trade-offs" title="Permanent link">&para;</a></h3>
+<p>Taking the SUM values as a starting point of conversation and for the SIA, there will come times when these values come into conflict with one another and decisions will have to be made on which value to prioritise. Within a team, discussion should be encouraged on how to weigh the values against one another and how to consider trade-offs should use-case specific circumstances arise when the values come into tension with each other.</p>
+<p>For instance, there may be circumstances where the use of an AI system could optimally advance the public interest only at the cost of safeguarding the wellbeing or the autonomy of a given individual. In other cases, the use of an AI system could preserve the wellbeing of a particular individual only at the cost of the autonomy of another or of the public welfare more generally.</p>
+<p>This issue of adjudicating between conflicting values has long been a crucial and thorny dimension of collective life, and the problem of discovering reasonable ways to overcome the disagreements that arise as a result of the plurality of human values has occupied thinkers for just as long. Nonetheless, over the course of the development of modern democratic and plural societies, several useful approaches to managing the tension between conflicting values have emerged.</p>
+<h3 id="consequences-based-and-principles-based-approaches-to-balancing-values">Consequences-based and principles-based approaches to balancing values<a class="headerlink" href="#consequences-based-and-principles-based-approaches-to-balancing-values" title="Permanent link">&para;</a></h3>
+<p>Let's go back to some concepts introduced in chapter 1 that will be useful when trying to balance the tension between values: consequences-based moral thinking or consequentialism and principles-based moral thinking or deontology. These can be seen as procedural tools for thinking through a given dilemma in weighing values.</p>
+<p>As a quick reminder, a consequence-based approach asks that, in judging the moral correctness of an action, one prioritise considerations of the goodness produced by an outcome. In other words, because what matters most is the consequences of ones actions, the goodness of these consequences should be maximised. Standards of right and wrong (indicators of what one ought to do) are determined, on this view, by whether the action taken maximises overall goodness of the consequences rather than by the principles or standards one applies when acting.</p>
+<p>A principles-based approach takes the opposite tack. The rightness of an action is determined, from this standpoint, by the intentional application of a universally applicable standard, maxim, or principle. Rather than basing the morality of conduct on the ends served by it, this approach anchors rightness in the duty or obligation of the individual agent to follow a rationally determined (and therefore “universalisable”) principle. </p>
+<p>For deontological or principles-based ethics, the integrity of the principled action and intention matters most, and so justified constraints, which are rooted in the priority to act according to moral standards, must be put on the pursuit of the achievement of one’s goals.</p>
+<p>Knowing when to prioritise consequences and when to prioritise principles in moral deliberations is a tricky matter, and applying either a consequentialist or deontological approach (or both) may make sense depending upon the context. </p>
+<p>To take a familiar example, in deontologically following the principle ‘Thou shall not lie,’ you would be justifiably constrained from stealthily deceiving and misleading others to get ahead in your job. The principle matters here. But, in a different situation, say, where lying to a murderer, who appears at your front door, would save an innocent victim whom you are concealing in your cellar, the prioritisation of consequences makes more sense.</p>
+<p>Consider another example: In an overburdened council, the introduction of an automated system for making sites available for development would vastly expedite housing delivery. The implementation of this AI system would thus produce a consequence that could be beneficial to the public.</p>
+<p>Yet, it may, among other things, simultaneously do damage to the value of Connect (which safeguards interpersonal dialogue, meaningful human connection and social cohesion) by eliminating time intensive consultation processes that facilitate interpersonal communication, trust building, and social bonding between council staff and residents. How then could one go about weighing the value of improving public welfare against the value of respecting the integrity of interpersonal relations?</p>
+<p>One way would be to place each side of this comparison under the rubric of either consequences or principles and then measure them up against each other accordingly. From one perspective, the publicly beneficial consequences of improving service delivery might outweigh the publicly harmful consequences of impairing social cohesion. On a different view, such a trade-off would be unacceptable, because the principle of respecting the integrity of social cohesion trumps any solidarity-harming but publicly beneficial consequences whatsoever. The answers to these questions will always be tricky, but deliberation between team members and stakeholders should always be a part of arriving to any sort of consensus (which we will focus on in the next section).</p>
+<p>Getting clear on the consequences and the principles involved in a specific case of conflicting values will allow team members to get a better picture of the practical and moral stakes at play in a particular project. It will also help the team get a sharper idea of the proportionality of using an AI technology to achieve a desired outcome given both its potential ethical impacts and the social needs to which it is responding. When drawn upon for guidance, consequentialism and deontology can provide a kind of procedural scale upon which to place, measure, and weigh conflicting values. They are practical tools that can be used within meaningful deliberation.</p>
+<h3 id="ensuring-meaningful-and-inclusive-deliberation">Ensuring meaningful and inclusive deliberation<a class="headerlink" href="#ensuring-meaningful-and-inclusive-deliberation" title="Permanent link">&para;</a></h3>
+<p>The most general approach is to encourage mutually respectful, sincere, and well-informed dialogue, so that reasons from all affected voices can be heard and considered. Deliberations that have been inclusive, open, and impartial tend to generate better and more inferentially sound conclusions, so approaching the adjudication of conflicting values in this manner will likely improve mutual understanding of the rationales and perspectives, which inform those values.</p>
+<p>Whether or not this ends up being the case in each conversational context, the importance of cultivating a culture of innovation, which encourages reciprocally respectful, open, non-coercive, and mutually accountable communication must be stressed. The success of the modern sciences (which have been built on the dynamic foundations of inclusive, rational, and democratic communication) is perhaps evidence enough to support the validity of this emphasis.</p>
+<figure>
+<p><img align="center" alt="grice-matrix" src="../../../assets/images/graphics/grice-maxim.png" /></p>
+</figure>
+<p>Here, procedural ethics is crucial. The importance of meaningful dialogue in balancing values is rooted in central role played in it by the rational exchange and assessment of ideas and beliefs. The validity of the claims we make in conversations about values is bound by practices of giving and asking for reasons. A claim about values that is justified is one that convinces by the unforced strength of the better or more compelling argument. Rational justification and persuasive reason-giving are, in fact, central elements of legitimate and consensus-oriented moral decision making. And, along the same lines, claims made about moral values or properties are subject to critical evaluation vis-à-vis their inferential strengths and weaknesses.</p>
+<p>Another way to understand the importance of meaningful dialogue in balancing values has to do with the way that such a procedural view of ethical thinking enables open communication about prioritising values without imposing substantive views about the values themselves. Instead, an emphasis on rational communication in deliberations looks to secure a justified and equitable process of exchanging and evaluating reasons. It starts with the question: what are the enabling conditions in the interpersonal communication of values and beliefs that allow interlocutors to come to defensible and rationally acceptable moral judgments and reason-based consensus?</p>
+<p>To answer this question, moral thinkers over the past century have endeavoured to reconstruct the practical assumptions behind and presuppositions of rational communication (a summary of the most essential of such assumptions and presuppositions is provided below). Creating a reflective and practicable awareness of these assumptions and presuppositions among members of a team can play a crucial role in creating an innovation environment that is optimally conducive meaningful and inclusive deliberation.</p>
+<p><strong>Preconditions of meaningful deliberation:</strong></p>
+<div class="admonition check">
+<p class="admonition-title">Impartiality</p>
+<p>Interlocutors engaging in meaningful deliberation must consider the interests of all those who are affected by their actions equally. Thinking impartially involves taking on the view of others to try to put oneself in their place.</p>
+</div>
+<div class="admonition check">
+<p class="admonition-title">Non-coercion</p>
+<p>Meaningful deliberation must be free from any sort of implicit or explicit coercion, force, or restriction that would prevent the open and unconstrained exchange of reasons.</p>
+</div>
+<div class="admonition check">
+<p class="admonition-title">Sincerity</p>
+<p>Meaningful deliberation must be free from any sort of deception or duplicity that would prevent the authentic exchange of reasons. Interlocutors must mean what they say.</p>
+</div>
+<div class="admonition check">
+<p class="admonition-title">Consistency and coherence</p>
+<p>Arguments and positions offered in meaningful deliberation must be clear, free from contradictions, and hold together collectively in an understandable way.</p>
+</div>
+<div class="admonition check">
+<p class="admonition-title">Mutual respect and egalitarian reciprocity</p>
+<p>All interlocutors must be treated with respect and given equal opportunity to contribute to the conversation. All voices are worthy of equal consideration in processes of exchanging reasons.</p>
+</div>
+<div class="admonition check">
+<p class="admonition-title">Inclusivity and publicity</p>
+<p>Anyone whose interests are affected by an issue and who could make a contribution to better understanding it must not be excluded from participating in deliberation. All relevant voices must be heard and all relevant information considered.</p>
+</div>
+<h3 id="addressing-and-mitigating-power-dynamics-that-may-obstruct-meaningful-and-inclusive-deliberation">Addressing and mitigating power dynamics that may obstruct meaningful and inclusive deliberation<a class="headerlink" href="#addressing-and-mitigating-power-dynamics-that-may-obstruct-meaningful-and-inclusive-deliberation" title="Permanent link">&para;</a></h3>
+<p>The stewardship of meaningful and inclusive dialogue is critical to safeguarding the collective weighing up of values. However, there is an important potential barrier to meaningful deliberation that challenges its feasibility and must be addressed. As guiding assumptions of rational communication, norms like sincerity, impartiality, non-coercion, and inclusiveness may strike some as overly idealistic. In the real world, discussions are rarely fully inclusive, informed, and free of assertive manipulation, coercion, and deception. Rather, deliberation and dialogue are often steered by and crafted to protect the interests of the dominant. Likewise, differential power relationships (for instance, divergent educational backgrounds that derive from differential socioeconomic privileges) create power imbalances that fundamentally challenge the conditions of reciprocity and equal footing that are needed for justified and equitable communication.</p>
+<p>A team should confront these obstacles to meaningful deliberation head-on through a power-aware approach to facilitating collaborative reflection, dialogue, and engagement. An awareness of and sensitivity to the differential relationships of power that can suppress the full participation of disadvantaged or marginalised voices can better encourage an inclusive, open, and equal opportunity conversation between participants. </p>
+<p>Clear-headed explorations of power dynamics between civil servants, scientists, citizens, domain experts, and policymakers can assist in avoiding the kind of deficiencies of representation and empowerment that risk reinforcing existing power structures and inequalities. This may involve active mitigation measures like the provision of training, upskilling, and technical resources to those who have lacked access to them. Above all, the norms of meaningful deliberation makes teams aware of the possible distortions of communication (i.e. a lack of egalitarian reciprocity, non-coercion, sincerity, etc.) that must be tackled and rectified for the hurdles of power disparities to be scaled.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 Alan Turing Institute</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../javascripts/mathjax.js" defer></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+        <script src="../../../javascripts/tablesort.js" defer></script>
+        <script src="../../../javascripts/case-studies.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

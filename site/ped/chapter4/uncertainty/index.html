@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://alan-turing-institute.github.io/turing-commons/ped/chapter4/uncertainty/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Communicating Uncertainty - Turing Commons</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../../../stylesheets/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Turing Commons</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../welcome/" class="nav-link">Welcome</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Responsible Research and Innovation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../rri/" class="dropdown-item">(RRI) About this Course</a>
+</li>
+                                    
+<li>
+    <a href="../../../rri/intro/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Responsible Research and Innovation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/responsibility/" class="dropdown-item">What is Responsibility</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/history/" class="dropdown-item">A Short History of RRI</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/sts/" class="dropdown-item">Science, Technology, and Society</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/timeline/" class="dropdown-item">Science and Technology Studies Timeline</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Data Science and AI</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/responsible_ds/" class="dropdown-item">What is Responsible Data Science and AI</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/project_lifecycle/" class="dropdown-item">Introducing the Project Lifecycle</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/roles_responsibility/" class="dropdown-item">Roles and Responsibilities</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/understanding_bias/" class="dropdown-item">Understanding Bias</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Project Lifecycle</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/activities/case_studies/" class="dropdown-item">Case Studies</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/planning/" class="dropdown-item">Project Planning</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/problem/" class="dropdown-item">Problem Formulation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/data_extraction/" class="dropdown-item">Data Extraction or Procurement</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/data_analysis.ipynb" class="dropdown-item">Data Analysis</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/preprocessing/" class="dropdown-item">Preprocessing and Feature Engineering</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_selection/" class="dropdown-item">Model Selection and Training</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_testing/" class="dropdown-item">Model Testing and Validation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_reporting/" class="dropdown-item">Model Reporting</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/model_productionalisation/" class="dropdown-item">Model Productionalisation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/user_training/" class="dropdown-item">User Training</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/system_use.ipynb" class="dropdown-item">System Use and Monitoring</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/model_updating/" class="dropdown-item">Model Updating or Deprovisioning</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/summary/" class="dropdown-item">Next Steps</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Communication</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/assurance/" class="dropdown-item">What is Argument-Based Assurance</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/communication/" class="dropdown-item">Assurance and Responsible Communication</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/gpe/" class="dropdown-item">Goals, Properties, and Evidence</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../rri/conclusion/" class="dropdown-item">Conclusion</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/resources/" class="dropdown-item">Additional Resources</a>
+</li>
+            
+<li>
+    <a href="../../../rri/resources/synthetic_data_generation.ipynb" class="dropdown-item">Synthetic Data Generation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/resources/further-reading/" class="dropdown-item">Further Reading</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Public Engagement of Data Science and AI <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">(PED) About this Course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Public Engagement?</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/ladder/" class="dropdown-item">Climbing the Ladder</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/goals/" class="dropdown-item">Goals of Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Value(s) of Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter2/deliberation/" class="dropdown-item">Deliberative Values</a>
+</li>
+            
+<li>
+    <a href="../../chapter2/responsible/" class="dropdown-item">Responsible Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Facilitating Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/when/" class="dropdown-item">When should you engage</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/how/" class="dropdown-item">How should you engage</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Guidance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../storytelling/" class="dropdown-item">Storytelling with Data</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Communicating Uncertainty</a>
+</li>
+            
+<li>
+    <a href="../uncertainty_example.ipynb" class="dropdown-item">Visualising Uncertainty</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Public Trust and Assurance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/trust/" class="dropdown-item">Public Trust in Science and Technology</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">AI Ethics and Governance <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../aeg/" class="dropdown-item">(AEG) About this course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Ethics</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter1/metaethics/" class="dropdown-item">Introduction to Metaethics</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter1/normative/" class="dropdown-item">Introduction to Normative Theories</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Harms and Values</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter2/harms/" class="dropdown-item">AI Harms</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter2/values/" class="dropdown-item">AI Values</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Sustainability</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter3/engagement/" class="dropdown-item">Stakeholder Engagement Process</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter3/impact/" class="dropdown-item">Stakeholder Impact Assessment</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Fairness & Bias Mitigation, Accountability, and Governance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/fairness/" class="dropdown-item">Introduction to Fairness</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/aifairness/" class="dropdown-item">AI Fairness</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/bias/" class="dropdown-item">Bias Mitigation</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/accountability/" class="dropdown-item">Accountability</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/governance/" class="dropdown-item">AI Governance</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Transparency, Explainability and CARE & ACT Principles</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/transparency/" class="dropdown-item">Transparency & Explainability</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/consider/" class="dropdown-item">Consider Context</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/anticipate/" class="dropdown-item">Anticipate Impacts</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/reflect/" class="dropdown-item">Reflect on Purpose, Positionality, and Power</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/engage/" class="dropdown-item">Engage Inclusively</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/act/" class="dropdown-item">Act Responsibly</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../blog/" class="dropdown-item">Blog</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../storytelling/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../uncertainty_example.ipynb" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/alan-turing-institute/turing-commons/edit/master/docs/ped/chapter4/uncertainty.md" class="nav-link">Edit on alan-turing-institute/turing-commons
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#communicating-uncertainty" class="nav-link">Communicating Uncertainty</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#the-challenges-of-scientific-uncertainty" class="nav-link">The Challenges of Scientific Uncertainty</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#a-framework-for-communicating-uncertainty" class="nav-link">A Framework for Communicating Uncertainty</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="communicating-uncertainty">Communicating Uncertainty<a class="headerlink" href="#communicating-uncertainty" title="Permanent link">&para;</a></h1>
+<p>There are many forms of uncertainty that we have to consider when planning and facilitating forms of public engagement.</p>
+<ul>
+<li>There is the <em>conceptual uncertainty</em> involved with key terms that are necessary for shared knowledge and understanding (e.g. what does 'intelligence' mean in the context of AI?).</li>
+<li>There is the <em>normative uncertainty</em> that is implicated when deliberating about or choosing on the right or best course of action (e.g. citizen juries).</li>
+<li>And, there is the <em>scientific uncertainty</em> associated with data analysis, experiments, and scientific knowledge.<sup id="fnref:epistemic"><a class="footnote-ref" href="#fn:epistemic">1</a></sup></li>
+</ul>
+<p>In this section, we are just going to look at the final option, but it's good to be aware of the other two.</p>
+<h2 id="the-challenges-of-scientific-uncertainty">The Challenges of Scientific Uncertainty<a class="headerlink" href="#the-challenges-of-scientific-uncertainty" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Roll up! Roll up! Come and see a true scientific mystery: the marvelous, mystifying marmokreb!</p>
+</blockquote>
+<p><img alt="A picture of a marmorkreb" src="../../../assets/images/graphics/marmorkreb.jpeg" /></p>
+<p>Alright, it's not much to look at, but it is a true scientific mystery in one respect.</p>
+<p>As Michael Blastland[@blastland2020] recounts in <em>The Hidden Half</em>, the marmorkrebs caused quite the stir in the late 20th Century when it was discovered that lone females were able to lay eggs without fertilisation.
+In short, the marmorkrebs did not need to mate, such that offspring were natural clones of their mothers—a process known as <em>parthogenesis</em>.
+However, it was not the parthogenic property—unique among the ~15,000 species of decapod—that baffled the scientific establishment.
+Rather, the mystery lay in what the marbled marmokrebs meant<sup id="fnref:tongue"><a class="footnote-ref" href="#fn:tongue">2</a></sup> for the nature-nurture debate.</p>
+<p>Because they were natural clones, the marmokrebs were ideal subjects for an experiment that raised two lineages in identical test conditions, designed to treat the environment as a control condition and investigate how and which genes contribute to observed behaviour or physiological traits.
+As Blastland puts it,</p>
+<blockquote>
+<p>The aim as far as humanly possible was to eliminate every variation that anyone could think of. They were born into the most boring uniformity humans could contrive.</p>
+</blockquote>
+<p>And yet, the following figure shows three marmorkrebs from the same lineage, who were raised in the exact same conditions.</p>
+<figure>
+<p><img align="center" alt="A figure of three marmorkrebs displaying significant variation" src="../../../assets/images/graphics/marmorkrebs.png" />
+  </p>
+<figcaption>A figure of three marmorkrebs displaying significant variation (Reprinted from Vogt et al. 2008)</figcaption>
+</figure>
+<p>Although the variation in size is striking enough, what is not shown in this image are the many other traits that differed throughout the population, such as distinct marbling or lifespan.
+And so it was that these seemingly simple crayfish undermined one of the key assumptions about phenotypic variation: if it isn't genes it's environment; if it isn't the environment it's genes.</p>
+<p>At this point, you may be considering possible explanations for the cause of the variation: is it epigenetics, or uncontrolled differences in the marmorkrebs environment that were overlooked by the researchers?
+We won't go into each possible causal explanation here, though I do suggest you read Blastland's book in case you find yourself over-confident that you know the answer!
+The purpose of mentioning this case of the confounding crayfish is to emphasise that there is a lot in science that we simply do not know.
+Sometimes, this uncertainty can be accounted for by following the scientific method and conducting ongoing experimentation.
+At other times, the observable phenomena place too much stress on the dominant scientific paradigm, causing the scientific community to rethink core assumptions—a sociological process brought to light by the philosopher of science, Thomas Kuhn.[@kuhn1970]</p>
+<p>As researchers and developers trained in the scientific method, you are likely familiar with a variety of methods and tools for navigating scientific uncertainty.
+But when it comes to communicating this uncertainty to different stakeholders, the knowledge and understanding of these methods cannot be assumed.
+And this can lead to a breakdown in communication and trust.
+This is where the systematic framework from van der Bles et al. (2019)[@vanderbles2019] comes in handy.</p>
+<h2 id="a-framework-for-communicating-uncertainty">A Framework for Communicating Uncertainty<a class="headerlink" href="#a-framework-for-communicating-uncertainty" title="Permanent link">&para;</a></h2>
+<p>The framework presented in (van der Bles et al., 2019)[@vanderbles2019] is grounded in a review of the, admittedly "scattered" empirical evidence pertaining to the psychological and behaviour effects of communicating uncertainty.
+Their framework comprises five stages that are summarised as follows:</p>
+<ol>
+<li>Who communicates</li>
+<li>what</li>
+<li>in what form</li>
+<li>to whom, and</li>
+<li>to what effect</li>
+</ol>
+<p><img alt="van der bles's framework for communicating uncertainty" src="../../../assets/images/graphics/uncertainty.png" /></p>
+<p>Let's (briefly) look at each of these in turn.<sup id="fnref:full"><a class="footnote-ref" href="#fn:full">3</a></sup></p>
+<h3 id="who">Who<a class="headerlink" href="#who" title="Permanent link">&para;</a></h3>
+<p>The first stage of their framework directs us to consider who is a) assessing the uncertainty, and b) who is responsible for communicating the uncertainty.
+As we will see, this is important for identifying the format of communication when communicating to different audiences (e.g. lay people versus those with technical expertise) but also for assessing credibility of the source reporting the information (e.g. media, scientists, commercial organisations).</p>
+<h3 id="what">What<a class="headerlink" href="#what" title="Permanent link">&para;</a></h3>
+<p>A particularly valuable contribution from their framework is the categorisation of <em>what</em> the uncertainty pertains to into the following taxonomy:</p>
+<ul>
+<li>Object of uncertainty<ul>
+<li>Facts (e.g. is the uncertainty about a specific event, such as whether there has been a data leak)</li>
+<li>Numbers (e.g. is the uncertainty about specific quantities or parameters of a model)</li>
+<li>Hypotheses (e.g. is the uncertainty about an underlying assumption in a scientific theory)</li>
+</ul>
+</li>
+<li>Source of uncertainty<ul>
+<li>Variability in population being sampled</li>
+<li>Measurement error</li>
+<li>Limited knowledge</li>
+<li>Expert disagreement</li>
+</ul>
+</li>
+<li>Level of uncertainty<ul>
+<li>Direct (i.e. is the uncertaity about the object itself)</li>
+<li>Indirect (i.e. is the uncertainty related to the quality of the evidence)</li>
+</ul>
+</li>
+<li>Magnitude of uncertainty</li>
+</ul>
+<h3 id="in-what-form">In what form<a class="headerlink" href="#in-what-form" title="Permanent link">&para;</a></h3>
+<p>The format used to communicate the uncertainty is likely to affect the audience in a variety of ways (see 'to what effect').
+As the following figure indicates, this form is associated with varying levels of precision.</p>
+<p><img alt="Graph display forms of uncertainty communication with decreasing levels of precision" src="../../../assets/images/graphics/uncertainty-expressions.png" />.</p>
+<p>Decreased precision is not always undesirable.
+For instance, sometimes it represents a worthwhile trade-off between precision and accessibility of communication to a non-technical or time-stretched audience.
+However, as the diagram shows, it can sometimes spill over into forms of explicit denial.</p>
+<h3 id="to-whom">To whom<a class="headerlink" href="#to-whom" title="Permanent link">&para;</a></h3>
+<p>In <a href="../../chapter2/deliberation/">chapter 2</a> we saw how the relationship between researchers and the public can embody a variety of communicative values, but also prevent obstacles when imbalances of power arise.
+Similar characteristics are present in the framework from van der Bles et al. (2019)[@vanderbles2019].</p>
+<ul>
+<li>characteristics of the audience (e.g. data literacy, relevant demographic variables)</li>
+<li>relationship of the audience to what is being communicated (e.g. skeptical attitude)</li>
+<li>relationship of the audience to the people doing the communication (e.g. trustworthy or credible relationship)</li>
+</ul>
+<p>As an example, van der Bles et al. (2019)[@vanderbles2019] cite a study from Dieckmann et al. (2017)[@dieckmann2017] that found evidence of varying responses to ambiguous information about average global surface temperatures.
+For audiences, who were more accepting of climate change, they took the information to be evidence of a normal distribution where higher values of surface temperature were likely.
+Whereas, for audiences who were less accepting of climate change, the same information was taken to reflect a uniform distribution where lower temperatures were more likely.</p>
+<h3 id="to-what-effect">To what effect<a class="headerlink" href="#to-what-effect" title="Permanent link">&para;</a></h3>
+<p>The final stage of the framework considers the effect of not knowing, and identifies the following categories based on the extant empirical literature:</p>
+<ul>
+<li>Effect on cognition (e.g. are consistent inferences or judgements elicited from <em>verbal statements</em> of uncertainty)</li>
+<li>Effect on emotion (e.g. do uncertainty ranges elicit higher levels of anxiety in specific audience, rather than point estimates)</li>
+<li>Effect on trust (e.g. is perceived over-confidence in the communication of uncertainty likely to build confidence or undermine trust)</li>
+<li>Effect on decision-making (e.g. if uncertainty is communicated, will decision-making be delayed)</li>
+</ul>
+<p>The above framework helps to systematise our understanding of uncertainty, which can be very valuable when trying to consider how best to communicate with specific audiences or stakeholders.
+However, it also raises the following question:</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Given the wide range of factors involved, and the scattered nature of the empirical evidence, how should researchers choose the best course of action when communicating uncertainty?</p>
+</div>
+<p>There is, again, and unfortunately, no simple answer to this question.
+Deciding on the right course of action is likely to be a team effort, and one which considers all of the topics we have covered so far (e.g. goals, values, audience, available methods, time and resources).
+There are, however, some interesting tools that link back to the first section in this chapter, which deserve a mention.</p>
+<p>=== "Plotting Hypothetical Outcomes"</p>
+<pre><code>&lt;div class="result" markdown&gt;
+
+![Animation of a hypothetical outcome plot](../../assets/images/animations/regression.gif){ align=right width=300 }
+
+One method is to use packages built into software like Python and R to generate visual animations that explicitly depict alternate or hypothetical outcomes alongside, say, the most likely model of the data generation process. See [this page for more details](uncertainty_example.ipynb).
+
+&lt;/div&gt;
+</code></pre>
+<p>=== "Interactive Heat Maps"</p>
+<pre><code>&lt;div class="result" markdown&gt;
+
+![Example climate impact map](../../assets/images/graphics/climate-map.gif){ align=left width=50% }
+
+Heat maps are commonly used for communicating probabilistic information. The [Climate Impact Lab](https://impactlab.org/map/#usmeas=change-from-hist&amp;usyear=2020-2039&amp;gmeas=change-from-hist&amp;gyear=2040-2059&amp;usvar=mortality&amp;tab=global&amp;gvar=mortality) take the traditional heat map a step further though by adding interactivity to allow users to alter variables and see the possible impact that emissions, for example, could have across the globe.
+
+ &lt;/div&gt;
+</code></pre>
+<p>=== "Uncertainty.io"</p>
+<pre><code>&lt;div class="result" markdown&gt;
+
+![From Line by Lee Ufan (1978)](../../assets/images/graphics/from-line.jpeg){ align=right width=300 }
+
+Still in need of some creative inspiration? [Uncertainty.io](https://www.uncertainty.io/art/) is a queryable interface to references of more than 400 works of fine art that "have a unique ability to convey uncertainty using a range of approaches and techniques."
+
+&lt;/div&gt;
+</code></pre>
+<!-- ## Cognitive Biases
+
+Our modern understanding of cognitive biases has been most heavily influenced by research conducted by the psychologists Daniel Kahneman and Amos Tversky.
+
+A lot of their work exposed a wide variety of psychological vulnerabilities, which impact our judgement and decision-making capabilities.
+For instance, their experiments showed how individuals rely on an assortment of heuristics or biases, which speed up judgement and decision-making but also lead us astray.
+To see how, try the following two activities.
+
+=== "The Linda Problem"
+
+    Linda is 31 years old, single, outspoken, and very bright. She majored in philosophy. As a student, she was deeply concerned with issues of discrimination and social justice, and also participated in anti-nuclear demonstrations.
+
+    !!! question "Question"
+
+        Which is more probable?
+
+        1) Linda is a bank teller.
+        2) Linda is a bank teller and is active in the feminist movement.
+
+    Try to answer this question yourself, before you reveal the answer.
+
+    ??? note "Reveal"
+
+        The correct answer is (1). Did you get it right?
+
+    If you got it wrong, you have just committed what is known as the 'conjunction fallacy'. But don't worry you're in very good company!
+    When Tvserky and Kahneman posed this question to a group of 88 undergraduate students, only $15%$ got the correct answer {cite}`tversky1983`. 
+
+    The reason it is (1) is because the probability of two events occurring *in conjunction*, such as Linda being both a 'bank teller' and 'active in the feminist movement' must be less than or equal to the probability of either event occurring on its own. 
+    Formally, for two events $A$ and $B$:
+
+    $Pr(A \wedge B) ≤ Pr(A)$ and $Pr(A \wedge B) ≤ Pr(B)$
+
+    Or, to put it more simply, someone cannot belong to the set of $feminist bank tellers$ without also belonging to the set of $bank tellers$ 👇
+
+    ![venn diagram for linda problem](../../assets/images/graphics/venn.png)
+
+    Tversky and Kahneman attributed this systematic error to what is known as the *representativeness heuristic*. 
+    In short, people don't think about the conjunction of events or consider probability theory when formulating an answer.
+    Instead, their choice is based on which of the two options is *most representative* of the description of Linda. 
+    That is, they employ a mental shortcut (or, a heuristic) that in some instances lead to the right answer—hence, their efficiency. However, in in other cases their use lead to mistakes or errors in judgement.
+
+=== "The Wason Selection Task"
+
+    In front of you is a set of four cards. Each card has a number on one side and a colour on the other side. The cards are displayed as follows:
+
+    ![A set of four cards showing the numbers 3 and 8 and the colours red and orange.](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Wason_selection_task_cards.svg/2880px-Wason_selection_task_cards.svg.png)
+
+    !!! question "Question"
+
+        Using the fewest possible actions, which card(s) must you turn over to test the validity of the following statement: 'If a card shows an even number on one side, the other side will be red"?
+
+    ??? note "Reveal"
+
+        The correct answer is to turn over the 8 and the orange.
+
+    The question is designed to test a subject's logical reasoning.
+    And the simplest way to test the claim is to identify instances that could falsify the statement.
+    Turning over the 3 or the red do not achieve this.
+
+    To see why this is the case, consider what turning over these other cards demonstrates.
+    If you turn over the 3 and there is a red card, you have not falsified the original statement.
+    All you have demonstrated is that odd numbers can also have red on their opposite sides.
+
+    Similarly, the red card can show either an odd or even number. If it's even you have found supporting (but redundant) evidence for the claim, and if you see an odd number all you have demonstrated is that the colour red, again, is not exclusive to even numbers.
+
+    The only actions that violate the original statement are if *the 8 is not red* or if *the orange card is even*.
+
+    In Wason's original experiment (1), fewer than 1 in 10 of the participants found the correct answer.
+    { .annotate }
+
+    1.  P. C. Wason (1968) Reasoning about a rule, The Quarterly Journal of Experimental Psychology, 20:3, 273-281, DOI: [10.1080/14640746808400161](https://journals.sagepub.com/doi/10.1080/14640746808400161)
+
+Experiments like this reveal something important about all human individuals.[^kahneman]
+Our judgement and decision-making falls short of the normative standards set by our formal methods and frameworks (e.g. rational choice theory).
+
+In the context of public engagement, this is important for two reasons:
+
+1. When communicating statistical information, there is a risk that your message or results may be affected negatively by a wide variety of cognitive biases.
+2. The process of research and development that you communicate to stakeholder may also be impacted by a myriad of cognitive biases (e.g., confirmation bias).
+
+It is beyond the scope of this course to set out all the possible ways in which cognitive (as well as statistical and social) biases can affect the process of research, innovation, and public engagement. However, [see our course on RRI for more details and further resources](../../rri/chapter2/understanding_bias.md).
+
+[^kahneman]: Daniel Kahneman even acknowledged that despite studying congitive biases for the majority of his career, he still finds himself falling prey to their effects. -->
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:epistemic">
+<p>We can split this into both <em>epistemic</em> and <em>aleatory</em> uncertainty, where the former relates to our uncertain knowledge of the world, and the latter refers to fundamental indeterminacy of the world itself. In this section we will only consider the former (i.e. epistemic uncertainty).&#160;<a class="footnote-backref" href="#fnref:epistemic" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:tongue">
+<p>An optional activity is to see who is the fastest at saying this phrase five times 😉.&#160;<a class="footnote-backref" href="#fnref:tongue" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:full">
+<p>See the <a href="https://royalsocietypublishing.org/doi/abs/10.1098/rsos.181870">original article</a> for further details and a review of the empirical evidence.&#160;<a class="footnote-backref" href="#fnref:full" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 Alan Turing Institute</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../javascripts/mathjax.js" defer></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+        <script src="../../../javascripts/tablesort.js" defer></script>
+        <script src="../../../javascripts/case-studies.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

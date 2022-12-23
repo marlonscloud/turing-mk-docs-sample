@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://alan-turing-institute.github.io/turing-commons/blog/posts/public-engagement/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Peeling Back the Layers of Science and Technology - Turing Commons</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../../../stylesheets/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Turing Commons</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../welcome/" class="nav-link">Welcome</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Responsible Research and Innovation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../rri/" class="dropdown-item">(RRI) About this Course</a>
+</li>
+                                    
+<li>
+    <a href="../../../rri/intro/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Responsible Research and Innovation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/responsibility/" class="dropdown-item">What is Responsibility</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/history/" class="dropdown-item">A Short History of RRI</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/sts/" class="dropdown-item">Science, Technology, and Society</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/timeline/" class="dropdown-item">Science and Technology Studies Timeline</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Data Science and AI</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/responsible_ds/" class="dropdown-item">What is Responsible Data Science and AI</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/project_lifecycle/" class="dropdown-item">Introducing the Project Lifecycle</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/roles_responsibility/" class="dropdown-item">Roles and Responsibilities</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/understanding_bias/" class="dropdown-item">Understanding Bias</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Project Lifecycle</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/activities/case_studies/" class="dropdown-item">Case Studies</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/planning/" class="dropdown-item">Project Planning</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/problem/" class="dropdown-item">Problem Formulation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/data_extraction/" class="dropdown-item">Data Extraction or Procurement</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/data_analysis.ipynb" class="dropdown-item">Data Analysis</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/preprocessing/" class="dropdown-item">Preprocessing and Feature Engineering</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_selection/" class="dropdown-item">Model Selection and Training</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_testing/" class="dropdown-item">Model Testing and Validation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_reporting/" class="dropdown-item">Model Reporting</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/model_productionalisation/" class="dropdown-item">Model Productionalisation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/user_training/" class="dropdown-item">User Training</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/system_use.ipynb" class="dropdown-item">System Use and Monitoring</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/model_updating/" class="dropdown-item">Model Updating or Deprovisioning</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/summary/" class="dropdown-item">Next Steps</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Communication</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/assurance/" class="dropdown-item">What is Argument-Based Assurance</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/communication/" class="dropdown-item">Assurance and Responsible Communication</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/gpe/" class="dropdown-item">Goals, Properties, and Evidence</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../rri/conclusion/" class="dropdown-item">Conclusion</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/resources/" class="dropdown-item">Additional Resources</a>
+</li>
+            
+<li>
+    <a href="../../../rri/resources/synthetic_data_generation.ipynb" class="dropdown-item">Synthetic Data Generation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/resources/further-reading/" class="dropdown-item">Further Reading</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Public Engagement of Data Science and AI <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../ped/" class="dropdown-item">(PED) About this Course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Public Engagement?</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter1/ladder/" class="dropdown-item">Climbing the Ladder</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter1/goals/" class="dropdown-item">Goals of Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Value(s) of Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter2/deliberation/" class="dropdown-item">Deliberative Values</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter2/responsible/" class="dropdown-item">Responsible Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Facilitating Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter3/when/" class="dropdown-item">When should you engage</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter3/how/" class="dropdown-item">How should you engage</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Guidance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/storytelling/" class="dropdown-item">Storytelling with Data</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/uncertainty/" class="dropdown-item">Communicating Uncertainty</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/uncertainty_example.ipynb" class="dropdown-item">Visualising Uncertainty</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Public Trust and Assurance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter5/trust/" class="dropdown-item">Public Trust in Science and Technology</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">AI Ethics and Governance <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../aeg/" class="dropdown-item">(AEG) About this course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Ethics</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter1/metaethics/" class="dropdown-item">Introduction to Metaethics</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter1/normative/" class="dropdown-item">Introduction to Normative Theories</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Harms and Values</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter2/harms/" class="dropdown-item">AI Harms</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter2/values/" class="dropdown-item">AI Values</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Sustainability</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter3/engagement/" class="dropdown-item">Stakeholder Engagement Process</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter3/impact/" class="dropdown-item">Stakeholder Impact Assessment</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Fairness & Bias Mitigation, Accountability, and Governance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/fairness/" class="dropdown-item">Introduction to Fairness</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/aifairness/" class="dropdown-item">AI Fairness</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/bias/" class="dropdown-item">Bias Mitigation</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/accountability/" class="dropdown-item">Accountability</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/governance/" class="dropdown-item">AI Governance</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Transparency, Explainability and CARE & ACT Principles</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/transparency/" class="dropdown-item">Transparency & Explainability</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/consider/" class="dropdown-item">Consider Context</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/anticipate/" class="dropdown-item">Anticipate Impacts</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/reflect/" class="dropdown-item">Reflect on Purpose, Positionality, and Power</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/engage/" class="dropdown-item">Engage Inclusively</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/act/" class="dropdown-item">Act Responsibly</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Blog</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/alan-turing-institute/turing-commons/edit/master/docs/blog/posts/public-engagement.md" class="nav-link">Edit on alan-turing-institute/turing-commons
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#peeling-back-the-layers-of-science-and-technology" class="nav-link">Peeling Back the Layers of Science and Technology</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#course-summary" class="nav-link">Course Summary</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#designing-a-hypothetical-case-study" class="nav-link">Designing a Hypothetical Case Study</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#concluding-remarks" class="nav-link">Concluding Remarks</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="peeling-back-the-layers-of-science-and-technology">Peeling Back the Layers of Science and Technology<a class="headerlink" href="#peeling-back-the-layers-of-science-and-technology" title="Permanent link">&para;</a></h1>
+<p><strong>In April 2022, we ran our first week-long course on <a href="../../../ped/">Public Engagement of Data Science and AI</a> with 25 fantastic researchers from across the globe.</strong></p>
+<p>This post explores why we developed the course, outlines the activities we ran with the course participants, and concludes with next steps.</p>
+<!-- more -->
+
+<video width="80%" autoplay loop muted>
+    <source src="https://raw.githubusercontent.com/alan-turing-institute/turing-commons/main/docs/assets/images/animations/phone_peel.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
+</video>
+
+<blockquote>
+<p>"Any sufficiently advanced technology is indistinguishable from magic."</p>
+</blockquote>
+<p>Arthur C. Clarke's phrase was made famous in the context of his science fiction stories, which were full of futuristic and magical-seeming technologies and alien worlds that captured the imagination of many of his readers.
+But the advances of science and technological innovation that we see all around us in our everyday lives can also seem magical at times, as well as feeling bewildering and obscure.
+For many researchers and developers, a key goal of public engagement is about supporting people to dispel the feeling of bewilderment through increased knowledge and understanding, while still maintaining a feeling of enthusiasm and excitement about the many possibilities and opportunities to use science and technology to improve society.
+This is no easy task!</p>
+<h2 id="course-summary">Course Summary<a class="headerlink" href="#course-summary" title="Permanent link">&para;</a></h2>
+<p>Therefore, over the course of a week in April 2022, 30 participants from different research disciplines joined a course being run as part of the <a href="https://turing-commons.netlify.app">Turing Commons</a> project on 'Public Engagement of Data Science and AI'. It was organised around a series of structured presentations, seminars, and group activities, as well as a capstone project which involved a hypothetical public engagement project.</p>
+<p>The course was designed with several learning objectives in mind, roughly split into two main sections. First, participants critically examined the practical and ethical values of public engagement with data science and AI. They explored what public engagement is and the different forms that it can take, as a way of creating a robust theoretical foundation. Next, the course turned to practical methods and tools for engaging with the public responsibly, such as how to carry out stakeholder analysis activities, structure a clear and accessible message, or communicate uncertainty in research.</p>
+<p>To support these learning objectives, <a href="https://www.turing.ac.uk/people/guest-speakers/david-spiegelhalter">Sir David Spiegelhalter</a>—Chair of the Winton Centre for Risk and Evidence Communication at the University of Cambridge—gave an excellent talk on trustworthy communication about data and algorithms. His presentation focused on the difficulties of interpreting (and therefore communicating) data and statistics, drawing on many examples from his public engagement work during the Covid-19 pandemic.</p>
+<h2 id="designing-a-hypothetical-case-study">Designing a Hypothetical Case Study<a class="headerlink" href="#designing-a-hypothetical-case-study" title="Permanent link">&para;</a></h2>
+<p>A primary goal for the course participants was to develop a hypothetical public engagement project by the end of the course. Working in three smaller groups, the participants built upon the material covered each day through a series of activities that tested the skills they were acquiring in the course while also providing an opportunity to share their different perspectives with one another.</p>
+<p>One of these activities was an in-depth stakeholder analysis focused on identifying, understanding, and analysing stakeholders, led by <a href="https://www.turing.ac.uk/people/researchers/cami-rincon">Cami Rincón</a> (part of the Ethics and Responsible Innovation team). The exercise involved conducting a mock analysis intended to get participants thinking about the questions and issues they would confront were they to engage with stakeholders in a real project. For this, they had to identify affected stakeholders from a set of personas, build out their specific characteristics, and then scope the potential impacts of the project on them.</p>
+<p>From there, and taking into account the different roadblocks and enablers that could impact potential stakeholders, the groups decided on a public engagement <a href="https://turing-commons.netlify.app/ped/chapter1/goals/">objective</a> as well as which of the various public engagement <a href="https://turing-commons.netlify.app/ped/chapter3/how/">method(s)</a> they would use to achieve their goals.</p>
+<p><img alt="Example of hypothetical personas identified as impacted stakeholders for a group working on a skin condition triaging app." src="../../../assets/images/blog/personas.png" />
+<em>Example of hypothetical personas identified as impacted stakeholders for a group working on a skin condition triaging app.</em></p>
+<p>On the final day of the course, the three groups presented their hypothetical project, supported by illustrations they had also co-designed with <a href="https://www.eleonoreguerra.com">Eleonore Guerra</a>.</p>
+<p><img alt="" src="../../../assets/images/blog/transport4u.jpg" />
+<em>Illustration created by Eleonore Guerra for group working on a app which allows the local community to voice their views about local transport infrastructure.</em></p>
+<p>During their capstone presentations, the groups introduced their hypothetical project, and discussed its main ethical implications. They also presented their stakeholder personas and the project's potential impacts on them. Taking all of this into consideration, they then defined their public engagement objective and method, and explained how they would (hypothetically) carry it out.</p>
+<p><img alt="" src="../../../assets/images/blog/pe_plan.jpg" />
+<em>Public engagement workshop plan taking into account the potential concerns of impacted stakeholders.</em></p>
+<p>After the course ended, we asked participants for anonymous feedback on whether and how the course was useful for them. Overall, the course was incredibly well received:</p>
+<div class="admonition quote participant feedback">
+<p class="admonition-title">Quote</p>
+<p>Very clear presentations, guest speakers also added a great depth to the experience.</p>
+<p>The activities and group work helped understand the course content really well so I would say that the activities are the highlights.</p>
+<p>The teaching was very well thought out and enjoyed the interactivity aspect of the training.</p>
+</div>
+<h2 id="concluding-remarks">Concluding Remarks<a class="headerlink" href="#concluding-remarks" title="Permanent link">&para;</a></h2>
+<p>Public engagement is sometimes treated as an after-thought by researchers and scientists—something that is important for funding or building a career, but mainly an ancillary activity that exists at the borders of research and development. As such, opportunities to learn about its social and ethical value, and also put principles into practice, are limited.</p>
+<p>This was the first time that this course was run, but as we continue to build out the content of the Turing Commons and grow its community, we hope that we will be able to both support and learn from more participants. In the meantime, a huge thanks to the first group who made the course such a pleasure to run.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 Alan Turing Institute</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../javascripts/mathjax.js" defer></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+        <script src="../../../javascripts/tablesort.js" defer></script>
+        <script src="../../../javascripts/case-studies.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

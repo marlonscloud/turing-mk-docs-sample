@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://alan-turing-institute.github.io/turing-commons/rri/chapter2/responsible_ds/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>What is Responsible Data Science and AI - Turing Commons</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../../../stylesheets/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Turing Commons</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../welcome/" class="nav-link">Welcome</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Responsible Research and Innovation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">(RRI) About this Course</a>
+</li>
+                                    
+<li>
+    <a href="../../intro/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Responsible Research and Innovation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/responsibility/" class="dropdown-item">What is Responsibility</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/history/" class="dropdown-item">A Short History of RRI</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/sts/" class="dropdown-item">Science, Technology, and Society</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/timeline/" class="dropdown-item">Science and Technology Studies Timeline</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Data Science and AI</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">What is Responsible Data Science and AI</a>
+</li>
+            
+<li>
+    <a href="../project_lifecycle/" class="dropdown-item">Introducing the Project Lifecycle</a>
+</li>
+            
+<li>
+    <a href="../roles_responsibility/" class="dropdown-item">Roles and Responsibilities</a>
+</li>
+            
+<li>
+    <a href="../understanding_bias/" class="dropdown-item">Understanding Bias</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Project Lifecycle</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../activities/case_studies/" class="dropdown-item">Case Studies</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/project_design/planning/" class="dropdown-item">Project Planning</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/project_design/problem/" class="dropdown-item">Problem Formulation</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/project_design/data_extraction/" class="dropdown-item">Data Extraction or Procurement</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/project_design/data_analysis.ipynb" class="dropdown-item">Data Analysis</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/model_development/preprocessing/" class="dropdown-item">Preprocessing and Feature Engineering</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/model_development/model_selection/" class="dropdown-item">Model Selection and Training</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/model_development/model_testing/" class="dropdown-item">Model Testing and Validation</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/model_development/model_reporting/" class="dropdown-item">Model Reporting</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/system_deployment/model_productionalisation/" class="dropdown-item">Model Productionalisation</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/system_deployment/user_training/" class="dropdown-item">User Training</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/system_deployment/system_use.ipynb" class="dropdown-item">System Use and Monitoring</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/system_deployment/model_updating/" class="dropdown-item">Model Updating or Deprovisioning</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/summary/" class="dropdown-item">Next Steps</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Communication</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/assurance/" class="dropdown-item">What is Argument-Based Assurance</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/communication/" class="dropdown-item">Assurance and Responsible Communication</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/gpe/" class="dropdown-item">Goals, Properties, and Evidence</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../conclusion/" class="dropdown-item">Conclusion</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../resources/" class="dropdown-item">Additional Resources</a>
+</li>
+            
+<li>
+    <a href="../../resources/synthetic_data_generation.ipynb" class="dropdown-item">Synthetic Data Generation</a>
+</li>
+            
+<li>
+    <a href="../../resources/further-reading/" class="dropdown-item">Further Reading</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Public Engagement of Data Science and AI <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../ped/" class="dropdown-item">(PED) About this Course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Public Engagement?</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter1/ladder/" class="dropdown-item">Climbing the Ladder</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter1/goals/" class="dropdown-item">Goals of Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Value(s) of Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter2/deliberation/" class="dropdown-item">Deliberative Values</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter2/responsible/" class="dropdown-item">Responsible Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Facilitating Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter3/when/" class="dropdown-item">When should you engage</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter3/how/" class="dropdown-item">How should you engage</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Guidance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/storytelling/" class="dropdown-item">Storytelling with Data</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/uncertainty/" class="dropdown-item">Communicating Uncertainty</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/uncertainty_example.ipynb" class="dropdown-item">Visualising Uncertainty</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Public Trust and Assurance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter5/trust/" class="dropdown-item">Public Trust in Science and Technology</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">AI Ethics and Governance <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../aeg/" class="dropdown-item">(AEG) About this course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Ethics</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter1/metaethics/" class="dropdown-item">Introduction to Metaethics</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter1/normative/" class="dropdown-item">Introduction to Normative Theories</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Harms and Values</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter2/harms/" class="dropdown-item">AI Harms</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter2/values/" class="dropdown-item">AI Values</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Sustainability</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter3/engagement/" class="dropdown-item">Stakeholder Engagement Process</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter3/impact/" class="dropdown-item">Stakeholder Impact Assessment</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Fairness & Bias Mitigation, Accountability, and Governance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/fairness/" class="dropdown-item">Introduction to Fairness</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/aifairness/" class="dropdown-item">AI Fairness</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/bias/" class="dropdown-item">Bias Mitigation</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/accountability/" class="dropdown-item">Accountability</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/governance/" class="dropdown-item">AI Governance</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Transparency, Explainability and CARE & ACT Principles</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/transparency/" class="dropdown-item">Transparency & Explainability</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/consider/" class="dropdown-item">Consider Context</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/anticipate/" class="dropdown-item">Anticipate Impacts</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/reflect/" class="dropdown-item">Reflect on Purpose, Positionality, and Power</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/engage/" class="dropdown-item">Engage Inclusively</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/act/" class="dropdown-item">Act Responsibly</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../blog/" class="dropdown-item">Blog</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../project_lifecycle/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/alan-turing-institute/turing-commons/edit/master/docs/rri/chapter2/responsible_ds.md" class="nav-link">Edit on alan-turing-institute/turing-commons
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#responsible-data-science-and-ai" class="nav-link">Responsible Data Science and AI</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#safe-d-principles" class="nav-link">SAFE-D Principles</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="responsible-data-science-and-ai">Responsible Data Science and AI<a class="headerlink" href="#responsible-data-science-and-ai" title="Permanent link">&para;</a></h1>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>What separates responsible data science and AI from responsible research and innovation more generally?</p>
+</div>
+<p>We saw in the <a href="../../chapter1/">previous chapter</a> how RRI can be defined with reference to concepts that emphasise the need for ethical reflection on possible social harms and benefits, supported by inclusive participation of affected stakeholders.
+Responsible data science and AI shares this emphasis, but can be further refined by considering more specific principles that are geared towards the particular harms and benefits associated with data science and AI.
+These principles can help us identify what is unique to responsible data science and AI.</p>
+<h2 id="safe-d-principles">SAFE-D Principles<a class="headerlink" href="#safe-d-principles" title="Permanent link">&para;</a></h2>
+<p>According to Mittelstadt[@mittelstadt2019], in 2019 there were at least 84 statements that provided ''high-level principles, values and other tenets to guide the ethical development, deployment and governance of AI''.
+By now there are surely many, many more!</p>
+<p>In response to this proliferation of principles, some have attempted to distil and condense the myriad documents, in order to identify commonalities and extract a unified list of shared principles.[@jobin2019]<sup>-</sup>[@floridi2019]
+However, regardless of which set of principles we start with, one thing remains the same: good principles should support ongoing reflection and deliberation; they are not decision procedures in their own right.</p>
+<p><img align="center" alt="An illustration of a man standing in front of a branching pathway of moral decisions and considerations" src="../../../assets/images/illustrations/deliberation.png" /></p>
+<p>This point is sometimes lost in the ensuing debate about <em>which set</em> of principles should be used or adhered to, or which set is best.
+However, what matters is that the set of principles should a) be responsive to the actual harms and benefits that matter to the communities of affected individuals, b) be underwritten by a set of shared values, which support and motivate dialogue between stakeholders<sup id="fnref:values"><a class="footnote-ref" href="#fn:values">1</a></sup>, and c) serve as <em>starting points</em> in a wider process of reflection and deliberation.</p>
+<p>With these points in mind, we will make use of the following set of principles known as the 'SAFE-D principles':</p>
+<ul>
+<li>Sustainability</li>
+<li>Accountability</li>
+<li>Fairness</li>
+<li>Explainability</li>
+<li>Data Quality, Integrity, Protection and Privacy</li>
+</ul>
+<p>These principles are grounded in comprehensive research and understanding of human rights and data protection law, as well as applied ethics of data and AI.[@leslie2021a]</p>
+<p>You can click through the following illustrative examples to get an idea of some of the social harms associated with data-driven technologies:</p>
+<p>=== "Predicting Risk"</p>
+<pre><code>Avon and Somerset Police and Bristol City Council developed a sophisticated predictive risk tool that was used, among other things, to predict the risk of children suffering sexual abuse. But, the Bristol Cable reported that many children were falsely flagged as being at risk, and that the tool was developed using dozens of public sector databases, including schools, housing, NHS records, and even credit scores from Experian.
+
+[The Bristol Cable, 'How a police and council database is predicting if your child is at risk of harm'](https://thebristolcable.org/2021/07/how-a-police-and-council-database-is-predicting-if-your-child-is-at-risk-of-harm/)
+</code></pre>
+<p>=== "Facebook Discriminatory Job Adverts"</p>
+<pre><code>The algorithmic system used by Facebook to automatically show job adverts to users it believes are most likely to engage with them was reported to perpetuate discriminatory gender norms. Thee BBC reported that
+
+!!! quote
+
+    almost all Facebook users shown adverts for mechanics were men, while ads for nursery nurses were seen almost exclusively by women.
+
+[BBC News, 'Facebook accused of allowing sexist job advertising'](https://www.bbc.co.uk/news/technology-58487026)
+</code></pre>
+<p>=== "Racist Photo Cropping Tool"</p>
+<pre><code>Twitter was forced to apologise after many users reported that the automated tool for cropping images on the social media platform showed a racial bias towards faces of white people over faces of black people. According to [Twitter](https://blog.twitter.com/engineering/en_us/topics/insights/2021/sharing-learnings-about-our-image-cropping-algorithm), one source of the issue was the use of a ''saliency algorithm'' that was trained on human eye-tracking data.
+
+[The Guardian, 'Twitter apologises for 'racist' image-cropping algorithm'](https://www.theguardian.com/technology/2020/sep/21/twitter-apologises-for-racist-image-cropping-algorithm)
+</code></pre>
+<p>=== "Lethal Autonomous Weapons"</p>
+<pre><code>Turkish company STM manufactures the [Kargu-2](https://www.stm.com.tr/uploads/docs/1628858259_tacticalminiuavsystems.pdf?)—an attack drone that can operate autonomously by using machine learning and real-time image processing to identify targets. According to a UN security council report this drone was reported to have been used to "remotely engage" and "hunt down" logistics convoys and retreating forces in the Libyan civil war during 2019.
+
+[NPR, 'A Military Drone With A Mind Of Its Own Was Used In Combat, U.N. Says'](https://www.npr.org/2021/06/01/1002196245/a-u-n-report-suggests-libya-saw-the-first-battlefield-killing-by-an-autonomous-d)
+</code></pre>
+<p>=== "#TravelingWhileTrans"</p>
+<pre><code>In their book, Design Justice, Sasha Costanza-Chock highlights how the design of sociotechnical systems reinforce and embed a variety of social norms and expectations that can be harmful to vulnerable or marginalised communities. For example, the impact of full-body scanners at airport security that require operators to select either 'male' or 'female', even when presented with non-binary or trans individuals whose bodies may not conform to the models embedded within the machine.
+
+[Design Justice, 'Introduction: #TravelingWhileTrans, Design Justice, and Escape from the Matrix of Domination'](https://design-justice.pubpub.org/pub/ap8rgw5e/release/1)
+</code></pre>
+<p>=== "Any Others?"</p>
+<pre><code>Do you know any other examples of social harms associated with data-driven technologies?
+</code></pre>
+<p>Each of the SAFE-D principles is either motivated by and captures a specific set of harms that have been uncovered and exposed, responds to a set or well-documented risks that arise in the context of data science and AI, or is oriented towards the sustainable, ethical, and responsible use of data-driven technologies.
+Let's look at each principle in turn.</p>
+<h3 id="sustainability">Sustainability<a class="headerlink" href="#sustainability" title="Permanent link">&para;</a></h3>
+<p>Sustainability can mean a couple of things.
+From a technical perspective, sustainability requires the outputs of a project to be safe, secure, robust, and reliable.
+For example, if an organisation is developing an autonomous vehicle, it should operate safely in the intended context of use.
+However, in the context of responsible data science and AI, there is also a social sustainability component.
+This aspect of sustainability requires a project's practices to be informed by ongoing consideration of the risk of exposing individuals to harms even after the system has been deployed and the project completed—a long-term (or sustainable) safety.</p>
+<h3 id="accountability">Accountability<a class="headerlink" href="#accountability" title="Permanent link">&para;</a></h3>
+<p>Accountability can refer to transparency of processes and associated outcomes that enable people to understand how a project was conducted (e.g., project documentation), or why a specific decision was reached.
+But it can also refer to broader processes of responsible project governance that seek to establish clear roles of responsibility where full transparency may be inappropriate (e.g., confidential projects).</p>
+<h3 id="fairness">Fairness<a class="headerlink" href="#fairness" title="Permanent link">&para;</a></h3>
+<p>Fairness is inseparably connected with legal conceptions of equality and justice, which may emphasize a variety of features such as non-discrimination, equitable outcomes, or procedural fairness through bias mitigation.
+However, these notions serve as a subset of broader normative considerations pertaining to social justice, socioeconomic capabilities, diversity and inclusivity.
+For this reason, the term 'fairness' can be confusing due to the wide variety of ways it is employed, and the large number of more specific concepts that fall within its scope.</p>
+<h3 id="explainability">Explainability<a class="headerlink" href="#explainability" title="Permanent link">&para;</a></h3>
+<p>Explainability is a key condition for autonomous and informed decision-making in situations where data-driven systems interact with or influence human judgement and choice behaviour.
+Explainability goes beyond the ability to merely interpret specific aspects of a project (e.g., interpreting the parameters of a model); it also depends on the ability to provide an accessible and relevant information base about the processes behind the outcome.</p>
+<h3 id="data-quality-integrity-protection-and-privacy">Data Quality, Integrity, Protection and Privacy<a class="headerlink" href="#data-quality-integrity-protection-and-privacy" title="Permanent link">&para;</a></h3>
+<p>Data quality, integrity, protection and privacy must all be established to be confident that a research or innovation project has been designed, developed, and deployed in a responsible manner.</p>
+<ul>
+<li>'Data Quality' captures the static properties of data, such as whether they are a) <em>relevant</em> to and <em>representative</em> of the domain and use context, b) <em>balanced</em> and <em>complete</em> in terms of how well the dataset represents the underlying data generating process, and c) <em>up-to-date</em> and <em>accurate</em> as required by the project.</li>
+<li>‘Data Integrity' refers to more dynamic properties of data stewardship, such as how a dataset evolves over the course of a project lifecycle. In this manner, data integrity requires a) <em>contemporaneous</em> and <em>attributable</em> records from the start of a project (e.g., process logs; research statements), b) ensuring <em>consistent</em> and <em>verifiable</em> means of data analysis or processing during development, and c) taking steps to establish <em>findable</em>, <em>accessible</em>, <em>interoperable</em>, and <em>reusable</em> records towards the end of a project’s lifecycle.<sup id="fnref:FAIR"><a class="footnote-ref" href="#fn:FAIR">2</a></sup></li>
+<li>‘Data protection and privacy' reflect ongoing developments and priorities as set out in relevant legislation and regulation of data practices as they pertain to fundamental rights and freedoms, democracy, and the rule of law. For example, the right for data subjects to have inaccurate personal data rectified or erased.[@ico2021]</li>
+</ul>
+<p>Each of these principles can be treated as a goal to which responsible data science and AI ought to be directed.<sup id="fnref:ped"><a class="footnote-ref" href="#fn:ped">3</a></sup>
+But, on their own they are insufficient for establishing what specific actions or decisions should be taken in any given project.
+For instance, what does it mean to develop a <em>fair</em> diagnostic model in healthcare?</p>
+<p>Does it mean ensuring that all patients are exposed to the same level of risk with respect to the distribution of possible false negatives?</p>
+<p>What about false positives instead?</p>
+<p>What about the use of the decision support system in which thee model is implemented?</p>
+<p>Will it be used in all hospitals on all patients?</p>
+<p>Or, will only those wealthy enough to afford private healthcare receive this service?</p>
+<p>Should it instead be used for the most vulnerable and worse off in society?</p>
+<p>Questions such as these have no straightforward answer and are heavily context-dependant.
+Even if consensus were to be reached for a specific model used, say, in the diagnosis of lung cancer,[@svoboda2020] this would be no guarantee of a similar answer in a different area of healthcare (e.g., paediatrics, mental healthcare), or even for another diagnostic model in radiology (e.g., MRI instead of CT scans).
+Therefore, starting in the next section we will look at a model for helping us get a clear grasp of the situated and sociotechnical context under consideration in research and innovation projects.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:values">
+<p>We won't say much about ethical values in this course. However, the course on <a href="https://turing-commons.netlify.app/aeg/index.html">AI Ethics &amp; Governance</a> focuses on them directly.&#160;<a class="footnote-backref" href="#fnref:values" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:FAIR">
+<p>These are known as the FAIR principles (<a href="https://www.go-fair.org/fair-principles/">read more here</a>).&#160;<a class="footnote-backref" href="#fnref:FAIR" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:ped">
+<p>In our guidebook on <a href="https://turing-commons.netlify.app/ped/index.html">public engagement of data science and AI</a> we formalise this notion of an ethical goal in relation to a method known as argument-based assurance. Here, the goals are supported by specific properties that must be established in a project, in order to provide justifiable assurance to stakeholders that the respective goal has been realised.&#160;<a class="footnote-backref" href="#fnref:ped" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 Alan Turing Institute</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../javascripts/mathjax.js" defer></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+        <script src="../../../javascripts/tablesort.js" defer></script>
+        <script src="../../../javascripts/case-studies.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

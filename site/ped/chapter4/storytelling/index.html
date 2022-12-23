@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://alan-turing-institute.github.io/turing-commons/ped/chapter4/storytelling/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Storytelling with Data - Turing Commons</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../../../stylesheets/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Turing Commons</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../welcome/" class="nav-link">Welcome</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Responsible Research and Innovation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../rri/" class="dropdown-item">(RRI) About this Course</a>
+</li>
+                                    
+<li>
+    <a href="../../../rri/intro/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Responsible Research and Innovation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/responsibility/" class="dropdown-item">What is Responsibility</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/history/" class="dropdown-item">A Short History of RRI</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/sts/" class="dropdown-item">Science, Technology, and Society</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/timeline/" class="dropdown-item">Science and Technology Studies Timeline</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Data Science and AI</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/responsible_ds/" class="dropdown-item">What is Responsible Data Science and AI</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/project_lifecycle/" class="dropdown-item">Introducing the Project Lifecycle</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/roles_responsibility/" class="dropdown-item">Roles and Responsibilities</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/understanding_bias/" class="dropdown-item">Understanding Bias</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Project Lifecycle</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/activities/case_studies/" class="dropdown-item">Case Studies</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/planning/" class="dropdown-item">Project Planning</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/problem/" class="dropdown-item">Problem Formulation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/data_extraction/" class="dropdown-item">Data Extraction or Procurement</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/data_analysis.ipynb" class="dropdown-item">Data Analysis</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/preprocessing/" class="dropdown-item">Preprocessing and Feature Engineering</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_selection/" class="dropdown-item">Model Selection and Training</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_testing/" class="dropdown-item">Model Testing and Validation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_reporting/" class="dropdown-item">Model Reporting</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/model_productionalisation/" class="dropdown-item">Model Productionalisation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/user_training/" class="dropdown-item">User Training</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/system_use.ipynb" class="dropdown-item">System Use and Monitoring</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/model_updating/" class="dropdown-item">Model Updating or Deprovisioning</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/summary/" class="dropdown-item">Next Steps</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Communication</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/assurance/" class="dropdown-item">What is Argument-Based Assurance</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/communication/" class="dropdown-item">Assurance and Responsible Communication</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/gpe/" class="dropdown-item">Goals, Properties, and Evidence</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../rri/conclusion/" class="dropdown-item">Conclusion</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/resources/" class="dropdown-item">Additional Resources</a>
+</li>
+            
+<li>
+    <a href="../../../rri/resources/synthetic_data_generation.ipynb" class="dropdown-item">Synthetic Data Generation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/resources/further-reading/" class="dropdown-item">Further Reading</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Public Engagement of Data Science and AI <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">(PED) About this Course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Public Engagement?</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/ladder/" class="dropdown-item">Climbing the Ladder</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/goals/" class="dropdown-item">Goals of Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Value(s) of Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter2/deliberation/" class="dropdown-item">Deliberative Values</a>
+</li>
+            
+<li>
+    <a href="../../chapter2/responsible/" class="dropdown-item">Responsible Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Facilitating Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/when/" class="dropdown-item">When should you engage</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/how/" class="dropdown-item">How should you engage</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Guidance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Storytelling with Data</a>
+</li>
+            
+<li>
+    <a href="../uncertainty/" class="dropdown-item">Communicating Uncertainty</a>
+</li>
+            
+<li>
+    <a href="../uncertainty_example.ipynb" class="dropdown-item">Visualising Uncertainty</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Public Trust and Assurance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/trust/" class="dropdown-item">Public Trust in Science and Technology</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">AI Ethics and Governance <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../aeg/" class="dropdown-item">(AEG) About this course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Ethics</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter1/metaethics/" class="dropdown-item">Introduction to Metaethics</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter1/normative/" class="dropdown-item">Introduction to Normative Theories</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Harms and Values</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter2/harms/" class="dropdown-item">AI Harms</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter2/values/" class="dropdown-item">AI Values</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Sustainability</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter3/engagement/" class="dropdown-item">Stakeholder Engagement Process</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter3/impact/" class="dropdown-item">Stakeholder Impact Assessment</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Fairness & Bias Mitigation, Accountability, and Governance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/fairness/" class="dropdown-item">Introduction to Fairness</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/aifairness/" class="dropdown-item">AI Fairness</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/bias/" class="dropdown-item">Bias Mitigation</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/accountability/" class="dropdown-item">Accountability</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/governance/" class="dropdown-item">AI Governance</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Transparency, Explainability and CARE & ACT Principles</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/transparency/" class="dropdown-item">Transparency & Explainability</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/consider/" class="dropdown-item">Consider Context</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/anticipate/" class="dropdown-item">Anticipate Impacts</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/reflect/" class="dropdown-item">Reflect on Purpose, Positionality, and Power</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/engage/" class="dropdown-item">Engage Inclusively</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/act/" class="dropdown-item">Act Responsibly</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../blog/" class="dropdown-item">Blog</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../uncertainty/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/alan-turing-institute/turing-commons/edit/master/docs/ped/chapter4/storytelling.md" class="nav-link">Edit on alan-turing-institute/turing-commons
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#storytelling-with-data" class="nav-link">Storytelling with Data</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#choosing-the-right-tools" class="nav-link">Choosing the right tools</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#attention" class="nav-link">ATTENTION!!!</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#constructing-narrative-structure" class="nav-link">Constructing Narrative Structure</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="storytelling-with-data">Storytelling with Data<a class="headerlink" href="#storytelling-with-data" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>"Data tells a story!"</p>
+</blockquote>
+<p>This phrase, which gets thrown around a lot, does contain a kernel of truth.
+But telling a story with data is not always straightforward, and data do not tell stories on their own.
+It takes careful analysis and informed deliberation to make sure that data tell the right story, and that the story is engaging to those who want or need to hear the story.
+Consider the following graph, for instance:</p>
+<p><img alt="Image of graphic" src="../../../assets/images/graphics/storytellinga.png" /></p>
+<p>Now, ask yourself the following questions:</p>
+<div class="admonition question">
+<p class="admonition-title">Questions</p>
+<ol>
+<li>What story do you think this graph is trying to tell?</li>
+<li>Which part of the graph caught your attention initially?</li>
+</ol>
+</div>
+<p>Cole Nussbaumer Knaflic's excellent book, <em>Storytelling with Data</em> is full of examples such as this one, in which badly designed or ordinary graphs are transformed into engaging and insightful visualisations that help tell a story and realise various goals.[@knaflic2015]
+The previous graph, for example, is altered into the following one, where a) more supportive messaging helps explain how a new program improved children's interest and engagement in science, and b) better use of colours help to direct the audience's attention to the values of significance (i.e., the increased percentages of children who were either 'interested' or 'excited' in science following the intervention).</p>
+<p><img alt="Image of graphic" src="../../../assets/images/graphics/storytellingb.png" /></p>
+<p>In this section, we are going to look at three lessons (based on Knaflic's book)[@knaflic2015] to help tell more engaging stories with data:</p>
+<ol>
+<li>Choose the right tool for the job</li>
+<li>Understand the limits of attention</li>
+<li>Construct a clear narrative</li>
+</ol>
+<h2 id="choosing-the-right-tools">Choosing the right tools<a class="headerlink" href="#choosing-the-right-tools" title="Permanent link">&para;</a></h2>
+<p>You would not choose a hammer to drill in a screw. Sure, it may get the screw into the wall, but it's certainly not the most effective tool for the job.
+In the context of data visualisation, there are no shortages of graphs (tools) and libraries (toolkits) to help you create a multitude of different graphs.
+For example, the popular Seaborn data visualization library for Python:</p>
+<iframe src="https://seaborn.pydata.org/examples/index.html" width="100%" height="500px"></iframe>
+
+<p>But, similar to the hammer analogy, it's easy to end up with choice paralysis in situations like this, especially when there are so many options available. </p>
+<div class="admonition example tools for data visualisation">
+<p class="admonition-title">Example</p>
+<p>Although far from being an exhaustive list, the following options are a varied set of examples for data visualisation tools:</p>
+<ol>
+<li><a href="https://www.tableau.com/">Tableau</a>: powerful tool for data analysis, BI, and visualisation</li>
+<li><a href="https://www.canva.com">Canva</a>: an online graphic design platform with a simple interface</li>
+<li><a href="https://d3js.org">D3.js</a>: a javascript library well suited to web-based visuals</li>
+<li><a href="https://developers.google.com/chart">Google Charts</a>: another free option for embedding (many different) charts into webpages</li>
+<li><a href="https://www.datawrapper.de">Datawrapper</a>: a popular option among cvommunicators (e.g. journalists) with a good range of interactive and responsive charts</li>
+<li><a href="https://docs.bokeh.org/en/latest/docs/gallery.html">Bokeh</a>: an Python library for creating interactive visualisations with a variant for <a href="https://hafen.github.io/rbokeh/">R</a></li>
+<li><a href="https://flourish.studio">Flourish</a>: easily turn your data into animated charts, maps, and interactive stories.</li>
+</ol>
+</div>
+<p>So, how do you choose the right tool?
+How do you select the right visualisation?</p>
+<p>Well, simply put, you have a clear answer to the questions from the preceding chapters:</p>
+<ul>
+<li>Who is your audience?</li>
+<li>What matters to them (or, what do they value?</li>
+<li>Why are you engaging them?</li>
+<li>What is your goal?</li>
+</ul>
+<p>When you can satisfactorily answer these questions you will probably know which tool is the right one top use.
+However, there are still a couple of hazards that could get in your way.</p>
+<h2 id="attention">ATTENTION!!!<a class="headerlink" href="#attention" title="Permanent link">&para;</a></h2>
+<p>You're about to take part in a short experiment.
+Watch the following video:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VkrrVozZR2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>Did you spot the change?</p>
+<p>As the video emphasises, our limited cognitive capacity forces us to pay attention to the details that we expect to be most salient to the current tasks we are engaged in.
+When you are communicating with or engaging an audience, they will also be in a similar predicament—forced to "make (sub-conscious) choices" about what to pay attention to.
+Therefore, it is important for you to have an understanding of how you can reduce cognitive load and make it easier for your audience to <em>pay attention to what matters</em>.</p>
+<p>Preattentive attributes are one way to achieve this.</p>
+<p>Knaflic's book, again, has useful guidance here about the role of <em>preattentive attributes</em>—elements of visual design that are rapidly processed by the lowest levels of our visual systems, signifying something of salience to the individual.
+The following 12 preattentive attributes are well-known among designers, and often exploited by those in advertising!</p>
+<p><img alt="Preattentive attributes" src="../../../assets/images/graphics/preattentive.png" /></p>
+<p>=== "Graph with no preattentive attributes"</p>
+<pre><code>![Graph A without colour](../../assets/images/graphics/coloura.png)
+</code></pre>
+<p>=== "Graph with colour added"</p>
+<pre><code>![Graph B with colour](../../assets/images/graphics/colourb.png)
+</code></pre>
+<p>=== "Graph using colour to build hierarchy"</p>
+<pre><code>![Graph C using colour to build hierarchy](../../assets/images/graphics/colourc.png)
+</code></pre>
+<h2 id="constructing-narrative-structure">Constructing Narrative Structure<a class="headerlink" href="#constructing-narrative-structure" title="Permanent link">&para;</a></h2>
+<p>The Hero's journey is a well-known template in literature and story-telling more generally.
+In brief, it identifies several stages for a protagonist's journey, starting with a departure (or, call to adventure) that serves as a hook, which leads into a series of trials, initiations, or challenges for the protagonist to overcome, before returning home as a changed or transformed individual.</p>
+<p><img alt="The hero's journey" src="../../../assets/images/graphics/hero.png" /></p>
+<p>This template can be seen in many areas of popular culture, ranging from science-fiction films (e.g. Star Wars) to classic works of literature (e.g. Jane Eyre).
+There are, of course, many challenges to the validity of this template and its application to specific stories—in both academia and geek culture!
+However, as a scaffold for both constructing and interpreting meaning the template serves a purpose.</p>
+<p>Unfortunately, there is no comparable template that we can point to for building narrative in the context of public engagement.
+But there are principles that can help steer us in the right direction, which include some we have already explored.</p>
+<p>Consider the following visual communication from the Education Endowment Foundation—an independent charity with the goal of improving educational attainment of the poorest pupils in English schools.</p>
+<p><img alt="The Teaching and Learning Toolkit—Educational Endowment Foundation" src="../../../assets/images/graphics/education.png" /></p>
+<p>The purpose of this graphic is to clearly summarise the evidence base for different education interventions, by focusing on three properties:</p>
+<ul>
+<li>Cost</li>
+<li>Strength of Evidence</li>
+<li>Impact</li>
+</ul>
+<p>Each of these three elements helps to build and communicate a clear narrative:</p>
+<ol>
+<li>Our research has uncovered a variety of interventions and policy options for improving education.</li>
+<li>These options differ in three ways:</li>
+<li>Their cost</li>
+<li>The strength of their supporting evidence</li>
+<li>The potential impact from implementing the chosen policy</li>
+<li>The information we have gathered and organised can support evidence-based policy making</li>
+</ol>
+<p>Obviously there is a lot more behind these three properties, but they serve as an accessible overview to help direct the attention of the audience.
+This is achieved through the use of clear visuals, clear messaging (and narrative structure), and a clear understanding of the audience and goals for the project—in the above case, policy-makers.
+Moreover, the message is linked to an implied causal process—a key component in narrative.
+Specifically, doing A (implementing a policy) is likely to cause B (the associated impact).</p>
+<p>This latter point may strike data scientists as problematic, as the idea that correlation does not imply causation is drilled into all scientists early on in their career.
+As such, suggesting evidence of causation is typically seen as an instance of overstating research findings.
+But when it comes to good storytelling and narrative, an underlying causal process is often implied or assumed by the audience.
+This is not necessarily a problem, as long as you are clear to differentiate between any causal processes referred to in your research, and the causal account assumed in your engagement's narrative.</p>
+<p>Although not a replacement for the Hero's journey, the following set of principles from <a href="https://www.northeastern.edu/graduate/blog/tips-for-effective-science-communication/">Northeastern University</a> serve as both a good summary of what we have learned so far, and also reinforce the importance of clear narrative structure (see principles in bold):</p>
+<div class="admonition example">
+<p class="admonition-title">10 Principles for How to Communicate Effectively</p>
+</div>
+<ol>
+<li>Know your audience</li>
+<li><strong>Identify the goals of communication</strong></li>
+<li><strong>Start with the most important information</strong></li>
+<li>Avoid jargon</li>
+<li>Be relatable</li>
+<li>Provide visuals</li>
+<li><strong>Stick to three points</strong></li>
+<li><strong>Talk about the scientific process</strong></li>
+<li><strong>Focus on the bigger impact</strong></li>
+<li>Develop an elevator pitch</li>
+</ol>
+<!-- !!! activity "Designing an Effective Visual (Activity 2.2)"
+
+    In this activity, you will design a data visual that supports a goal relevant to your case study.
+    You will need to do the following:
+
+    1. Create some fictional data that supports a positive message that you want to communicate to a group of stakeholders. 
+    2. Select an effective data visualisation type. If you're stuck for ideas, take a look at the Seaborn examples above. 
+    3. Choose one (or more) preattentive attributes that will help engage your audience's attention.
+    4. Construct a clear narrative to communicate with your audience. 
+
+    To help you with this process, consider these questions designed to help you build a compelling narrative:
+
+    1.  Has an opportunity arisen that your audience ought to know about?
+    2.  Is this because of a change in behaviour or policy?
+    3.  How does your data support this message?
+    4.  Who has been involved with your project?
+    5.  Is there a new technology, method of working, or service that your audience would benefit from?
+    6.  What other positive outcomes are associated with your project?
+
+    In doing so, remember the following:
+
+    !!! note "Guidance"
+
+    1. If all you have is a hammer, everything look's like a nail. Make sure you choose the right tool for the job.
+    2. Your audience are likely to be easily distracted and have a limited attention span.
+    3. You're not Tolstoy, and you're not writing *War and Peace*. It's better to tell a cogent story with a clear narrative than the whole story. --></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 Alan Turing Institute</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../javascripts/mathjax.js" defer></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+        <script src="../../../javascripts/tablesort.js" defer></script>
+        <script src="../../../javascripts/case-studies.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

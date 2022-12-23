@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://alan-turing-institute.github.io/turing-commons/ped/chapter1/goals/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Goals of Public Engagement - Turing Commons</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../../../stylesheets/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Turing Commons</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../welcome/" class="nav-link">Welcome</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Responsible Research and Innovation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../rri/" class="dropdown-item">(RRI) About this Course</a>
+</li>
+                                    
+<li>
+    <a href="../../../rri/intro/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Responsible Research and Innovation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/responsibility/" class="dropdown-item">What is Responsibility</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/history/" class="dropdown-item">A Short History of RRI</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/sts/" class="dropdown-item">Science, Technology, and Society</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/timeline/" class="dropdown-item">Science and Technology Studies Timeline</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Data Science and AI</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/responsible_ds/" class="dropdown-item">What is Responsible Data Science and AI</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/project_lifecycle/" class="dropdown-item">Introducing the Project Lifecycle</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/roles_responsibility/" class="dropdown-item">Roles and Responsibilities</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/understanding_bias/" class="dropdown-item">Understanding Bias</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Project Lifecycle</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/activities/case_studies/" class="dropdown-item">Case Studies</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/planning/" class="dropdown-item">Project Planning</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/problem/" class="dropdown-item">Problem Formulation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/data_extraction/" class="dropdown-item">Data Extraction or Procurement</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/data_analysis.ipynb" class="dropdown-item">Data Analysis</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/preprocessing/" class="dropdown-item">Preprocessing and Feature Engineering</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_selection/" class="dropdown-item">Model Selection and Training</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_testing/" class="dropdown-item">Model Testing and Validation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_reporting/" class="dropdown-item">Model Reporting</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/model_productionalisation/" class="dropdown-item">Model Productionalisation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/user_training/" class="dropdown-item">User Training</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/system_use.ipynb" class="dropdown-item">System Use and Monitoring</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/model_updating/" class="dropdown-item">Model Updating or Deprovisioning</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/summary/" class="dropdown-item">Next Steps</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Communication</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/assurance/" class="dropdown-item">What is Argument-Based Assurance</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/communication/" class="dropdown-item">Assurance and Responsible Communication</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/gpe/" class="dropdown-item">Goals, Properties, and Evidence</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../rri/conclusion/" class="dropdown-item">Conclusion</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/resources/" class="dropdown-item">Additional Resources</a>
+</li>
+            
+<li>
+    <a href="../../../rri/resources/synthetic_data_generation.ipynb" class="dropdown-item">Synthetic Data Generation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/resources/further-reading/" class="dropdown-item">Further Reading</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Public Engagement of Data Science and AI <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">(PED) About this Course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Public Engagement?</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../ladder/" class="dropdown-item">Climbing the Ladder</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Goals of Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Value(s) of Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter2/deliberation/" class="dropdown-item">Deliberative Values</a>
+</li>
+            
+<li>
+    <a href="../../chapter2/responsible/" class="dropdown-item">Responsible Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Facilitating Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/when/" class="dropdown-item">When should you engage</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/how/" class="dropdown-item">How should you engage</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Guidance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/storytelling/" class="dropdown-item">Storytelling with Data</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/uncertainty/" class="dropdown-item">Communicating Uncertainty</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/uncertainty_example.ipynb" class="dropdown-item">Visualising Uncertainty</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Public Trust and Assurance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/trust/" class="dropdown-item">Public Trust in Science and Technology</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">AI Ethics and Governance <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../aeg/" class="dropdown-item">(AEG) About this course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Ethics</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter1/metaethics/" class="dropdown-item">Introduction to Metaethics</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter1/normative/" class="dropdown-item">Introduction to Normative Theories</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Harms and Values</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter2/harms/" class="dropdown-item">AI Harms</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter2/values/" class="dropdown-item">AI Values</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Sustainability</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter3/engagement/" class="dropdown-item">Stakeholder Engagement Process</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter3/impact/" class="dropdown-item">Stakeholder Impact Assessment</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Fairness & Bias Mitigation, Accountability, and Governance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/fairness/" class="dropdown-item">Introduction to Fairness</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/aifairness/" class="dropdown-item">AI Fairness</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/bias/" class="dropdown-item">Bias Mitigation</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/accountability/" class="dropdown-item">Accountability</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/governance/" class="dropdown-item">AI Governance</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Transparency, Explainability and CARE & ACT Principles</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/transparency/" class="dropdown-item">Transparency & Explainability</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/consider/" class="dropdown-item">Consider Context</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/anticipate/" class="dropdown-item">Anticipate Impacts</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/reflect/" class="dropdown-item">Reflect on Purpose, Positionality, and Power</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/engage/" class="dropdown-item">Engage Inclusively</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/act/" class="dropdown-item">Act Responsibly</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../blog/" class="dropdown-item">Blog</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../ladder/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../chapter2/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/alan-turing-institute/turing-commons/edit/master/docs/ped/chapter1/goals.md" class="nav-link">Edit on alan-turing-institute/turing-commons
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#goals-of-public-engagement" class="nav-link">Goals of Public Engagement</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#improving-public-knowledge-and-awareness-of-science" class="nav-link">Improving Public Knowledge and Awareness of Science</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#public-deliberation" class="nav-link">Public Deliberation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#establishing-trust-legitimacy-and-social-license" class="nav-link">Establishing Trust, Legitimacy, and Social License</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#improving-social-welfare" class="nav-link">Improving Social Welfare</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#safeguarding-and-supporting-human-rights" class="nav-link">Safeguarding and Supporting Human Rights</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="goals-of-public-engagement">Goals of Public Engagement<a class="headerlink" href="#goals-of-public-engagement" title="Permanent link">&para;</a></h1>
+<p>Before we explore some specific goals of public engagement, have a go at answering the following question on your own:</p>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>What are some goals of public engagement?</p>
+</div>
+<p>In answering the above question, you may have come up with a valid goal of public engagement or, alternatively, a different framing for one of the subsequent goals that have been discussed in the relevant literature.
+Let's look at some of the most significant or influential goals.<sup id="fnref:reader"><a class="footnote-ref" href="#fn:reader">1</a></sup></p>
+<h2 id="improving-public-knowledge-and-awareness-of-science">Improving Public Knowledge and Awareness of Science<a class="headerlink" href="#improving-public-knowledge-and-awareness-of-science" title="Permanent link">&para;</a></h2>
+<p>This first, epistemic goal is often the most intuitive and familiar to scientific researchers and developers.
+In many cases this is due to institutional factors that promote <em>uni-directional</em> forms of engagement such as blog posts, news articles, or television and radio interviews.
+For many members of the public, these types of engagement can be both entertaining and informative when they are well produced.</p>
+<p>However, as already discussed, it is unclear whether this goal is an intrinsic good.
+That is, should the goal of improved public knowledge in science be treated as something valuable in and of itself, or is the value of improved scientific knowledge instrumental upon the practical benefits that this knowledge can bring?</p>
+<p>How we answer this question will affect how we evaluate this goal.
+On the one hand, if we think that improved knowledge is an instrumental good, then we may be sceptical about specific public education campaigns.
+For example, few users are likely to leverage technical knowledge about how object recognition algorithms work to deploy a system in their own home that can identify common household objects.
+But on the other hand, if we see improved knowledge as an intrinsic good, then any efforts to raise public awareness in science and technology should be treated as valuable.</p>
+<!-- add further reading about this debate -->
+
+<h2 id="public-deliberation">Public Deliberation<a class="headerlink" href="#public-deliberation" title="Permanent link">&para;</a></h2>
+<p>This second goal is often associated with Jurgen Habermas—a German philosopher and social theorist—who developed the theory of discourse ethics and saw deliberation as</p>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>a time-consuming process of mutual enlightenment, for the ‘general interest’ on the basis of which alone a rational agreement between publicly competing opinions could freely be reached [@habermas1989]</p>
+</div>
+<p>The general idea is that deliberation aims at consensus, such that the latter emerges from the sharing of public reasons and a drive towards mutual understanding between those engaged in dialogue.
+Here, consensus could involve a shared belief and agreement about the benefits or harms of some scientific or technological development.</p>
+<p>In practice, consensus does not have to involve unanimous agreement on a final outcome.
+Rather, it can also include acceptable domains or preferences and ranges of competing options, the credibility of disputed beliefs, and the legitimacy of competing values.[@dryzek2006]
+This avoids the misplaced criticism that deliberation aimed at consensus building results in the flattening of the range of options or covers up dissent and legitimate disagreement or difference.</p>
+<h2 id="establishing-trust-legitimacy-and-social-license">Establishing Trust, Legitimacy, and Social License<a class="headerlink" href="#establishing-trust-legitimacy-and-social-license" title="Permanent link">&para;</a></h2>
+<p>Closely connected with the goal of consensus building or formation is the goal of establishing trust, legitimacy, and a social license.</p>
+<p>As a socially-embedded process, science and technology development can often depend on the support of members of the public.
+This is especially true where science and technology research and development is publicly funded and administered.</p>
+<p>A clear example of this is the recent case of contact-tracing apps used across the globe in response to the COVID-19 pandemic.[@leslie2020]
+Many formal healthcare organisations supported contact tracing because of its potential to support epidemiological research.
+However, the success of the public health programmes depended upon whether members of the public trusted the scientific process, including whether their personal data were handled in a responsible and ethical fashion.</p>
+<p>The choice of whether to use contact-tracing apps was, therefore, dependant upon a) how <em>trustworthy</em> the app was judged to be, b) whether the operator of the app had <em>perceived legitimacy</em> in the eyes of the public, and c) whether there was broad <em>social license</em> for the app in the first place.</p>
+<p>Public engagement was seen by many as crucial to establishing trust, legitimacy, and social license.[@aitken2020]
+Although this may be a valid goal, it is also important to note that like the first goal, it can be treated as an instrumentally valuable goal insofar as it supports subsequent goals, such as improving health outcomes or supporting epidemiological research.</p>
+<h2 id="improving-social-welfare">Improving Social Welfare<a class="headerlink" href="#improving-social-welfare" title="Permanent link">&para;</a></h2>
+<p>Following on from the previous goal, we can also identify the goal of improved social welfare.
+It is often recognised that science and technology can improve many facets of society and people's lives.
+Cleaner air and water, improved health, more effective forms of communication, better governance and public policy—all of these social goods can (and have) been improved by science and technology.</p>
+<p>Where local knowledge is required in order to realise these goals though, it is vital that members of the public (e.g. local communities) are able to participate in the scientific process.</p>
+<p>However, what constitutes improved 'social welfare' is itself a question that may require public engagement to satisfactorily address.
+For example, if a research team were exploring whether a drug could improve the health outcomes for a group of patients, they may need to work with these patients in order to understand which side effects or symptoms were most important to them when assessing if the drug had a positive impact on their health or well-being.
+Universal agreement on whether a medical intervention is a net positive in terms of health and well-being is not something that can easily be assumed.</p>
+<h2 id="safeguarding-and-supporting-human-rights">Safeguarding and Supporting Human Rights<a class="headerlink" href="#safeguarding-and-supporting-human-rights" title="Permanent link">&para;</a></h2>
+<p>Consider the following text from the United Nation's Universal Declaration of Human Rights:[@nations2022]</p>
+<div class="admonition abstract">
+<p class="admonition-title">Article 27</p>
+<ol>
+<li>Everyone has the right freely to participate in the cultural life of the community, to enjoy the arts and to share in scientific advancement and its benefits.</li>
+<li>Everyone has the right to the protection of the moral and material interests resulting from any scientific, literary or artistic production of which he is the author.</li>
+</ol>
+</div>
+<p><img alt="An image of a scroll and scales" src="../../../assets/images/graphics/human-rights.jpeg" /></p>
+<p>The scope of human rights, and the obligations or duties that they impose upon various institutions is a lively area of debate among legal scholars and practitioners.
+However, when compared to other rights, Article 27 has received little attention.</p>
+<p>Although enshrined in a legal document, the manner in which these various articles translate into either practical safeguards against possible abuses or positive opportunities and capabilities for human flourishing is far from obvious.</p>
+<p>Citizen science is one way, among many, in which this right may be exercised.
+The term 'citizen science' is defined by Vayena and Tasioulas as,</p>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>[...] any form of active non-professional participation in science that goes beyond human subject research conducted by professional researchers.[@vayena2015]</p>
+</div>
+<p>This inclusive definition makes room for myriad scientific activities, ranging from astronomy to zoology, or from self-tracking and experimentation through smart devices (e.g. wearables and smartphones) to participation in distributed forms of environment data collection and mapping<sup id="fnref:colouring"><a class="footnote-ref" href="#fn:colouring">2</a></sup>.</p>
+<p>The unprecedented technological means available to members of the public has undoubtedly played a significant role in increasing the participation in citizen science projects.
+However, the fact that access to science and technology remains unequally distributed throughout society suggests that technological means alone are insufficient for universally establishing the aforementioned human right.
+Therefore, it is worthwhile considering how such a goal could be better realised.</p>
+<p>In the next chapter we will look at the preconditions for effectively realising these goals, by exploring the values that support, underwrite, and motivate public engagement.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:reader">
+<p>The astute reader will notice that these goals are not mutually exclusive nor exhaustive.
+For instance, mutual understanding can also be aimed at building trust.&#160;<a class="footnote-backref" href="#fnref:reader" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:colouring">
+<p>see the <a href="https://colouringlondon.org">Colouring London project</a> as one visually-appealing example of crowdsourced data-science.&#160;<a class="footnote-backref" href="#fnref:colouring" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 Alan Turing Institute</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../javascripts/mathjax.js" defer></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+        <script src="../../../javascripts/tablesort.js" defer></script>
+        <script src="../../../javascripts/case-studies.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

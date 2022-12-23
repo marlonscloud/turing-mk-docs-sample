@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://alan-turing-institute.github.io/turing-commons/ped/chapter2/responsible/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Responsible Public Engagement - Turing Commons</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../../../stylesheets/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Turing Commons</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../welcome/" class="nav-link">Welcome</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Responsible Research and Innovation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../rri/" class="dropdown-item">(RRI) About this Course</a>
+</li>
+                                    
+<li>
+    <a href="../../../rri/intro/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Responsible Research and Innovation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/responsibility/" class="dropdown-item">What is Responsibility</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/history/" class="dropdown-item">A Short History of RRI</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/sts/" class="dropdown-item">Science, Technology, and Society</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/timeline/" class="dropdown-item">Science and Technology Studies Timeline</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Data Science and AI</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/responsible_ds/" class="dropdown-item">What is Responsible Data Science and AI</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/project_lifecycle/" class="dropdown-item">Introducing the Project Lifecycle</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/roles_responsibility/" class="dropdown-item">Roles and Responsibilities</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/understanding_bias/" class="dropdown-item">Understanding Bias</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Project Lifecycle</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/activities/case_studies/" class="dropdown-item">Case Studies</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/planning/" class="dropdown-item">Project Planning</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/problem/" class="dropdown-item">Problem Formulation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/data_extraction/" class="dropdown-item">Data Extraction or Procurement</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/data_analysis.ipynb" class="dropdown-item">Data Analysis</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/preprocessing/" class="dropdown-item">Preprocessing and Feature Engineering</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_selection/" class="dropdown-item">Model Selection and Training</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_testing/" class="dropdown-item">Model Testing and Validation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_reporting/" class="dropdown-item">Model Reporting</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/model_productionalisation/" class="dropdown-item">Model Productionalisation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/user_training/" class="dropdown-item">User Training</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/system_use.ipynb" class="dropdown-item">System Use and Monitoring</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/model_updating/" class="dropdown-item">Model Updating or Deprovisioning</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/summary/" class="dropdown-item">Next Steps</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Communication</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/assurance/" class="dropdown-item">What is Argument-Based Assurance</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/communication/" class="dropdown-item">Assurance and Responsible Communication</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/gpe/" class="dropdown-item">Goals, Properties, and Evidence</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../rri/conclusion/" class="dropdown-item">Conclusion</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/resources/" class="dropdown-item">Additional Resources</a>
+</li>
+            
+<li>
+    <a href="../../../rri/resources/synthetic_data_generation.ipynb" class="dropdown-item">Synthetic Data Generation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/resources/further-reading/" class="dropdown-item">Further Reading</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Public Engagement of Data Science and AI <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">(PED) About this Course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Public Engagement?</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/ladder/" class="dropdown-item">Climbing the Ladder</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/goals/" class="dropdown-item">Goals of Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Value(s) of Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../deliberation/" class="dropdown-item">Deliberative Values</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Responsible Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Facilitating Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/when/" class="dropdown-item">When should you engage</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/how/" class="dropdown-item">How should you engage</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Guidance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/storytelling/" class="dropdown-item">Storytelling with Data</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/uncertainty/" class="dropdown-item">Communicating Uncertainty</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/uncertainty_example.ipynb" class="dropdown-item">Visualising Uncertainty</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Public Trust and Assurance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/trust/" class="dropdown-item">Public Trust in Science and Technology</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">AI Ethics and Governance <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../aeg/" class="dropdown-item">(AEG) About this course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Ethics</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter1/metaethics/" class="dropdown-item">Introduction to Metaethics</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter1/normative/" class="dropdown-item">Introduction to Normative Theories</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Harms and Values</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter2/harms/" class="dropdown-item">AI Harms</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter2/values/" class="dropdown-item">AI Values</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Sustainability</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter3/engagement/" class="dropdown-item">Stakeholder Engagement Process</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter3/impact/" class="dropdown-item">Stakeholder Impact Assessment</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Fairness & Bias Mitigation, Accountability, and Governance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/fairness/" class="dropdown-item">Introduction to Fairness</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/aifairness/" class="dropdown-item">AI Fairness</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/bias/" class="dropdown-item">Bias Mitigation</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/accountability/" class="dropdown-item">Accountability</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter4/governance/" class="dropdown-item">AI Governance</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Transparency, Explainability and CARE & ACT Principles</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../aeg/chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/transparency/" class="dropdown-item">Transparency & Explainability</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/consider/" class="dropdown-item">Consider Context</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/anticipate/" class="dropdown-item">Anticipate Impacts</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/reflect/" class="dropdown-item">Reflect on Purpose, Positionality, and Power</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/engage/" class="dropdown-item">Engage Inclusively</a>
+</li>
+            
+<li>
+    <a href="../../../aeg/chapter5/act/" class="dropdown-item">Act Responsibly</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../blog/" class="dropdown-item">Blog</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../deliberation/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../chapter3/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/alan-turing-institute/turing-commons/edit/master/docs/ped/chapter2/responsible.md" class="nav-link">Edit on alan-turing-institute/turing-commons
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#responsible-public-engagement-in-data-science-and-ai" class="nav-link">Responsible Public Engagement in Data Science and AI</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#the-burden-of-responsibility" class="nav-link">The Burden of Responsibility</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#safe-d-principles" class="nav-link">SAFE-D Principles</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="responsible-public-engagement-in-data-science-and-ai">Responsible Public Engagement in Data Science and AI<a class="headerlink" href="#responsible-public-engagement-in-data-science-and-ai" title="Permanent link">&para;</a></h1>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>The public have to live with the consequences of science and technology. As such, RRI is above all "an opportunity for truly collective stewardship of our highly technologized future." (Sebastian Pfotenhauer quoted in Pain, 2017)[@pain2017]</p>
+</div>
+<p>The above quote helps to motivate a need to consider our responsibility, as researchers, to the societal impact of science and technology. The practical tools and methods we will explore in subsequent chapters will help us meet our various obligations. However, before we shift to the practical considerations, there is one final question to consider:</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>What does it mean to conduct <em>responsible</em> public engagement in data science and AI?</p>
+</div>
+<p>Responsible research and innovation is increasingly important in science and technology.
+As a term, 'responsible research and innovation' (RRI) is most strongly associated with the European Commission's Framework Programmes for Research and Technological Development—a set of funding programmes that support research in the European Union.
+Beginning with the seventh framework programme in 2010, and continuing on through Horizon 2020 (FP8), the term 'responsible research and innovation' became increasingly important for the European Commission's policy.</p>
+<p>Since then, other national funding bodies have also shown a commitment to RRI.
+For example, <a href="https://www.ukri.org/councils/epsrc/">UKRI's Engineering and Physical Sciences Research Council</a> have developed the <a href="https://www.ukri.org/about-us/epsrc/our-policies-and-standards/framework-for-responsible-innovation/">AREA framework</a>, which sets out four principles for RRI: Anticipate, Reflect, Engage, and Act (AREA).</p>
+<div class="admonition example">
+<p class="admonition-title">AREA Principles</p>
+<p><strong>Anticipate</strong>
+- Describe and analyse the impacts, intended or otherwise, that might arise. Do not seek to predict but rather support the exploration of possible impacts (such as economic, social and environmental) and implications that may otherwise remain uncovered and little discussed.</p>
+<p><strong>Reflect</strong>
+- Reflect on the purposes of, motivations for and potential implications of the research, together with the associated uncertainties, areas of ignorance, assumptions, framings, questions, dilemmas and social transformations these may bring.</p>
+<p><strong>Engage</strong>
+- Open up such visions, impacts and questioning to broader deliberation, dialogue, engagement and debate in an inclusive way.</p>
+<p><strong>Act</strong>
+- Use these processes to influence the direction and trajectory of the research and innovation process itself.</p>
+</div>
+<p>However, research and innovation in data science and AI is unlike traditional scientific research or technological innovation in many ways.
+For example, the following considerations are pertinent and relate to the impact upon public engagement specifically:</p>
+<ul>
+<li>Effective public communication requires sufficient levels of data and digital literacy (e.g. understanding of statistics, data visualisation)</li>
+<li>Conceptual knowledge and understanding of relevant concepts such as 'autonomous and adaptive behaviour', 'intelligence', or ' algorithmic system' may vary widely, such that different stakeholders may not be talking about the same thing</li>
+<li>Participants will hold differing opinions on key topics, such as data privacy and protection, which could give rise to challenging attitudes such as <em>algorithmic aversion</em>.<sup id="fnref:aversion"><a class="footnote-ref" href="#fn:aversion">1</a></sup></li>
+<li>Values and norms concerning the impact of novel data-driven technologies are still in flux, as they continue to affect different areas of society. Therefore, public attitudes may also vary, perhaps drastically, over time.</li>
+</ul>
+<p>As such, legitimate doubts could be raised about how universally these principles apply, and also whether they extend to considerations about public engagement?</p>
+<p>In response to these doubts, a justifiable argument could be made that some principles of RRI are more directly relevant to some of the applied sciences than more theoretical disciplines (e.g. fundamental physics).</p>
+<p>Two comments can be made:</p>
+<ol>
+<li>We should exercise caution in assenting to such a belief too rapidly given the many examples in the history of science that show how unintended consequences can arise as a result of advances in some scientific discipline that even experts could not foresee (see <a href="/rri/chapter1/history.md">this example</a>).</li>
+<li>Although principles of RRI may apply more strongly in some areas of application or research, there are also principles (e.g. <a href="https://www.go-fair.org/fair-principles/">FAIR principles</a>) that support responsible public engagement that ought to apply universally (e.g. research integrity, promotion of equality, diversity, and inclusivity among researchers).</li>
+</ol>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>How else does public engagement in data science and AI differ from public engagement in traditional scientific research or technological innovation?</p>
+</div>
+<h2 id="the-burden-of-responsibility">The Burden of Responsibility<a class="headerlink" href="#the-burden-of-responsibility" title="Permanent link">&para;</a></h2>
+<p>Exercising responsibility can be demanding.
+In the context of public engagement for research this is made more demanding by the existence of several barriers:</p>
+<ul>
+<li>High levels of competition for research funding</li>
+<li>Secrecy among project teams</li>
+<li>Temporary (fixed-term) contracts for researchers</li>
+<li>Time pressures</li>
+</ul>
+<p>Although some of the tools and methods we will consider in later chapters can help alleviate some of these burdens, it would be naive to pretend that a wider institutional change in attitudes and incentive structures is not also necessary.<sup id="fnref:epsrc"><a class="footnote-ref" href="#fn:epsrc">2</a></sup></p>
+<p>On top of these barriers, public engagement in data science and AI is not always recognised as valuable for the furthering of one's scientific career by some specialists.
+However, consider the following quotation:</p>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>The lack of diverse jobs after a PhD, a shrinking funding budget and lack of public support all seem daunting to graduate students. In the face of these major hurdles, many scientists isolate themselves from these issues and focus on their own research. A recent study has shown, however, that increased interaction with reporters and the more Twitter mentions a study receives correlate with a higher <em>h</em>-index of the author, a metric for measuring the scientific impact of a publication. To determine whether media coverage of a published science article is causative of increased citations, a 1991 study looked at journal articles that would have been covered by the New York Times, but due to a writer’s strike in the late 1970s, were not. Researchers found that the journal articles that were not covered had consistently less citations than other research articles covered by the Times. There is clear value for the science research community to publicise new findings to the public.[@pham2016]</p>
+</div>
+<p>While this is only one form of engagement (i.e. communication) it serves as a pragmatic reason for pursuing public engagement.
+However, there are also ethical reasons for pursuing public engagement in data science, in spite of the aforementioned barriers.</p>
+<p>With these considerations in mind, let us now return to the original question, 'what does it mean to conduct <em>responsible</em> public engagement in data science and AI?'
+Although some of the principles alluded to above may also apply to responsible engagement in data science and AI (e.g. AREA principles), there are more specific principles that can help us with planning and delivering public engagement activities.
+We call these the <strong>SAFE-D principles</strong>.</p>
+<h2 id="safe-d-principles">SAFE-D Principles<a class="headerlink" href="#safe-d-principles" title="Permanent link">&para;</a></h2>
+<p>We cover the SAFE-D principles in greater detail in our our course on <a href="../../../rri/">responsible research and innovation</a>.
+Here, it will suffice to simply summarise them and explain how they can support responsible public engagement through some illustrative examples.
+We will return to some of the examples in later activities.</p>
+<p>In general, the SAFE-D principles are designed to support responsible project governance in data science and AI research and innovation.
+Insofar as public engagement forms a key part of this research and innovation, the SAFE-D principles serve as useful ethical reflection points to help design responsible public engagement activities.</p>
+<h3 id="sustainability">Sustainability<a class="headerlink" href="#sustainability" title="Permanent link">&para;</a></h3>
+<p>Sustainability can mean a couple of things.
+From a technical perspective, sustainability requires the outputs of a project to be safe, secure, robust, and reliable.
+For example, if an organisation is developing an autonomous vehicle, it should operate safely in the intended context of use.
+However, in the context of responsible data science and AI, there is also a social sustainability component.
+This aspect of sustainability requires a project’s practices and outputs to be informed a) by ongoing consideration of the risks of harm to individuals and society, even after the system has been deployed and the project completed—a long-term (or sustainable) safety—but also b) by the shared values that motivate the pursuit of social goals.</p>
+<p>The final point in the above summary is significant for public engagement, and connects with the following question:</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Who Designs the Future?</p>
+</div>
+<p>As society continues to stagger forward feeling the ongoing effects of the global pandemic, while struggling with the increasing complexity and uncertainty that a modern, data-driven society poses, the ability for particular voices to participate in imagining a collective vision for the future becomes increasingly difficult.
+This can lead to a growing distrust in vital social institutions as people become alienated from society.</p>
+<p>In response, organisations like Nesta in the UK are carrying out public engagement activities focused on building "<a href="https://www.nesta.org.uk/project/participatory-futures/">participatory futures</a>", which aim to include marginalised or systematically excluded voices in these conversations.
+Public engagement activities and events such as these can play a vital role in supporting sustainable research and innovation.</p>
+<h3 id="accountability">Accountability<a class="headerlink" href="#accountability" title="Permanent link">&para;</a></h3>
+<p>In contrast to responsibility, accountability is often seen as a <em>backwards-looking</em> process of holding an individual or organisation to account.
+It is commonly associated with regulation and governance, but in the context of data science or AI research and innovation, it goes beyond these matters.</p>
+<p>In this context, 'accountability' refers to the transparency of processes and associated outcomes that enable people to understand how a project was conducted (e.g., project documentation), or why a specific decision was reached.
+But it can also refer to broader processes of responsible project governance that seek to establish clear roles of responsibility where full transparency may be inappropriate (e.g., confidential projects).</p>
+<p>Without this broader, end-to-end awareness of accountability throughout a project's lifecycle, it is possible that harms could arise such that specific individuals are stripped of their ability to seek redress for their grievances or violations of certain rights.</p>
+<p>Responsible public engagement, therefore, can serve as a way to ensure that a project and its associated outputs remain sufficiently accountable, by ensuring that all affected stakeholders are able to voice potential concerns.
+The following quote is a nice reflection point for the values contained within this principle:</p>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>Sometimes we want everyone’s voice to be heard because we think that will make a better decision as a result, and sometimes we want everyone’s voice to be heard simply because we think that everyone has a right to be heard.[@macgilvray2014]</p>
+</div>
+<h3 id="fairness">Fairness<a class="headerlink" href="#fairness" title="Permanent link">&para;</a></h3>
+<p>Consider the following statistic:</p>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>15 per cent of scientists come from working class backgrounds; and in the US, children from the top 1 per cent of richest families (by income) are ten times as likely to have filed for a patent as those from families in the bottom half of the income distribution.[@saunders2018]</p>
+</div>
+<p>While much has been done in the past decade to improve access to science and technology, there is, of course, still a lot more that needs to be done to ensure all individuals have an equal opportunity to participate in a core part of society.
+This is, ultimately, a matter of fairness.</p>
+<p>Fairness is inseparably connected with legal conceptions of equality and justice.
+In the context of data science or AI, this often leads to an emphasis on features such as non-discrimination, equitable outcomes of automated decisions, or procedural fairness through bias mitigation.
+However, these notions serve only a subset of broader ethical considerations pertaining to social justice, socioeconomic capabilities, diversity and inclusivity.</p>
+<p>As the above quote acknowledges, fairness is also a matter of addressing the socioeconomic barriers that prevent or make it difficult for certain individuals or communities to participate.
+Responsible public engagement, therefore, can help researchers or developers identify relevant barriers and work with affected people to co-design ways to improve capabilities.</p>
+<h3 id="explainability">Explainability<a class="headerlink" href="#explainability" title="Permanent link">&para;</a></h3>
+<p>Explainability has received widespread attention in recent years from many within the AI community.
+This is because it is a key requirement for autonomous and informed decision-making in situations where data-driven systems interact with or influence human judgement and choice behaviour.
+For example, if an autonomous vehicle is involved in an accident or if a algorithmic system fails to recognise a fault in vital energy infrastructure, the reasons for these unexpected and undesirable behaviours needs to be identified.</p>
+<p>As such, there needs to be a) interpretability of the system itself (e.g., an ability to make sense of the underlying logic by which a system reaches a decision) and b) the ability to translate this information into a variety of explanations that are acceptable to relevant users and stakeholders.
+On this second point, public engagement can support evaluation and determination of both the accessibility and usability of different explanations, as well as providing input on possible trade-offs between, say, the interpretability and accuracy of possible system types (e.g., decision trees versus neural networks).<sup id="fnref:explainability"><a class="footnote-ref" href="#fn:explainability">3</a></sup></p>
+<h3 id="data-quality-integrity-privacy-and-protection">Data Quality, Integrity, Privacy and Protection<a class="headerlink" href="#data-quality-integrity-privacy-and-protection" title="Permanent link">&para;</a></h3>
+<p>Data quality, integrity, protection and privacy must all be established to be confident that a research or innovation project has been designed, developed, and deployed in a responsible manner.</p>
+<ul>
+<li>‘Data Quality’ captures the static properties of data, such as whether they are a) <em>relevant</em> to and <em>representative</em> of the domain and use context, b) <em>balanced</em> and <em>complete</em> in terms of how well the dataset represents the underlying data generating process, and c) <em>up-to-date</em> and <em>accurate</em> as required by the project.</li>
+<li>‘Data Integrity’ refers to more dynamic properties of data stewardship, such as how a dataset evolves over the course of a project lifecycle. In this manner, data integrity requires a) <em>contemporaneous</em> and <em>attributable</em> records from the start of a project (e.g., process logs; research statements), b) ensuring <em>consistent</em> and <em>verifiable</em> means of data analysis or processing during development, and c) taking steps to establish <em>findable</em>, <em>accessible</em>, <em>interoperable</em>, and <em>reusable</em> records towards the end of a project’s lifecycle.</li>
+<li>‘Data protection and privacy’ reflect ongoing developments and priorities as set out in relevant legislation and regulation of data practices as they pertain to fundamental rights and freedoms, democracy, and the rule of law. For example, the right for data subjects to have inaccurate personal data rectified or erased.</li>
+</ul>
+<p>These final properties are, typically, more technical than the others (e.g., requiring legal expertise to determine if a project violates any data protection laws).
+However, public engagement can help determine whether a project that is legal is also acceptable from a moral perspective.</p>
+<p>For example, if a research project uses a basis of informed consent to collect and process personal data, are the participants able to opt-out at a later stage and are their processes to make this decision easy and accessible for participants.
+Whether this is the case will, invariably, be a matter of working with participants to determine.</p>
+<p>--8&lt;-- "includes/abbreviations.md"</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:aversion">
+<p>Algorithmic aversion refers to the reluctance of human agents to incorporate algorithmic tools as part of their decision-making processes due to misaligned expectations of the algorithm’s performance (see Burton et al. 2020).&#160;<a class="footnote-backref" href="#fnref:aversion" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:epsrc">
+<p>There are increasing signs of reform in the funding landscape, however, with more funding bodies favouring applications that demonstrate commitments to responsible research and innovation or include early career researchers as co-investigators.&#160;<a class="footnote-backref" href="#fnref:epsrc" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:explainability">
+<p>For more on the explainability/accuracy trade-off see <a href="/rri/chapter3/model_development/model_testing.md">this page</a>.&#160;<a class="footnote-backref" href="#fnref:explainability" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 Alan Turing Institute</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../javascripts/mathjax.js" defer></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+        <script src="../../../javascripts/tablesort.js" defer></script>
+        <script src="../../../javascripts/case-studies.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

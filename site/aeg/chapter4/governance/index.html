@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://alan-turing-institute.github.io/turing-commons/aeg/chapter4/governance/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>AI Governance - Turing Commons</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../../../stylesheets/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Turing Commons</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../welcome/" class="nav-link">Welcome</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Responsible Research and Innovation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../rri/" class="dropdown-item">(RRI) About this Course</a>
+</li>
+                                    
+<li>
+    <a href="../../../rri/intro/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Responsible Research and Innovation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/responsibility/" class="dropdown-item">What is Responsibility</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/history/" class="dropdown-item">A Short History of RRI</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/sts/" class="dropdown-item">Science, Technology, and Society</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/timeline/" class="dropdown-item">Science and Technology Studies Timeline</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Data Science and AI</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/responsible_ds/" class="dropdown-item">What is Responsible Data Science and AI</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/project_lifecycle/" class="dropdown-item">Introducing the Project Lifecycle</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/roles_responsibility/" class="dropdown-item">Roles and Responsibilities</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/understanding_bias/" class="dropdown-item">Understanding Bias</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Project Lifecycle</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/activities/case_studies/" class="dropdown-item">Case Studies</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/planning/" class="dropdown-item">Project Planning</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/problem/" class="dropdown-item">Problem Formulation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/data_extraction/" class="dropdown-item">Data Extraction or Procurement</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/data_analysis.ipynb" class="dropdown-item">Data Analysis</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/preprocessing/" class="dropdown-item">Preprocessing and Feature Engineering</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_selection/" class="dropdown-item">Model Selection and Training</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_testing/" class="dropdown-item">Model Testing and Validation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_reporting/" class="dropdown-item">Model Reporting</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/model_productionalisation/" class="dropdown-item">Model Productionalisation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/user_training/" class="dropdown-item">User Training</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/system_use.ipynb" class="dropdown-item">System Use and Monitoring</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/model_updating/" class="dropdown-item">Model Updating or Deprovisioning</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/summary/" class="dropdown-item">Next Steps</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Communication</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/assurance/" class="dropdown-item">What is Argument-Based Assurance</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/communication/" class="dropdown-item">Assurance and Responsible Communication</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/gpe/" class="dropdown-item">Goals, Properties, and Evidence</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../rri/conclusion/" class="dropdown-item">Conclusion</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/resources/" class="dropdown-item">Additional Resources</a>
+</li>
+            
+<li>
+    <a href="../../../rri/resources/synthetic_data_generation.ipynb" class="dropdown-item">Synthetic Data Generation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/resources/further-reading/" class="dropdown-item">Further Reading</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Public Engagement of Data Science and AI <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../ped/" class="dropdown-item">(PED) About this Course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Public Engagement?</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter1/ladder/" class="dropdown-item">Climbing the Ladder</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter1/goals/" class="dropdown-item">Goals of Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Value(s) of Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter2/deliberation/" class="dropdown-item">Deliberative Values</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter2/responsible/" class="dropdown-item">Responsible Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Facilitating Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter3/when/" class="dropdown-item">When should you engage</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter3/how/" class="dropdown-item">How should you engage</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Guidance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/storytelling/" class="dropdown-item">Storytelling with Data</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/uncertainty/" class="dropdown-item">Communicating Uncertainty</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/uncertainty_example.ipynb" class="dropdown-item">Visualising Uncertainty</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Public Trust and Assurance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter5/trust/" class="dropdown-item">Public Trust in Science and Technology</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">AI Ethics and Governance <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">(AEG) About this course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Ethics</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/metaethics/" class="dropdown-item">Introduction to Metaethics</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/normative/" class="dropdown-item">Introduction to Normative Theories</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Harms and Values</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter2/harms/" class="dropdown-item">AI Harms</a>
+</li>
+            
+<li>
+    <a href="../../chapter2/values/" class="dropdown-item">AI Values</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Sustainability</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/engagement/" class="dropdown-item">Stakeholder Engagement Process</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/impact/" class="dropdown-item">Stakeholder Impact Assessment</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Fairness & Bias Mitigation, Accountability, and Governance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../fairness/" class="dropdown-item">Introduction to Fairness</a>
+</li>
+            
+<li>
+    <a href="../aifairness/" class="dropdown-item">AI Fairness</a>
+</li>
+            
+<li>
+    <a href="../bias/" class="dropdown-item">Bias Mitigation</a>
+</li>
+            
+<li>
+    <a href="../accountability/" class="dropdown-item">Accountability</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">AI Governance</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Transparency, Explainability and CARE & ACT Principles</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/transparency/" class="dropdown-item">Transparency & Explainability</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/consider/" class="dropdown-item">Consider Context</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/anticipate/" class="dropdown-item">Anticipate Impacts</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/reflect/" class="dropdown-item">Reflect on Purpose, Positionality, and Power</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/engage/" class="dropdown-item">Engage Inclusively</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/act/" class="dropdown-item">Act Responsibly</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../blog/" class="dropdown-item">Blog</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../accountability/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../chapter5/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/alan-turing-institute/turing-commons/edit/master/docs/aeg/chapter4/governance.md" class="nav-link">Edit on alan-turing-institute/turing-commons
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#governance" class="nav-link">Governance</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#putting-accountability-into-practice" class="nav-link">Putting accountability into practice</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="governance">Governance<a class="headerlink" href="#governance" title="Permanent link">&para;</a></h1>
+<h2 id="putting-accountability-into-practice">Putting accountability into practice<a class="headerlink" href="#putting-accountability-into-practice" title="Permanent link">&para;</a></h2>
+<p>Now that we have explored some of the main aspects of the concept of accountability, we are ready to examine–in greater detail–how elements of answerability and auditability can be put into practice.</p>
+<p>The central importance of the end-to-end operability of good governance practices should guide your strategy to embed accountability across the project workflow. Three components are essential to creating a such a workflow:</p>
+<ol>
+<li>
+<p>Maintaining strong regimes of professional and institutional transparency.</p>
+</li>
+<li>
+<p>Establishing and maintaining a clear and accessible Process-Based Governance Framework (PBG Framework).</p>
+</li>
+<li>
+<p>Establishing a well-defined auditability trail for your PBG Framework through robust activity logging protocols that are consolidated digitally in a Process Log.</p>
+</li>
+</ol>
+<h3 id="maintaining-professional-and-institutional-transparency">Maintaining professional and institutional transparency<a class="headerlink" href="#maintaining-professional-and-institutional-transparency" title="Permanent link">&para;</a></h3>
+<p>At every stage of the design and implementation of your AI project, team members should be held to rigorous standards of conduct that secure and maintain professionalism and institutional transparency. These standards should include the core values of selflessness, integrity, honesty, accountability, openness, sincerity, neutrality, objectivity, impartiality, and leadership. </p>
+<!-- All professionals involved in the research, development, production, and implementation of AI technologies are, first and foremost, acting as fiduciaries of the public interest and must, in keeping with these core values of the Civil Service, put the obligations to serve that interest above any other concerns. For helpful guidance on professionalism and good conduct for public office holders, see the Seven Principles of Public Life (also known as the Nolan Principles). -->
+
+<p>Furthermore, from start to finish of the AI project lifecycle, the design, development, and deployment process should be as transparent and as open to public scrutiny as possible with restrictions on accessibility to relevant information limited to the reasonable protection of justified confidentiality and of analytics that may tip off bad actors to methods of gaming the system of service provision or otherwise taking advantage of their insight to the detriment of the system's performance or the rest of the users.</p>
+<h3 id="process-based-governance-framework">Process-based governance framework<a class="headerlink" href="#process-based-governance-framework" title="Permanent link">&para;</a></h3>
+<p>We have looked at some of the most important values and princciples necessary for establishing responsible innovation practices in the AI project lifecycle.</p>
+<p>Perhaps the most vital of these measures is the effective operationalisation of these practices.The recently-adopted standard, ISO 37000, defines governance as ‘the system by which the whole organisation is directed, controlled, and held accountable to achieve its core purpose in the long run’. </p>
+<p>Establishing a diligent and well-conceived governance framework that covers the entire design, development, and deployment process will provide the foundation for effectively establishing needed practical actions and controls, exhaustively distributing roles and responsibilities, and operationalising answerability and auditability throughout the AI lifecycle. Organising all of the governance actions into a PBG Framework is a way to better accomplish this task.</p>
+<p>The purpose of a PBG Framework is to provide a template for the integrations of the norms, values, and principles, which motivate and steer responsible innovation, with the actual processes that characterise the AI design and development pipeline. Establishing a PBG framework creates the baseline conditions for ensuring that the goal of instituting an AI innovation process that is accountable-by-design is achieved.</p>
+<p>A PBG Framework should give the team a landscape view of the governance actions that are organising the control structures of the project workflow. Constructing a good PBG Framework will provide the team with a big picture of:</p>
+<p>• The relevant stages of the workflow in which actions are necessary to meet governance goals</p>
+<p>• The relevant team members and roles involved in each governance action</p>
+<p>• Explicit timeframes for any necessary follow-up actions, re-assessments, and continual monitoring</p>
+<p>• Clear and well-defined protocols for logging activity and for instituting mechanisms to assure end-to-end auditability and appropriate documentation</p>
+<p>The PBG framework asks that teams not only outline the governance actions established for individual projects, but also roles involved in each action, timeframes for follow-up actions, and logging protocols.</p>
+<figure>
+<p><img align="center" alt="pbgf" src="../../../assets/images/graphics/pbgf-template.png" /></p>
+</figure>
+<figure>
+<p><img align="center" alt="pbgf2" src="../../../assets/images/graphics/pbgf-template2.png" /></p>
+</figure>
+<figure>
+<p><img align="center" alt="pbgf3" src="../../../assets/images/graphics/pbgf-template3.png" /></p>
+</figure>
+<h3 id="establishing-proportional-governance-actions">Establishing proportional governance actions<a class="headerlink" href="#establishing-proportional-governance-actions" title="Permanent link">&para;</a></h3>
+<p>Just as with the determination of proportionate stakeholder involvement, the establishment of proportionate governance protocols should involve a preliminary assessment of the potential risks and hazards of the model or tool under consideration. Low-stakes AI applications that are not safety critical, do not directly impact the lives of people, and do not process potentially sensitive social and demographic data may need less proactive governance controls and processes than high-stakes projects. </p>
+<p>By completing the Project Summary Report and Stakeholder Impact Assessments, the project team will need to carry out evaluations of the scope of the possible risks that could arise from the project and of the potential hazards it poses to affected individuals and groups. These assessments of the dangers posed to individual wellbeing and public welfare will help formulate proportionate governance actions to be outlined in the PBG framework.</p>
+<p>Notwithstanding the importance of the need for this reasonable application of proportionate governance actions,  a strong regime of accountability-by-design across the project lifecycle should nonetheless be established. It may be the case that the assessment of potential risks and adverse impacts does not sufficiently anticipate the full range of possible harms. In instances where such unforeseen harms do arise,  proper mechanisms of anticipatory accountability and corresponding documentation protocols should already be in place, so that the best practices of the project team are demonstrable.</p>
+<p><strong>Here is a summary picture of where all possible governance actions fit across the project workflow:</strong></p>
+<figure>
+<p><img align="center" alt="pbg" src="../../../assets/images/graphics/pbg.png" /></p>
+</figure>
+<p>Each principle can be operationalised through specific processes:</p>
+<div class="admonition note">
+<p class="admonition-title">Sustainability</p>
+<p><strong>Stakeholder engagement process (SEP)</strong></p>
+<p>Process facilitating a contextually informed understanding of the social environment and human factors that may be impacted by, or may impact, individual AI projects, and the uptake of proportionate stakeholder engagement and input throughout the AI lifecycle.</p>
+<p><strong>Stakeholder impact assessment (SIA)</strong></p>
+<p>Process facilitating the iterative evaluation of the social impact and sustainability of individual AI projects, as well as the corroboration of these potential impacts in dialogue with stakeholders, when appropriate.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Safety</p>
+<p><strong>SSA &amp; RA (Safety Self-Assessment and  Risk Management)</strong></p>
+<p>Process facilitating the evaluation of how AI projects align with safety objectives through the iterative identification and documentation of risks of potential safety risks across the lifecycle, and assurance actions implemented to address these.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Responsible data management</p>
+<p><strong>Data factsheet</strong></p>
+<p>Live document facilitating the uptake of best practices for Responsible Data Management and Stewardship across the AI project workflow by facilitating the documentation of a comprehensive record of the data lineage iterative assessments of data integrity, quality, protection, and privacy.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Fairness</p>
+<p><strong>BSA &amp; RM (Bias self-assessment &amp; risk management)</strong></p>
+<p>Process facilitating the  evaluation of how AI projects align with the principle of fairness through the iterative identification and documentation of risks of bias across the lifecycle, and assurance actions implemented to address these.</p>
+<p><strong>Fairness position statement</strong></p>
+<p>Document establishing the metric-based fairness criteria for individual AI projects, providing an explanation in plain and nontechnical language.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Accountability</p>
+<p><strong>PBG Framework</strong></p>
+<p>Live document outlining governance actions, relevant team members and roles involved in each action, timeframes for follow-up actions, and logging protocols, for individual AI projects. </p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Explainability</p>
+<p><strong>Transparency &amp; EAM (explainability assurance management)</strong></p>
+<p>Iterative process aimed to facilitate the implementation and evaluation of transparency and explainability assurance activities across the project lifecycle and assist in providing clarification of AI system outputs to a range of impacted stakeholders.</p>
+</div>
+<h3 id="accountability-across-the-workflow">Accountability across the workflow<a class="headerlink" href="#accountability-across-the-workflow" title="Permanent link">&para;</a></h3>
+<p>The task of establishing a PBG framework for the project should be initially undertaken in the project planning step of the project alongside the Project Summary Report  The results of the Stakeholder Analysis (particularly, the scoping of potential stakeholder impacts) should inform a proportional selection of governance actions within the PBG framework. At this stage, the PBG framework will provide a prospective and provisional plotting of governance actions, roles, and responsibilities for the project. This preliminary outline of governance structures will provide the necessary information for answering the Governance Framework Reflection questions within the PS Report.</p>
+<p>In the PS Report, the task of reflecting on your governance framework on your involves answering the following questions:</p>
+<ol>
+<li>
+<p>Do established governance actions proportionally mitigate possible harms to stakeholders posed by this project? If not, how can your PBG framework be rectified to address these potential harms?</p>
+</li>
+<li>
+<p>Does this distribution of responsibilities outlined in the PBG Framework establish a continuous chain of human accountability throughout the design, development, and deployment of this project? If not, how can any identified gaps or breaks in the chain be rectified in the PBG Framework?</p>
+</li>
+<li>
+<p>How will you ensure that all team members, who are assigned roles/responsibilities understand the roles/responsibilities that have been assigned to them?</p>
+</li>
+<li>
+<p>If you are procuring parts or elements of the system from third-party vendors, suppliers, sub-contractors, or external developers, how are you instituting appropriate governance controls that will establish end-to-end accountability, traceability, and auditability for these procured parts or elements?</p>
+</li>
+<li>
+<p>If any data being used in the production of the AI system will be acquired from a vendor, supplier, or third party, how are you instituting appropriate governance controls that will establish end-to-end accountability, answerability, and auditability across the data lifecycle?</p>
+</li>
+</ol>
+<p>These questions (alongside the rest of the PS Report) are to be revisited and updated as part of completing each iteration of the Stakeholder Impact Assessment, at each point informing any necessary updates to the project’s governance structure (and PBG framework). The PBG Framework is therefore a live document reflecting a governance structure that responds to the emerging needs across the design, development, and deployment lifecycle. It is to be updated after each revisitation of the PS report to reflect the project’s current governance structure.</p>
+<p>The process by which these questions are answered should be as collaborative and inclusive as possible. The aim is to involve all relevant members of the project team (and any other relevant managers, operators, or vendors), so that all people involved in the workflow can share input and come to understand expectations about their roles and responsibilities. Any future revisions or updates of this part of the PS Report should likewise include all affected parties.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 Alan Turing Institute</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../javascripts/mathjax.js" defer></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+        <script src="../../../javascripts/tablesort.js" defer></script>
+        <script src="../../../javascripts/case-studies.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

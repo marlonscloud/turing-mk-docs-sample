@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://alan-turing-institute.github.io/turing-commons/aeg/chapter5/transparency/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Transparency & Explainability - Turing Commons</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../../../stylesheets/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Turing Commons</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../welcome/" class="nav-link">Welcome</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Responsible Research and Innovation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../rri/" class="dropdown-item">(RRI) About this Course</a>
+</li>
+                                    
+<li>
+    <a href="../../../rri/intro/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Responsible Research and Innovation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/responsibility/" class="dropdown-item">What is Responsibility</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/history/" class="dropdown-item">A Short History of RRI</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/sts/" class="dropdown-item">Science, Technology, and Society</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/timeline/" class="dropdown-item">Science and Technology Studies Timeline</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Data Science and AI</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/responsible_ds/" class="dropdown-item">What is Responsible Data Science and AI</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/project_lifecycle/" class="dropdown-item">Introducing the Project Lifecycle</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/roles_responsibility/" class="dropdown-item">Roles and Responsibilities</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/understanding_bias/" class="dropdown-item">Understanding Bias</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Project Lifecycle</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/activities/case_studies/" class="dropdown-item">Case Studies</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/planning/" class="dropdown-item">Project Planning</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/problem/" class="dropdown-item">Problem Formulation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/data_extraction/" class="dropdown-item">Data Extraction or Procurement</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/data_analysis.ipynb" class="dropdown-item">Data Analysis</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/preprocessing/" class="dropdown-item">Preprocessing and Feature Engineering</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_selection/" class="dropdown-item">Model Selection and Training</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_testing/" class="dropdown-item">Model Testing and Validation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_reporting/" class="dropdown-item">Model Reporting</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/model_productionalisation/" class="dropdown-item">Model Productionalisation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/user_training/" class="dropdown-item">User Training</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/system_use.ipynb" class="dropdown-item">System Use and Monitoring</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/model_updating/" class="dropdown-item">Model Updating or Deprovisioning</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/summary/" class="dropdown-item">Next Steps</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Communication</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/assurance/" class="dropdown-item">What is Argument-Based Assurance</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/communication/" class="dropdown-item">Assurance and Responsible Communication</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/gpe/" class="dropdown-item">Goals, Properties, and Evidence</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../rri/conclusion/" class="dropdown-item">Conclusion</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/resources/" class="dropdown-item">Additional Resources</a>
+</li>
+            
+<li>
+    <a href="../../../rri/resources/synthetic_data_generation.ipynb" class="dropdown-item">Synthetic Data Generation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/resources/further-reading/" class="dropdown-item">Further Reading</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Public Engagement of Data Science and AI <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../ped/" class="dropdown-item">(PED) About this Course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Public Engagement?</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter1/ladder/" class="dropdown-item">Climbing the Ladder</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter1/goals/" class="dropdown-item">Goals of Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Value(s) of Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter2/deliberation/" class="dropdown-item">Deliberative Values</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter2/responsible/" class="dropdown-item">Responsible Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Facilitating Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter3/when/" class="dropdown-item">When should you engage</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter3/how/" class="dropdown-item">How should you engage</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Guidance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/storytelling/" class="dropdown-item">Storytelling with Data</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/uncertainty/" class="dropdown-item">Communicating Uncertainty</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/uncertainty_example.ipynb" class="dropdown-item">Visualising Uncertainty</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Public Trust and Assurance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter5/trust/" class="dropdown-item">Public Trust in Science and Technology</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">AI Ethics and Governance <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">(AEG) About this course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Ethics</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/metaethics/" class="dropdown-item">Introduction to Metaethics</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/normative/" class="dropdown-item">Introduction to Normative Theories</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Harms and Values</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter2/harms/" class="dropdown-item">AI Harms</a>
+</li>
+            
+<li>
+    <a href="../../chapter2/values/" class="dropdown-item">AI Values</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Sustainability</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/engagement/" class="dropdown-item">Stakeholder Engagement Process</a>
+</li>
+            
+<li>
+    <a href="../../chapter3/impact/" class="dropdown-item">Stakeholder Impact Assessment</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Fairness & Bias Mitigation, Accountability, and Governance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/fairness/" class="dropdown-item">Introduction to Fairness</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/aifairness/" class="dropdown-item">AI Fairness</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/bias/" class="dropdown-item">Bias Mitigation</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/accountability/" class="dropdown-item">Accountability</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/governance/" class="dropdown-item">AI Governance</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Transparency, Explainability and CARE & ACT Principles</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Transparency & Explainability</a>
+</li>
+            
+<li>
+    <a href="../consider/" class="dropdown-item">Consider Context</a>
+</li>
+            
+<li>
+    <a href="../anticipate/" class="dropdown-item">Anticipate Impacts</a>
+</li>
+            
+<li>
+    <a href="../reflect/" class="dropdown-item">Reflect on Purpose, Positionality, and Power</a>
+</li>
+            
+<li>
+    <a href="../engage/" class="dropdown-item">Engage Inclusively</a>
+</li>
+            
+<li>
+    <a href="../act/" class="dropdown-item">Act Responsibly</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../blog/" class="dropdown-item">Blog</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../consider/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/alan-turing-institute/turing-commons/edit/master/docs/aeg/chapter5/transparency.md" class="nav-link">Edit on alan-turing-institute/turing-commons
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#transparency-and-explainability" class="nav-link">Transparency and Explainability</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#introduction-to-transparency-and-explainability" class="nav-link">Introduction to transparency and explainability</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#defining-transparent-ai" class="nav-link">Defining transparent AI</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#process-based-vs-outcome-based" class="nav-link">Process-based vs outcome-based</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#six-main-types-of-explanations" class="nav-link">Six main types of explanations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#putting-the-principle-of-transparency-and-explainability-into-practice" class="nav-link">Putting the Principle of Transparency and Explainability into Practice</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="transparency-and-explainability">Transparency and Explainability<a class="headerlink" href="#transparency-and-explainability" title="Permanent link">&para;</a></h1>
+<figure>
+<p><img align="center" alt="phone-peel" src="../../../assets/images/illustrations/phone-peel-background.png" /></p>
+</figure>
+<h2 id="introduction-to-transparency-and-explainability">Introduction to transparency and explainability<a class="headerlink" href="#introduction-to-transparency-and-explainability" title="Permanent link">&para;</a></h2>
+<h2 id="defining-transparent-ai">Defining transparent AI<a class="headerlink" href="#defining-transparent-ai" title="Permanent link">&para;</a></h2>
+<p>Transparency as a principle of AI ethics differs a bit in meaning from the everyday use of the term. The common dictionary understanding of transparency defines it as either </p>
+<p>(1) the quality an object has when one can see clearly through it or </p>
+<p>(2) the quality of a situation or process that can be clearly justified and explained because it is open to inspection and free from secrets. </p>
+<p>Transparency as a principle of AI ethics encompasses both of these meanings:</p>
+<p>On the one hand, transparent AI involves the interpretability of a given AI system, i.e. the ability to know how and why a model performed the way it did in a specific context and therefore to understand the rationale behind its decision or behaviour. This sort of transparency is often referred to by way of the metaphor of ‘opening the black box’ of AI. It involves content clarification and intelligibility or explicability.</p>
+<p>On the other hand, transparent AI involves the justifiability of both of the processes that go into its design and implementation and of its outcome. It therefore involves the soundness of the justification of its use. In this more normative meaning, transparent AI is practically justifiable in an unrestricted way if one can demonstrate that both the design and implementation processes that have gone into the particular decision or behaviour of a system and the decision or behaviour itself are sustainable, safe, fair, and driven by responsibly managed data. </p>
+<h2 id="process-based-vs-outcome-based">Process-based vs outcome-based<a class="headerlink" href="#process-based-vs-outcome-based" title="Permanent link">&para;</a></h2>
+<p>The two-pronged definition of transparency as a principle of AI ethics asks that the project team thinks about transparent AI </p>
+<ul>
+<li>
+<p>in terms of the process behind it (the design and implementation practices that lead to an algorithmically supported outcome); and,</p>
+</li>
+<li>
+<p>in terms of its product (the content and justification of that outcome).</p>
+</li>
+</ul>
+<p>This also means that explanations are provided to impacted stakeholders that demonstrate how the team and all others involved in the development of the system acted responsibly when choosing the processes behind its design and deployment; and make the reasoning behind the outcome of that decision clear.</p>
+<p><strong>Process-based explanation</strong> of AI systems are about demonstrating that good governance processes and best practices have been followed throughout the design, development and use of the AI system. This entails demonstrating that considerations of sustainability, safety, fairness, and responsible data management were operative end-to-end in the project lifecycle. </p>
+<p>For example, if trying to explain the fairness and safety of a particular AI-assisted decision, one component of this explanation will involve establishing that adequate measures across the system’s production and deployment have been taken to ensure that its outcome is fair and safe.</p>
+<p><strong>Outcome-based explanations</strong> of AI systems are about clarifying the results of a specific decision. They involve explaining the reasoning behind a <em>particular algorithmically generated outcome</em> in plain, easily understandable, and everyday language that is socially meaningful to impacted stakeholders (understandable in terms of the contextual factors and relationships that it implicates). </p>
+<ul>
+<li>If there is meaningful human involvement in the decision-making process, 
+it should also be made clear to the affected individual how and why a human judgement that is assisted by an AI output was reached.</li>
+</ul>
+<p>In addition, an adequate explanantion will also need to confirm that the actual outcome of an AI decision meets criteria previously established in the design process to ensure that the AI system is being used in a fair, safe, and ethical way. An explanation to affected stakeholders should also include a demonstration that a specific decision or behaviour of the system is sustainable, safe, fair, and driven by data that has been responsibly managed. </p>
+<figure>
+<p><img align="center" alt="phone-peel" src="../../../assets/images/illustrations/lifecycle-stylised-alt.png" /></p>
+</figure>
+<h2 id="six-main-types-of-explanations">Six main types of explanations<a class="headerlink" href="#six-main-types-of-explanations" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<ol>
+<li>Rationale explanation</li>
+<li>Responsibility explanation</li>
+<li>Data explanation</li>
+<li>Fairness explanation</li>
+<li>Safety and performance explanation</li>
+<li>Impact explanation</li>
+</ol>
+</div>
+<h3 id="rationale-explanation">Rationale explanation<a class="headerlink" href="#rationale-explanation" title="Permanent link">&para;</a></h3>
+<p>What does this explanation help people understand?</p>
+<p><strong>It is about the ‘why?’ of an AI decision.</strong> It helps people understand the reasons that led to a decision outcome, in an accessible way.</p>
+<p>What does this type of explanation include?</p>
+<ul>
+<li>
+<p>How the system performed and behaved to get to that decision outcome.</p>
+</li>
+<li>
+<p>How the different components in the AI system led it to transform inputs into outputs in a particular way. This will help communicate which features, interactions, and parameters were most significant.</p>
+</li>
+<li>
+<p>How these technical components of the logic underlying the result can provide supporting evidence for the decision reached.</p>
+</li>
+<li>
+<p>How this underlying logic can be conveyed as easily understandable reasons to decision recipients.</p>
+</li>
+<li>
+<p>How do the system’s results apply to the concrete context and life situation of the affected individual.</p>
+</li>
+</ul>
+<p>What rationale explanations might answer:</p>
+<ul>
+<li>
+<p>Will the selected algorithmic model, or set of models, provide a degree of interpretability that corresponds with its impact on affected individuals?</p>
+</li>
+<li>
+<p>Are the supplementary explanation tools being used to help make the complex system explainable good enough to provide meaningful and accurate information about its underlying logic?</p>
+</li>
+</ul>
+<p><strong>What information goes into rationale explanations</strong></p>
+<p>As with the other types of explanation, rationale explanations can be process-based or outcome-based.</p>
+<p>Process-based explanations clarify:</p>
+<ul>
+<li>
+<p>How the procedures set up help provide meaningful explanations of the underlying logic of the AI model’s results.</p>
+</li>
+<li>
+<p>How these procedures are suitable given the model’s particular domain context and its possible impacts on the affected decision recipients and wider society.</p>
+</li>
+<li>
+<p>How the system’s design and deployment workflow has been set up so that it is appropriately interpretable and explainable, including its data collection and preprocessing, model selection, explanation extraction, and explanation delivery procedures.</p>
+</li>
+</ul>
+<p>Outcome-based explanations provide:</p>
+<ul>
+<li>
+<p>The formal and logical rationale of the AI system – how the system is verified against its formal specifications. In this way, one can verify that the AI system will operate reliably and behave in accordance with its intended functionality.</p>
+</li>
+<li>
+<p>The technical rationale of the system’s output – how the model’s components (its variables and rules) transform inputs into outputs, so that the role these components play in producing that output is known. By understanding the roles and functions of the individual components, it is possible to identify the features and parameters that significantly influence a particular output.</p>
+</li>
+<li>
+<p>Translation of the system’s workings – its input and output variables, parameters and so on – into accessible everyday language. This enables those in charge of the AI system to clarify, in plain and understandable terms, what role these factors play in reasoning about the real-world problem that the model is trying to address or solve.</p>
+</li>
+<li>
+<p>Clarification of how a statistical result is applied to the individual concerned.</p>
+</li>
+</ul>
+<h3 id="responsibility-explanation">Responsibility explanation<a class="headerlink" href="#responsibility-explanation" title="Permanent link">&para;</a></h3>
+<p>What does this explanation help people understand?</p>
+<p>It helps people understand <strong>‘who’ is involved in the development and management of the AI model</strong>, and <strong>‘who’ to contact for a human review of a decision</strong>.</p>
+<p>What does this type of explanation include?</p>
+<ul>
+<li>
+<p>Who is accountable at each stage of the AI system’s design and deployment, from defining outcomes for the system at its initial phase of design, through to providing the explanation to the affected individual at the end.</p>
+</li>
+<li>
+<p>Definitions of the mechanisms by which each of these people will be held accountable, as well as how the design and implementation processes of the AI system have been made traceable and auditable.</p>
+</li>
+</ul>
+<p><strong>What information goes into responsibility explanations</strong></p>
+<p>Process-based explanations clarify:</p>
+<ul>
+<li>
+<p>The roles and functions across the organisation that are involved in the various stages of developing and implementing an AI system, including any human involvement in the decision-making. If the system, or parts of it, are procured, thjen information about the providers or developers involved should be included.</p>
+</li>
+<li>
+<p>Broadly, what the roles do, why they are important, and where overall responsibility lies for management of the AI model – who is ultimately accountable.</p>
+</li>
+<li>
+<p>Who is responsible at each step from the design of an AI system through to its implementation to make sure that there is effective accountability throughout.</p>
+</li>
+</ul>
+<p>Outcome-based explanations:</p>
+<p>Because a responsibility explanation largely has to do with the governance of the design and implementation of AI systems, it is, in a strict sense, entirely process-based. Even so, there is important information about post-decision procedures that should be provided:</p>
+<ul>
+<li>
+<p>Cover information on how to request a human review of an AI-enabled decision or object to the use of AI, including details on who to contact, and what the next steps will be (e.g., how long it will take, what the human reviewer will take into account, how they will present their own decision and explanation).</p>
+</li>
+<li>
+<p>Give individuals a way to directly contact the role or team responsible for the review (this does not necessarily have to be a specific individual within the organisation).</p>
+</li>
+</ul>
+<h3 id="data-explanation">Data explanation<a class="headerlink" href="#data-explanation" title="Permanent link">&para;</a></h3>
+<p>What does this explanation help people understand?</p>
+<p>Data explanations are about <strong>the ‘what’ of AI-assisted decisions</strong>. They let people know what data about them were used in a particular AI decision, as well as any other sources of data. Generally, they also help individuals understand more about the data used to train and test the AI model. </p>
+<p>What does this type of explanation include?</p>
+<ul>
+<li>
+<p>How the data used to train, test, and validate an AI model was managed and utilised from collection through processing and monitoring.</p>
+</li>
+<li>
+<p>Which data was used in a particular decision and how.</p>
+</li>
+</ul>
+<p><strong>What information goes into data explanations</strong></p>
+<p>Process-based explanations include:</p>
+<ul>
+<li>
+<p>What training/testing/validating data was collected, the sources of that data, and the methods that were used to collect it.</p>
+</li>
+<li>
+<p>Who took part in choosing the data to be collected or procured and who was involved in its recording or acquisition. </p>
+</li>
+<li>
+<p>How procured or third-party provided data was vetted.</p>
+</li>
+<li>
+<p>How data quality was assessed and the steps that were taken to address any quality issues discovered, such as completing or removing data.</p>
+</li>
+<li>
+<p>What the training/testing/validating split was and how it was determined.</p>
+</li>
+<li>
+<p>How data pre-processing, labelling, and augmentation supported the interpretability and explainability of the model.</p>
+</li>
+<li>
+<p>What measures were taken to ensure the data used to train, test, and validate the system was representative, relevant, accurately measured, and generalisable.</p>
+</li>
+<li>
+<p>How potential bias and discrimination in the dataset have been mitigated.</p>
+</li>
+</ul>
+<p>Outcome-based explanations:</p>
+<ul>
+<li>
+<p>Clarify the input data used for a specific decision, and the sources of that data. This is outcome-based because it refers to the AI system’s result for a particular decision recipient.</p>
+</li>
+<li>
+<p>In some cases, the output data may also require an explanation, particularly where the decision recipient has been placed in a category which may not be clear to them. For example, in the case of anomaly detection for financial fraud identification, the output might be a distance measure which places them at a certain distance away from other people based on their transaction history. Such a classification may require an explanation.</p>
+</li>
+</ul>
+<h3 id="fairness-explanation">Fairness explanation<a class="headerlink" href="#fairness-explanation" title="Permanent link">&para;</a></h3>
+<p>What does this explanation help people understand?</p>
+<p>The fairness explanation is about helping people understand the steps have been taken (and will continue to be taken) to ensure an AI decisions are generally unbiased and equitable. 
+It also gives people an understanding of whether or not they have been treated equitably themselves.</p>
+<p>What does this type of explanation include?</p>
+<p>An explanation of fairness can relate to several stages of the design, development and deployment of AI systems:</p>
+<p>A) Data fairness: 
+The system is trained and tested on properly representative, relevant, accurately measured, and generalisable datasets (note that this dataset fairness component will overlap with data explanation). </p>
+<p>This may include showing that the data used is:</p>
+<ul>
+<li>
+<p>as representative as possible of all those affected;</p>
+</li>
+<li>
+<p>sufficient in terms of its quantity and quality, so it represents the underlying population and the phenomenon being modelled;</p>
+</li>
+<li>
+<p>assessed and recorded through suitable, reliable and impartial sources of measurement and has been sourced through sound collection methods;</p>
+</li>
+<li>
+<p>up-to-date and accurately reflects the characteristics of individuals, populations and the phenomena that is being modeled; and</p>
+</li>
+<li>
+<p>relevant by calling on domain experts to help the team understand, assess and use the most appropriate sources and types of data to serve the project's objectives.</p>
+</li>
+</ul>
+<p>B) Design fairness:</p>
+<p>It needs to be appropriately shown the AI model's architectures do not include target variables, features,processes, or analytical structures (correlations, interactions, and inferences) which are unreasonable or unjustifiable. </p>
+<p>This may include showing that the following has been done:</p>
+<ul>
+<li>
+<p>Any underlying structural biases that may play a role in translating the objectives into target variables and measurable proxies have been identified. When defining the problem at the start of the AI project, these biases could influence what system designers expect target variables to measure and what they statistically represent.</p>
+</li>
+<li>
+<p>Biases in the data pre-processing phase have been mitigated by taking into account the sector or organisational context in which the AI system is being operated. When this process is automated or outsourced, one should be able to show that what was done has been reviewed and that oversight was maintained throughout. </p>
+</li>
+<li>
+<p>Information on the context of the metadata should also be included, so that those coming to the pre-processed data later on have access to the relevant properties when they undertake bias mitigation.</p>
+</li>
+<li>
+<p>Mitigated bias when the feature space was determined (i.e., when relevant features were selected as input variables for your model). Choices made about grouping or separating and including or excluding features, as well as more general judgements about the comprehensiveness or coarseness of the total set of features, may have consequences for protected groups of people.</p>
+</li>
+<li>
+<p>Mitigated bias when tuning parameters and setting metrics at the modelling, testing and evaluation stages (i.e., into the trained model). The AI development team should iterate the model and peer review it to help ensure that how they choose to adjust the dials and metrics of the model are in line with your objectives of mitigating bias.</p>
+</li>
+<li>
+<p>Mitigated bias by watching for hidden proxies for discriminatory features in the trained model, as these may act as influences on a model’s output. Designers should also look into whether the significant correlations and inferences determined by the model’s learning mechanisms are justifiable.</p>
+</li>
+</ul>
+<p>C) Metric-based fairness: 
+This is about making sure that the model does not have discriminatory or inequitable impact on the lives of the people it affects. This may include showing that:</p>
+<ul>
+<li>
+<p>The formal definition(s) of fairness that has been chosen is made explicit, as well as the reason why this decision. Data scientists can apply different formalised fairness criteria to choose how specific groups in a selected set will receive benefits in comparison to others in the same set, or how the accuracy or precision of the model will be distributed among subgroups; and</p>
+</li>
+<li>
+<p>the method applied in operationalising theformalised fairness criteria, for example, by reweighting model parameters; embedding trade-offs in a classification procedure; or re-tooling algorithmic results to adjust for outcome preferences.</p>
+</li>
+</ul>
+<p>D) Implementation fairness: 
+The AI sysetem is deployed by users sufficiently trained to implement it responsibly and without bias. This may include showing that implementers of the AI system have been appropriately prepared and trained to:</p>
+<ul>
+<li>
+<p>avoid automation bias (over-relying on the outputs of AI systems) or automation-distrust bias (under-relying on AI system outputs because of a lack of trust in them);</p>
+</li>
+<li>
+<p>use its results with an active awareness of the specific context in which they are being applied. They should understand the particular circumstances of the individual to which that output is being applied; and</p>
+</li>
+<li>
+<p>understand the limitations of the system. This includes understanding the statistical uncertainty associated with the result as well as the relevant error rates and performance metrics.</p>
+</li>
+</ul>
+<p><strong>What information goes into fairness explanations</strong></p>
+<p>This explanation is about providing people with appropriately simplified and concise information on the considerations, measures and testing you carry out to make sure that your AI system is equitable and that bias has been optimally mitigated. Fairness considerations come into play through the whole lifecycle of an AI model, from inception to deployment, monitoring and review.</p>
+<p>Process-based explanations include:</p>
+<ul>
+<li>
+<p>the chosen measures to mitigate risks of bias and discrimination at the data collection, preparation, model design and testing stages;</p>
+</li>
+<li>
+<p>how these measures were chosen and how managed informational barriers to bias-aware design such as limited access to data about protected or sensitive traits of concern have been managed; and</p>
+</li>
+<li>
+<p>the results of the initial (and ongoing) fairness testing, self-assessment, and external validation – showing that the chosen fairness measures are deliberately and effectively being integrated into model design. This can be done by showing that different groups of people receive similar outcomes, or that protected characteristics have not played a factor in the results.</p>
+</li>
+</ul>
+<p>Outcome-based explanations include:</p>
+<ul>
+<li>
+<p>details about how the formal fairness criteria were implemented in the case of a particular decision or output;</p>
+</li>
+<li>
+<p>presentation of the relevant fairness metrics and performance measurements in the delivery interface of your model. This should be geared to a non-technical audience and done in an easily understandable way; and</p>
+</li>
+<li>
+<p>explanations of how others similar to the individual were treated (i.e., whether they received the same decision outcome as the individual). For example, information generated from counter-factual scenarios could be used to show whether or not someone with similar characteristics, but of a different ethnicity or gender, would receive the same decision outcome as the individual.</p>
+</li>
+</ul>
+<h3 id="safety-and-performance-explanation">Safety and performance explanation<a class="headerlink" href="#safety-and-performance-explanation" title="Permanent link">&para;</a></h3>
+<p>What does this explanation help people understand?
+The safety and performance explanation helps people understand the measures that have been put in place, and the steps that have been taken (and are continuously bein taken) to maximise the accuracy, reliability, security and robustness of the decisions the AI model helps make. It can also be used to justify the type of AI system chosen, such as comparisons to other systems or human decision makers.</p>
+<div class="admonition info">
+<p class="admonition-title">Key concepts:<p><strong>Accuracy:</strong> the proportion of examples for which  model generates a correct output. This component may also include other related performance measures such as precision, sensitivity (true positives), and specificity (true negatives). Individuals may want to understand how accurate, precise, and sensitive the output was in their particular case.</p>
+<p><strong>Reliability:</strong> how dependably the AI system does what it was intended to do. If it did not do what it was programmed to carry out, individuals may want to know why, and whether this happened in the process of producing the decision that affected them.</p>
+<p><strong>Security:</strong> the system is able to protect its architecture from unauthorised modification or damage of any of its component parts; the system remains continuously functional and accessible to its authorised users and keeps confidential and private information secure, even under hostile or adversarial conditions.</p>
+<p><strong>Robustness:</strong> the system functions reliably and accurately in practice. Individuals may want to know how well the system works if things go wrong, how this has been anticipated and tested, and how the system has been immunised from adversarial attacks.</p>
+</p>
+</div>
+<p><strong>What information goes into safety and performance explanations</strong></p>
+<p>Process-based explanations include:</p>
+<p>For accuracy:</p>
+<ul>
+<li>How is accuracy measured (e.g., maximising precision to reduce the risk of false negatives).</li>
+<li>Why those measures were chosen, and what the assurance process behind it was.</li>
+<li>
+<p>What was done at the data collection stage to ensure that the training data was up-to-date and reflective of the characteristics of the people to whom the results apply.</p>
+</li>
+<li>
+<p>What kinds of external validation has undertaken to test and confirm your model’s ‘ground truth’.</p>
+</li>
+<li>
+<p>What the overall accuracy rate of the system was at testing stage.</p>
+</li>
+<li>
+<p>What is done to monitor this (e.g., measuring for concept drift over time).</p>
+</li>
+</ul>
+<p>For reliability:</p>
+<ul>
+<li>
+<p>How it is measured and what the assurance process behind it is.</p>
+</li>
+<li>
+<p>Results of the formal verification of the system’s programming specifications, i.e., how encoded requirements have been mathematically verified.</p>
+</li>
+</ul>
+<p>For security: 
+- How it is measured and what the assurance process behind it is, e.g., how limitation have been set on who is able to access the system, when, and how.</p>
+<ul>
+<li>How the security of confidential and private information that is processed in the model has been managed.</li>
+</ul>
+<p>For robustness:</p>
+<ul>
+<li>
+<p>How it is measured.</p>
+</li>
+<li>
+<p>Why the specific measures were chosen.</p>
+</li>
+<li>
+<p>What the assurance process behind it is, e.g., how the system has been stress-tested to understand how it responds to adversarial intervention, implementer error, or skewed goal-execution by an automated learner (in reinforcement learning applications).</p>
+</li>
+</ul>
+<p>Outcome-based explanations:</p>
+<p>While one might not be able to guarantee accuracy at an individual level, one should be able to provide assurance that, at run-time, an AI system operated reliably, securely, and robustly for a specific decision.</p>
+<ul>
+<li>
+<p>In the case of accuracy and the other performance metrics, however the resultsof cross-validation (training/ testing splits) and any external validation carried out, should be included in the model's delivery interface.</p>
+</li>
+<li>
+<p>Other relevant information that could be included is:  information related to the system’s confusion matrix (the table that provides the range of performance metrics) and ROC curve (receiver operating characteristics)/ AUC (area under the curve). Include guidance for users and affected individuals that makes the meaning of these measurement methods, and specifically the ones that have been chosen, easily accessible and understandable. This should also include a clear representation of the uncertainty of the results (e.g., confidence intervals and error bars).</p>
+</li>
+</ul>
+<h3 id="impact-explanation">Impact explanation<a class="headerlink" href="#impact-explanation" title="Permanent link">&para;</a></h3>
+<p>What does this explanation help people understand?</p>
+<p>An impact explanation helps people understand how the effects that an AI decision-support system may have on an individual, i.e., what the outcome of the decision means for them, have been considered. </p>
+<p>It is also about helping individuals to understand the broader societal effects that the use of this AI system may have. This can help reassure people that the use of AI will be of benefit. Impact explanations are therefore often well suited to delivery before an AI-assisted decision has been made. </p>
+<p>What does this type of explanation include?</p>
+<p>Demonstrate that thought has been put into how an AI system will potentially affect individuals and wider society. It is important to clearly show affected individuals the process done to determine these possible impacts.</p>
+<p><strong>What information goes into impact explanations</strong></p>
+<p>Process-based explanations include:</p>
+<ul>
+<li>
+<p>Showing the considerations givne to the AI system’s potential effects, how these considerations were undertaken, and the measures and steps taken to mitigate possible negative impacts on society, and to amplify the positive effects.</p>
+</li>
+<li>
+<p>Information on the plan in place to monitor and re-assess impacts while the system is deployed should also be included.</p>
+</li>
+</ul>
+<p>Outcome-based explanations:</p>
+<p>Although impact explanations are mainly about demonstrating that appropriate forethought has been given into the potential ‘big picture’ effects, it is also important to consider how to help recipients understand the impact of the AI-assisted decisions that specifically affect them. For instance, one might explain the consequences for the individual of the different possible decision outcomes and how, in some cases, changes in their behaviour would have brought about a different outcome with more positive impacts. This use of counterfactual assessment would help decision recipients make changes that could lead to a different outcome in the future or allow them to challenge the decision.</p>
+<h2 id="putting-the-principle-of-transparency-and-explainability-into-practice">Putting the Principle of Transparency and Explainability into Practice<a class="headerlink" href="#putting-the-principle-of-transparency-and-explainability-into-practice" title="Permanent link">&para;</a></h2>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<ul>
+<li>Task 1 (Project Planning): Select priority explanations by considering the domain, use case and potential impacts</li>
+<li>Task 2 (Data Extraction or Procurement, Data Analysis): Collect and pre-process data in an explanation-aware manner</li>
+<li>Task 3 (Model Selection): Build a system that is able to extract relevant information for a range of explanation types</li>
+<li>Task 4 (Model Reporting): Translate the rationale of the system’s results into useable and easily understandable reasons</li>
+<li>Task 5: (User Training) Prepare implementers to deploy the AI system</li>
+<li>Task 6 (Model Reporting): Consider how to build and present an explanation</li>
+</ul>
+</div>
+<p>There are a number of tasks both to help in the design and deployment of appropriately transparent and explainable AI systems and to assist in providing clarification of the results these systems produce to a range of impacted stakeholders (from operators, implementers, and auditors to decision recipients).
+These tasks make up Transparency and Explainability Assurance Management for AI projects, offering a systematic approach to:</p>
+<ul>
+<li>Designing, developing, and deploying AI projects in a transparent and explanation-aware fashion; and selecting, extracting and delivering explanations that are differentiated according to the needs and skills of the different audiences they are directed at.</li>
+</ul>
+<p><strong>Task 1 (Project Planning): Select priority explanations by considering the domain, use case and potential impacts</strong></p>
+<ul>
+<li>
+<p>Understanding the different types of explanation will serve to identify the dimensions of an explanation that decision recipients will find useful. 
+In most cases, explaining AI-assisted decisions involves identifying what is happening in the AI system and who is responsible. That means prioritising the rationale and responsibility explanation types.</p>
+</li>
+<li>
+<p>The setting and the sector are important in figuring out what kinds of explanation one should be able to provide. Therefore considering the domain context and use case is crucial to prioritise which explanations the team should be prepared to give.</p>
+</li>
+<li>
+<p>In addition, consider the potential impacts of the particular use of the AI system to determine which other types of explanation should be provided. This will also help in thinking about how much information is required, and how comprehensive it should be.</p>
+</li>
+<li>
+<p>Choosing what to prioritise is not an exact science. Hopefully the explanations prioritised will coincide with what the majority of the people impacted want to know, but it is unlikely that every individual will have all their questions answered. Having a clear and documented rationale for the explanations prioritised will probably also be useful for your own accountability or auditing purposes.</p>
+</li>
+</ul>
+<p><strong>Task 2 (Data Extraction or Procurement, Data Analysis): Collect and pre-process data in an explanation-aware manner</strong></p>
+<p>The data collected and pre-processed before inputting it into the system has an important role to play in the ability to derive each explanation type. Careful labelling and selection of input data can help provide information for your rationale explanation.</p>
+<p>Providing details about who is responsible at each stage of data collection and pre-processing is part of being more transparent. This is part of the responsibility explanation (information can be drawn from Workflow Governance Map, covered in the AI accountability section of this course).</p>
+<p>Drawing from the dataset factsheet can aid in providing data explanations, including the following information:</p>
+<ul>
+<li>the source of the training data;</li>
+<li>how it was collected;</li>
+<li>assessments about its quality; and</li>
+<li>steps taken to address quality issues, such as completing or removing data</li>
+</ul>
+<p>Check the data used within the model to ensure it is sufficiently representative of those it is making decisions about. Another issue to consider is whether pre-processing techniques, such as re-weighting, are required.  These decisions should be documented in the Bias Self-Assessments, and will help construct the fairness explanation.</p>
+<p><strong>Task 3 (Model Selection): Build a system that is able to extract relevant information for a range of explanation types</strong></p>
+<p>Deriving the rationale explanation is key to understanding an AI system (as well as complying with parts of the GDPR).
+It requires looking ‘under the hood’ and helps in gathering the information needed for some of the other explanations, such as safety and fairness. </p>
+<p>However, this is a complex task that requires knowing when to use more and less interpretable models and how to understand their outputs.
+To choose the right AI model for the particular explanation needs, one should think about the domain the system will be working in, and the potential impact of the system.</p>
+<p>When selecting a model for an AI project, it is important to consider whether:</p>
+<ul>
+<li>there are costs and benefits of using a newer and potentially less explainable AI model;</li>
+<li>the data used requires a more or less explainable system;</li>
+<li>the use case and domain context encourage choosing an inherently interpretable system; </li>
+<li>the processing needs lead to the selection of a ‘black box’ model; and</li>
+<li>the supplementary interpretability tools that help  explain a ‘black box’ model (if chosen) are appropriate given the context.</li>
+</ul>
+<p>To extract explanations from inherently interpretable models, look at the logic of the model’s mapping function by exploring it and its results directly.
+On the other hand, there are many techniques used to extract explanations from ‘black box’ systems. Make sure that they provide a reliable and accurate representation of the system’s behaviour.</p>
+<p><strong>Task 4 (Model Reporting): Translate the rationale of the system’s results into useable and easily understandable reasons</strong></p>
+<p>Once the rationale of the underlying logic of the AI model has been extracted, the statistical output needs to be incorporated into the wider decision-making process.</p>
+<p>Implementers of the outputs from the AI system will need to recognise the factors that they see as legitimate determinants of the outcome they are considering.</p>
+<p>Decision recipients should be able to easily understand how the statistical result has been applied to their particular case.</p>
+<p><strong>Task 5: (User Training) Prepare implementers to deploy the AI system</strong></p>
+<p>In cases where decisions are not fully automated, implementers need to be meaningfully involved.</p>
+<p>This means that they need to be appropriately trained to use the model’s results responsibly and fairly.</p>
+<p>Their training should cover:
+- the basics of how machine learning works;
+- the limitations of AI and automated decision-support technologies;
+- the benefits and risks of deploying these systems to assist decision-making, particularly how they help humans come to judgements rather than replacing that judgement; and
+- how to manage cognitive biases, including both decision-automation bias and automation-distrust bias.</p>
+<p><strong>Task 6 (Model Reporting): Consider how to build and present an explanation</strong>
+Gathering together the information gained when implementing Tasks 1-4 is the first step towards building an explanation. This includes reviewing the information and determine how this provides an evidence base for the process-based or outcome-based explanations.</p>
+<p>Additionally, it is important to revisit the contextual factors to establish which explanation types should be prioritised.</p>
+<p>The way an explanation is presented depends on the way AI-assisted decisions are made, and on how people might expect those responsible for the AI system to deliver explanations without using AI.</p>
+<p>Explanations can la 'layered' by proactively providing individuals with the prioritised explanations first and making additional explanations available in further layers. This helps to avoid information (or explanation) overload.</p>
+<p>Delivering explanations should be thought of as a conversation, rather than a one-way process. People should be able to discuss a decision with a competent human being.</p>
+<p>Providing an explanation at the right time is also important. Proactively engaging with customers by making information available on how the AI system is used and how it aids in making decisions, can increase the trust and awareness.</p>
+<!-- ****** Question, should we include the template on transparency and explainality assurance? --></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 Alan Turing Institute</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../javascripts/mathjax.js" defer></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+        <script src="../../../javascripts/tablesort.js" defer></script>
+        <script src="../../../javascripts/case-studies.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

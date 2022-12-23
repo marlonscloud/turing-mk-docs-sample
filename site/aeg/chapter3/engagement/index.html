@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://alan-turing-institute.github.io/turing-commons/aeg/chapter3/engagement/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Stakeholder Engagement Process - Turing Commons</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../../../stylesheets/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Turing Commons</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../welcome/" class="nav-link">Welcome</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Responsible Research and Innovation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../rri/" class="dropdown-item">(RRI) About this Course</a>
+</li>
+                                    
+<li>
+    <a href="../../../rri/intro/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Responsible Research and Innovation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/responsibility/" class="dropdown-item">What is Responsibility</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/history/" class="dropdown-item">A Short History of RRI</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/sts/" class="dropdown-item">Science, Technology, and Society</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter1/timeline/" class="dropdown-item">Science and Technology Studies Timeline</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Data Science and AI</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/responsible_ds/" class="dropdown-item">What is Responsible Data Science and AI</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/project_lifecycle/" class="dropdown-item">Introducing the Project Lifecycle</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/roles_responsibility/" class="dropdown-item">Roles and Responsibilities</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter2/understanding_bias/" class="dropdown-item">Understanding Bias</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Project Lifecycle</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/activities/case_studies/" class="dropdown-item">Case Studies</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/planning/" class="dropdown-item">Project Planning</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/problem/" class="dropdown-item">Problem Formulation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/data_extraction/" class="dropdown-item">Data Extraction or Procurement</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/project_design/data_analysis.ipynb" class="dropdown-item">Data Analysis</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/preprocessing/" class="dropdown-item">Preprocessing and Feature Engineering</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_selection/" class="dropdown-item">Model Selection and Training</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_testing/" class="dropdown-item">Model Testing and Validation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/model_development/model_reporting/" class="dropdown-item">Model Reporting</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/model_productionalisation/" class="dropdown-item">Model Productionalisation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/user_training/" class="dropdown-item">User Training</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/system_use.ipynb" class="dropdown-item">System Use and Monitoring</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/system_deployment/model_updating/" class="dropdown-item">Model Updating or Deprovisioning</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter3/summary/" class="dropdown-item">Next Steps</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Responsible Communication</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/assurance/" class="dropdown-item">What is Argument-Based Assurance</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/communication/" class="dropdown-item">Assurance and Responsible Communication</a>
+</li>
+            
+<li>
+    <a href="../../../rri/chapter4/gpe/" class="dropdown-item">Goals, Properties, and Evidence</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../rri/conclusion/" class="dropdown-item">Conclusion</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../rri/resources/" class="dropdown-item">Additional Resources</a>
+</li>
+            
+<li>
+    <a href="../../../rri/resources/synthetic_data_generation.ipynb" class="dropdown-item">Synthetic Data Generation</a>
+</li>
+            
+<li>
+    <a href="../../../rri/resources/further-reading/" class="dropdown-item">Further Reading</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Public Engagement of Data Science and AI <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../ped/" class="dropdown-item">(PED) About this Course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">What is Public Engagement?</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter1/ladder/" class="dropdown-item">Climbing the Ladder</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter1/goals/" class="dropdown-item">Goals of Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">The Value(s) of Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter2/deliberation/" class="dropdown-item">Deliberative Values</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter2/responsible/" class="dropdown-item">Responsible Public Engagement</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Facilitating Public Engagement</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter3/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter3/when/" class="dropdown-item">When should you engage</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter3/how/" class="dropdown-item">How should you engage</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Guidance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/storytelling/" class="dropdown-item">Storytelling with Data</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/uncertainty/" class="dropdown-item">Communicating Uncertainty</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter4/uncertainty_example.ipynb" class="dropdown-item">Visualising Uncertainty</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Public Trust and Assurance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../ped/chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../../ped/chapter5/trust/" class="dropdown-item">Public Trust in Science and Technology</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">AI Ethics and Governance <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">(AEG) About this course</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Practical Ethics</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter1/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/metaethics/" class="dropdown-item">Introduction to Metaethics</a>
+</li>
+            
+<li>
+    <a href="../../chapter1/normative/" class="dropdown-item">Introduction to Normative Theories</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Harms and Values</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter2/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter2/harms/" class="dropdown-item">AI Harms</a>
+</li>
+            
+<li>
+    <a href="../../chapter2/values/" class="dropdown-item">AI Values</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AI Sustainability</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Stakeholder Engagement Process</a>
+</li>
+            
+<li>
+    <a href="../impact/" class="dropdown-item">Stakeholder Impact Assessment</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Fairness & Bias Mitigation, Accountability, and Governance</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter4/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/fairness/" class="dropdown-item">Introduction to Fairness</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/aifairness/" class="dropdown-item">AI Fairness</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/bias/" class="dropdown-item">Bias Mitigation</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/accountability/" class="dropdown-item">Accountability</a>
+</li>
+            
+<li>
+    <a href="../../chapter4/governance/" class="dropdown-item">AI Governance</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Transparency, Explainability and CARE & ACT Principles</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../chapter5/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/transparency/" class="dropdown-item">Transparency & Explainability</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/consider/" class="dropdown-item">Consider Context</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/anticipate/" class="dropdown-item">Anticipate Impacts</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/reflect/" class="dropdown-item">Reflect on Purpose, Positionality, and Power</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/engage/" class="dropdown-item">Engage Inclusively</a>
+</li>
+            
+<li>
+    <a href="../../chapter5/act/" class="dropdown-item">Act Responsibly</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../blog/" class="dropdown-item">Blog</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../impact/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/alan-turing-institute/turing-commons/edit/master/docs/aeg/chapter3/engagement.md" class="nav-link">Edit on alan-turing-institute/turing-commons
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#stakeholder-engagement-process" class="nav-link">Stakeholder Engagement Process</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#preliminary-project-scoping-and-stakeholder-analysis" class="nav-link">Preliminary Project Scoping and Stakeholder Analysis</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#positionality-reflection" class="nav-link">Positionality Reflection</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#stakeholder-engagement-objective-and-method" class="nav-link">Stakeholder Engagement Objective and Method</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="stakeholder-engagement-process">Stakeholder Engagement Process<a class="headerlink" href="#stakeholder-engagement-process" title="Permanent link">&para;</a></h1>
+<figure>
+<p><img align="center" alt="Sustainabilitycycle" src="../../../assets/images/graphics/sustainability-cycle.png" />
+  </p>
+<figcaption>The Sustainability, engagement, and reflection cycle</figcaption>
+</figure>
+<p>A crucial component of AI Sustainability is conducting an appropriate Stakeholder Engagement Process (SEP). But before we delve into the process itself, we must ask, what is a stakeholder?</p>
+<div class="admonition info">
+<p class="admonition-title">Key Concept: Stakeholder</p>
+<p>Stakeholders are individuals or groups that:</p>
+<p>(1) have interests or rights that may be affected by the past, present, and future decisions and activities of an organisation;</p>
+<p>(2) may have the power or authority to influence the outcome of such decisions and activities; </p>
+<p>(3) possess relevant characteristics that put them in positions of advantage or vulnerability with regard to those decisions and activities.</p>
+</div>
+<p>The SEP is an iterative process with three core steps: </p>
+<figure>
+<p><img align="center" alt="SEP" src="../../../assets/images/graphics/sep.png" /></p>
+</figure>
+<p>Each of these activities should be documented and utilised to create a Project Summary (PS) report. A Project Summary Report is comprised of four components reflecting the SEP process: (1) a preliminary project scoping and stakeholder analysis, (2) a positionality reflection (3) an overview of established stakeholder objectives and methods and (4) a governance workflow map. The fourth component of the PS Report will be discussed later in the course when we look into accountability and governance of AI systems.</p>
+<p>We will now analyise each of the relevant steps within the process and look at how they relate to thinking about the sustainability of the project as a whole. </p>
+<h2 id="preliminary-project-scoping-and-stakeholder-analysis"><strong>Preliminary Project Scoping and Stakeholder Analysis</strong><a class="headerlink" href="#preliminary-project-scoping-and-stakeholder-analysis" title="Permanent link">&para;</a></h2>
+<p>This is the first activity within the SEP process. It involves four sub-steps:</p>
+<ol>
+<li>
+<p><strong>Outlining project use context, domain, and data:</strong> In this step, a high-level description of the prospective system is outlined. This includes the domain in which it will operate, the contexts in which it will be used, and the data on which it will be trained. During this initial project scoping activity, information should be drawn from organisational documents (i.e., the project business case, proof of concept, or project charter), project team collaboration, as well as desk research (if necessary) to complete the description.</p>
+</li>
+<li>
+<p><strong>Identifying stakeholders:</strong> Once the first step is completed and building on this contextual understanding, this step involves identifying who may be affected by, or may affect the project.</p>
+</li>
+<li>
+<p><strong>Scoping potential stakeholder impacts:</strong> This involves carrying out a preliminary evaluation of the potential impacts of the prospective AI system on affected individuals and communities. At this initial stage of reflection, members of the project team should review the SUM values, and the corresponding ethical concerns, rights and freedoms, and then consider which of these could be impacted by the design, development and deployment of the prospective AI system and how.</p>
+</li>
+<li>
+<p><strong>Analysing stakeholder salience:</strong> The step requires assessing the relevance of each identified stakeholder group to the AI project and to its use contexts. This includes assessing the relative interests, rights, vulnerabilities, and advantages of identified stakeholders as these interests, rights, vulnerabilities, and advantages may be impacted by, or may impact, the AI system in question. When identifying stakeholders, the project team should also consider organisational stakeholders, whose input will likewise strengthen the openness, inclusivity, and diversity of the project.</p>
+</li>
+</ol>
+<hr />
+<hr />
+<p>Stakeholder analyses may be carried out in a variety of ways that involve more-or-less stakeholder involvement. This spectrum of options ranges from analyses carried out exclusively by a project team without active community engagement to analyses built around the inclusion of community-led participation and co-design from the earliest stages of stakeholder identification. The degree of stakeholder involvement will vary from project to project based upon a preliminary assessment of the potential risks and hazards of the model or tool under consideration. </p>
+<p>Low-stakes AI applications that are not safety-critical, do not directly impact the lives of people, and do not process potentially sensitive social and demographic data may need less proactive stakeholder engagement than high-stakes projects. For example, an application which sorts out email and identifies spam may be correctly classified as low impact and low risk.</p>
+<p>A responsible and thorough initial evaluation of the scope of the possible risks that could arise from the AI system (to be carried by the team responsible for developing said system) will determine the the potential hazards the project poses to affected stakeholdes (be them individuals or communities). A reasonable assessments of the dangers posed to individual wellbeing and public welfare is needed in order to formulate proportionate approaches to stakeholder involvement. </p>
+<p>Regardless of the potential impacts of a project, involving affected individuals and communities in stakeholder analysis (and, later, in stakeholder impact assessment) should, in all cases, be a significant consideration. Stakeholder involvement ensures that a project will possess an appropriate degree of public accountability, transparency, legitimacy, and democratic governance, and it recognizes the important role played in this by the inclusion of the voices of all affected individuals and communities in decision-making processes. </p>
+<p>In addition to providing these important supports for building public trust, stakeholder involvement can help to strengthen the objectivity, reflexivity, reasonableness, and robustness of the choices a project team makes across the project lifecycle. This is because the inclusion of a wider range of perspectives (especially of those who are most marginalised) can enlarge a project team’s purview, expand its domain knowledge as well as its understanding of citizens’ needs. It can likewise unearth potential biases that may arises from limiting the standpoints that inform decision-making to those of team members. </p>
+<p>Public engagement and community involvement, however, are only one part of the measures a team needs to take to ensure the objectivity, reflexivity, reasonableness, and robustness of its stakeholder analysis, impact assessment, and decision-making, more generally. Apart from outward-facing community participation, processes inward-facing reflection should also inform the way the team approaches to these challenges (see the sustainability, engagement, and reflection cycle).</p>
+<h2 id="positionality-reflection"><strong>Positionality Reflection</strong><a class="headerlink" href="#positionality-reflection" title="Permanent link">&para;</a></h2>
+<p>All individual human beings come from unique places, experiences, and life contexts that have shaped their thinking and perspectives. Reflecting on these is important insofar as it can help team members understand how their viewpoints might differ from those around them and, more importantly, from those who have diverging cultural and socioeconomic backgrounds and life experiences. </p>
+<p>Identifying and probing these differences can enable individuals to better understand how their own backgrounds, for better or worse, frame the way they see others, the way they approach and solve problems, and the way they carry out research and engage in innovation. By undertaking such efforts to recognise social position and differential privilege, they may gain a greater awareness of their own personal biases and unconscious assumptions. This then can enable them to better discern the origins of these biases and assumption and to confront and challenge them in turn. </p>
+<p>Social scientists have long referred to this kind of self-locating reflection as “positionality”. When team members take their own positionalities into account making them explicit, they can better grasp how the influence of their respective social and cultural positions creates strengths and limitations. </p>
+<p>On the one hand, one’s positionality—with respect to characteristics like ethnicity, race, age, gender, socioeconomic status, education and training levels, values, geographical background, etc.—can have a positive effect on an individual’s contributions to an innovation project; the uniqueness of each person’s lived experience and standpoint can play a constructive role in introducing insights and understandings that other team members do not have. On the other hand, one’s positionality can assume a harmful role when hidden biases and prejudices that derive from a person’s background, and from power imbalances and differential privileges, creep into decision-making processes undetected. </p>
+<p>When taking positionality into account, team members should reflect on their own positionality matrix. They should ask: To what extent do my personal characteristics, group identifications, socioeconomic status, educational, training, &amp; work background, team composition, &amp; institutional frame represent sources of power and advantage or sources of marginalisation and disadvantage? How does this positionality influence my (and my team’s) ability to identify &amp; understand affected stakeholders and the potential impacts of my project? Several other questions must be asked to respond to these two: How do I identify? How have I been educated and trained? What does my institutional context and team composition look like? What is my socioeconomic history? </p>
+<figure>
+<p><img align="center" alt="Positionality Matrix" src="../../assets/images/graphics/Positionality-Matrix-2.png" /></p>
+</figure>
+<h2 id="stakeholder-engagement-objective-and-method"><strong>Stakeholder Engagement Objective and Method</strong><a class="headerlink" href="#stakeholder-engagement-objective-and-method" title="Permanent link">&para;</a></h2>
+<p>Once the initial project scoping, stakeholder analysis, and positionality reflection have been done, a project team can move on to define the objective for their stakeholder enaggement, as well as the method(s) to be used. </p>
+<p>As we have previously established, stakeholder engagement may be carried out in a variety of ways that involve more-or-less stakeholder involvement. This spectrum of options ranges from analyses carried out exclusively by a project team without active community engagement to analyses built around the inclusion of community-led participation and co-design from the earliest stages of stakeholder identification. </p>
+<p>The degree of stakeholder involvement will vary from project to project and take into account a preliminary assessment of the potential risks and hazards of the model or tool under consideration. Low-stakes AI applications that are not safety-critical, do not directly impact the lives of people, and do not process potentially sensitive social and demographic data may need less proactive stakeholder engagement than high-stakes projects. Similarly, the project team will need to take into account their assessment of positionality.</p>
+<p>When weighing these three factors, the team should prioritise the establishment of a clear and explicit stakeholder engagement objective and document this. This is crucial, because all stakeholder engagement processes can run the risk either of being cosmetic tools employed to legitimate projects without substantial and meaningful participation or of being insufficiently participative, i.e. of being one-way information flows or nudging exercises that serve as public relations instruments. The purpose of stakeholder involvement in sustainable AI projects is just the opposite: to amplify the participatory agency of affected individuals and organisations in impact assessment, risk management, and assurance processes.</p>
+<p>To avoid such hazards of superficiality, the team should shore up its proportionate approach to stakeholder engagement with deliberate and precise goal-setting. There are a range of engagement options that can help a project obtain a level of public participation which meets team-based assessments of impact and positionality as well as practical considerations and stakeholder needs.</p>
+<h3 id="defining-a-stakeholder-objective">Defining a Stakeholder Objective<a class="headerlink" href="#defining-a-stakeholder-objective" title="Permanent link">&para;</a></h3>
+<figure>
+<p><img align="center" alt="objective-methods" src="../../../assets/images/graphics/objective-methods.png" /></p>
+</figure>
+<h3 id="selecting-a-stakeholder-engagement-method">Selecting a Stakeholder Engagement Method<a class="headerlink" href="#selecting-a-stakeholder-engagement-method" title="Permanent link">&para;</a></h3>
+<figure>
+<p><img align="center" alt="methods" src="../../../assets/images/graphics/methods.png" /></p>
+</figure>
+<p>The following table summarises a wide range of salient methods:</p>
+<table>
+<thead>
+<tr>
+<th>Mode of Engagement</th>
+<th>Description</th>
+<th>Degree of Engagement</th>
+<th>Practical Strengths</th>
+<th>Practical Weaknesses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>:material-email: <strong>Newsletters</strong> (email)</td>
+<td>Regular emails (e.g.: fortnightly or monthly) that contain updates, relevant news, and calls to action in an inviting format.</td>
+<td><code>INFORM</code></td>
+<td>Can reach many people; can contain large amount of relevant information; can be made accessible and visually engaging.</td>
+<td>Might not reach certain portions of the population; can be demanding to design and produce with some periodicity; easily forwarded to spam/junk folders without project team knowing (leading to overinflated readership stats).</td>
+</tr>
+<tr>
+<td>:material-mailbox: <strong>Letters</strong> (post)</td>
+<td>Regular letters (e.g.: monthly) that contain the latest updates, relevant news and calls to action.</td>
+<td><code>INFORM</code></td>
+<td>Can reach parts of the population with no internet or digital access; can contain large amount of relevant information; can be made accessible and visually engaging.</td>
+<td>Might not engage certain portions of the population; Slow delivery and interaction times hampers the effective flow of information and the organisation of further engagement.</td>
+</tr>
+<tr>
+<td>:material-checkbox-blank-badge: <strong>App notifications</strong></td>
+<td>Projects can rely on the design of apps that are pitched to stakeholders who are notified on their phone with relevant updates.</td>
+<td><code>INFORM</code></td>
+<td>Easy and cost-effective to distribute information to large numbers of people; Rapid information flows bolster the provision of relevant and timely news and updates.</td>
+<td>More significant initial investment in developing an app; will not be available to people without smartphones.</td>
+</tr>
+<tr>
+<td>:fontawesome-solid-people-group: <strong>Community fora</strong></td>
+<td>Events in which panels of experts share their knowledge on issues and then stakeholders can ask questions.</td>
+<td><code>INFORM</code></td>
+<td>Can inform people with more relevant information by providing them with the opportunity to ask questions; brings community together in a shared space of public communication.</td>
+<td>More time-consuming and resource intensive to organise; might attract smaller numbers of people and self-selecting groups rather than representative subsets of the population; effectiveness is constrained by forum capacity.</td>
+</tr>
+<tr>
+<td>:fontawesome-solid-list-check: <strong>Online Surveys</strong></td>
+<td>Survey sent via email, embedded in a website, shared via social media, etc.</td>
+<td><code>CONSULT</code></td>
+<td>Cost-effective; simple mass- distribution.</td>
+<td>Risk of pre-emptive evaluative framework when designing questions; Does not reach those without internet connection or computer/smartphone access.</td>
+</tr>
+<tr>
+<td>:material-phone-in-talk: <strong>Phone Interviews</strong></td>
+<td>Structured or semi-structured interviews held over the phone.</td>
+<td><code>CONSULT</code> <code>PARTNER</code></td>
+<td>Opportunity for stakeholders to voice concerns more openly.</td>
+<td>Risk of pre-emptive evaluative framework when designing questions; Might exclude portions of the populations without phone access or with habits of infrequent phone use.</td>
+</tr>
+<tr>
+<td>:fontawesome-solid-door-closed: <strong>Door-to-door interviews</strong></td>
+<td>Structured or semi-structured interviews held in-person at people’s houses.</td>
+<td><code>CONSULT</code> <code>PARTNER</code></td>
+<td>Opportunity for stakeholders to voice concerns more openly; can allow participants the opportunity to form connections through empathy and face-to- face communication.</td>
+<td>Potential for limited interest to engage with interviewers; time-consuming; can be seen by interviewees as intrusive or burdensome.</td>
+</tr>
+<tr>
+<td>:fontawesome-solid-people-arrows-left-right: <strong>In-person interviews</strong></td>
+<td>Short interviews conducted in- person in public spaces.</td>
+<td><code>CONSULT</code> <code>PARTNER</code></td>
+<td>Can reach many people and a representative subset of the population if stakeholders are appropriately defined and sortition is used.</td>
+<td>Less targeted; pertinent stakeholders must be identified by area; little time/interest to engage with interviewer; can be viewed by interviewees as time- consuming and burdensome.</td>
+</tr>
+<tr>
+<td>:material-selection-search: <strong>Focus Groups</strong></td>
+<td>A group of stakeholders brought together and asked their opinions on a particular issue. Can be more or less formally structured.</td>
+<td><code>CONSULT</code> <code>PARTNER</code></td>
+<td>Can gather in-depth information; Can lead to new insights and directions that were not anticipated by the project team.</td>
+<td>Subject to hazards of group think or peer pressure; complex to facilitate; can be steered by dynamics of differential power among participants.</td>
+</tr>
+<tr>
+<td>:fontawesome-solid-users-between-lines: <strong>Online Workshops</strong></td>
+<td>Workshops using digital tools such as collaborative platforms.</td>
+<td><code>CONSULT</code></td>
+<td>Opportunity to reach stakeholders across regions, increased accessibility depending on digital access.</td>
+<td>Potential barriers to accessing tools required for participation, potential for disengagement.</td>
+</tr>
+<tr>
+<td>:material-crowd: <strong>Crowdsourcing</strong> (Online)</td>
+<td>Well-designed tasks that can be undertaken by a distributed collective, with individuals working on separate components.</td>
+<td><code>CONSULT</code> <code>PARTNER</code></td>
+<td>Opportunity to engage stakeholders across regions, in an asynchronous manner, with increased accessibility depending on digital access. Supports increased potential for diverse forms of expertise and experience.</td>
+<td>Can be misused as a method for outsourcing cheap labour; potential barriers to accessing tools required for participation; potential for disengagement; difficult to ensure accuracy and validity of input from participants.</td>
+</tr>
+<tr>
+<td>:material-github: <strong>Distributed Project Collaboration</strong> (Online)</td>
+<td>Online digital platforms, such as GitHub, enable new forms of citizen science and collaborative development on diverse projects (e.g., open source software, open science).</td>
+<td><code>CONSULT</code> <code>PARTNER</code> <code>EMPOWER</code></td>
+<td>Opportunity to engage stakeholders across regions, in an asynchronous manner, with increased accessibility depending on digital access; increased potential for diverse forms of expertise and experience; empowers new communities to actively participate in shaping and building tools that have real value for their communities.</td>
+<td>Potential barriers to accessing digital tools required for participation, including high levels of digital literacy.</td>
+</tr>
+<tr>
+<td>:fontawesome-solid-building-columns: <strong>Citizen panel or assembly</strong></td>
+<td>Large groups of people (dozens or even thousands) who are representative of a town/region.</td>
+<td><code>INFORM</code> <code>CONSULT</code> <code>PARTNER</code> <code>EMPOWER</code></td>
+<td>Provides an opportunity for co-production of outputs; can produce insights and directions that were not anticipated by the project team; can provide an information base for conducting further outreach (surveys, interviews, focus groups, etc.); can be broadly representative; can bolster a community’s sense of democratic agency and solidarity.</td>
+<td>Participant rolls must be continuously updated to ensure panels or assemblies remains representative of the population throughout their lifespan; resource-intensive for establishment and maintenance; subject to hazards of group think or peer pressure; complex to facilitate; can be steered by dynamics of differential power among participants.</td>
+</tr>
+<tr>
+<td>:material-account-group: <strong>Citizen jury</strong></td>
+<td>A small group of people (between 12 and 24), representative of the demographics of a given area, come together to deliberate on an issue (generally one clearly framed set of questions), over the period of 2 to 7 days (<a href="http://involve.org.uk">Involve.org.uk</a>.</td>
+<td><code>INFORM</code> <code>CONSULT</code> <code>PARTNER</code> <code>EMPOWER</code></td>
+<td>Can gather in-depth information; can produce insights and directions that were not anticipated by the project team; can bolster participants’ sense of democratic agency and solidarity.</td>
+<td>Subject to hazards of group think; complex to facilitate; risk of pre-emptive evaluative framework; small sample of citizens involved risks low representativeness of wider range of public opinions and beliefs.</td>
+</tr>
+</tbody>
+</table>
+<p>As with all forms of engagement, deciding on the best method requires awareness of your audience.
+Consider the following cases:</p>
+<p>=== ":octicons-log-16: Policymakers"</p>
+<pre><code>A research team has released results from an economics study that could have a positive impact on public policy. They decide to share these results with policymakers. The goal is to directly influence policy. Therefore, the results need to be clearly communicated and also connected to the policy goal. This connection is important to help ensure that policy-makers are able to evaluate the wider implications of the scientific findings.
+
+**Communication Goal:** to demonstrate how scientific findings can support evidence-based policy impact
+</code></pre>
+<p>=== ":octicons-people-16: General Public"</p>
+<pre><code>As part of an education outreach campaign to improve digital literacy among adolescents, a mental health charity are running workshops with secondary school students. They wish to communicate recent evidence about the impact of over-using social media on mental health. Rather than communicating complicated statistical information about the methods used in their study, the team develop a more accessible form of their findings and link these findings to practical steps that the students can take to protect themselves online.
+
+**Communication Goal:** to build awareness of possible risks associated with excessive social media usage and support behavioural change strategies
+</code></pre>
+<p>=== ":octicons-beaker-16: Researchers"</p>
+<pre><code>A PhD student working in a Physics department has results from a recent study that developed and tested a new method for the large-scale data mining of astronomical data. The PhD student wishes to present this new method and the validation study at an upcoming international conference for data science. The audience will be technically literate, but will not have specialist expertise in astronomy. Therefore, the PhD student describes the method in the context of its original study buy also emphasises the generalisability for other sciences (e.g. genomics).
+
+**Communication Goal**: to advance academic career by gaining experience of presenting conference papers and also generating interest in a novel data science method.
+</code></pre>
+<!-- Information is taken from PSGW on Sustainability, Part 1, plus Public Engagement course on Turing Commons --></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 Alan Turing Institute</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../javascripts/mathjax.js" defer></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+        <script src="../../../javascripts/tablesort.js" defer></script>
+        <script src="../../../javascripts/case-studies.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
